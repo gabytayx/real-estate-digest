@@ -1,0 +1,79 @@
+name: Daily News Digest
+
+on:
+  schedule:
+    # 08:00 UTC every day (cron is always UTC). Adjust as you like.
+    - cron: '0 8 * * *'
+  workflow_dispatch:   # also lets you trigger manually from the Actions tab
+
+env:
+  # 👇 EDIT THIS to your GitHub Pages URL
+  SITE_URL: https://gaby438.github.io/real-estate-digest/
+
+
+
+permissions:
+  contents: read      # needed by checkout / general repo access
+  models: read        # unlocks GitHub Models for the GITHUB_TOKEN
+  issues: write       # lets the workflow open the digest issue
+
+jobs:
+  digest:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Fetch and clean the site
+        env:
+          SITE_URL: ${{ env.SITE_URL }}
+        run: |
+          python -m pip install --quiet requests beautifulsoup4
+          python <<'PY'
+          import os, requests
+          from bs4 import BeautifulSoup
+
+          url = os.environ["SITE_URL"]
+          html = requests.get(
+              url,
+              timeout=30,
+              headers={"User-Agent": "daily-digest/1.0"},
+          ).text
+
+          soup = BeautifulSoup(html, "html.parser")
+          for tag in soup(["script", "style", "nav", "footer", "header", "noscript"]):
+              tag.decompose()
+          text = "\n".join(
+              ln for ln in soup.get_text("\n", strip=True).splitlines() if ln.strip()
+          )
+          text = text[:400_000]   # safety cap
+
+          prompt = (
+              "Below is the raw text of a news digest website, scraped today. "
+              "Summarize just the news -- the actual stories -- as a clean, "
+              "scannable digest in markdown. Use short bullet points (one line "
+              "per story), lead with the most important items, group related "
+              "items together, and skip navigation, ads, sign-up prompts, and "
+              "any boilerplate.\n\n"
+              "---\n" + text + "\n---\n"
+          )
+          with open("prompt.txt", "w", encoding="utf-8") as f:
+              f.write(prompt)
+          PY
+
+      - name: Summarize with GitHub Models
+        id: summarize
+        uses: actions/ai-inference@v1
+        with:
+          prompt-file: prompt.txt
+          # Browse https://github.com/marketplace?type=models for other options.
+          model: openai/gpt-4o
+          max-completion-tokens: 2048
+
+      - name: Open issue with the digest
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          SUMMARY_FILE: ${{ steps.summarize.outputs.response-file }}
+        run: |
+          TITLE="Daily News Digest — $(date -u '+%a, %b %d')"
+          gh issue create \
+            --repo "${{ github.repository }}" \
+            --title "$TITLE" \
+            --body-file "$SUMMARY_FILE"
