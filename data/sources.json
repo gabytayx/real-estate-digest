@@ -1,0 +1,50 @@
+[
+  {
+    "key": "vastgoedjournaal",
+    "label": "Vastgoedjournaal",
+    "home": "https://vastgoedjournaal.nl/",
+    "feeds": ["https://vastgoedjournaal.nl/rss", "https://vastgoedjournaal.nl/feed"],
+    "listing": ["https://vastgoedjournaal.nl/", "https://vastgoedjournaal.nl/vj-transacties"],
+    "link_pattern": "/news/"
+  },
+  {
+    "key": "propertynl",
+    "label": "PropertyNL",
+    "home": "https://propertynl.com/Home",
+    "feeds": ["https://propertynl.com/rss", "https://propertynl.com/Rss"],
+    "listing": ["https://propertynl.com/Home", "https://propertynl.com/Nieuws"],
+    "link_pattern": "/Nieuws/"
+  },
+  {
+    "key": "vastgoedmarkt",
+    "label": "Vastgoedmarkt",
+    "home": "https://www.vastgoedmarkt.nl/",
+    "feeds": ["https://www.vastgoedmarkt.nl/rss", "https://www.vastgoedmarkt.nl/feed"],
+    "listing": ["https://www.vastgoedmarkt.nl/"],
+    "link_pattern": "/nieuws/"
+  },
+  {
+    "key": "vastgoeddata",
+    "label": "Vastgoeddata",
+    "home": "https://www.vastgoeddata.nl/",
+    "feeds": ["https://www.vastgoeddata.nl/rss", "https://www.vastgoeddata.nl/feed"],
+    "listing": ["https://www.vastgoeddata.nl/"],
+    "link_pattern": "/nieuws"
+  },
+  {
+    "key": "vastgoednieuws",
+    "label": "Vastgoednieuws",
+    "home": "https://vastgoednieuws.nl/",
+    "feeds": ["https://vastgoednieuws.nl/feed", "https://vastgoednieuws.nl/rss"],
+    "listing": ["https://vastgoednieuws.nl/"],
+    "link_pattern": "/"
+  },
+  {
+    "key": "vastgoedactueel",
+    "label": "Vastgoedactueel",
+    "home": "https://vastgoedactueel.nl/",
+    "feeds": ["https://vastgoedactueel.nl/feed", "https://vastgoedactueel.nl/rss"],
+    "listing": ["https://vastgoedactueel.nl/"],
+    "link_pattern": "/"
+  }
+]
