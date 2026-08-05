@@ -17,8 +17,42 @@ MONTHS_NL = ["januari", "februari", "maart", "april", "mei", "juni", "juli",
              "augustus", "september", "oktober", "november", "december"]
 
 
-def dutch_date(d: datetime) -> str:
+def dutch_date(d) -> str:
+    if isinstance(d, Path):
+        d = datetime.fromisoformat(d.stem)
     return f"{DAYS_NL[d.weekday()].capitalize()} {d.day} {MONTHS_NL[d.month - 1]} {d.year}"
+
+
+def short_date(d: datetime) -> str:
+    return f"{d.day} {MONTHS_NL[d.month - 1]} {d.year}"
+
+
+def editions() -> list:
+    """All archived editions on disk, newest first."""
+    out = []
+    for p in ARCHIVE.glob("*.html"):
+        if p.name == "index.html":
+            continue
+        try:
+            datetime.fromisoformat(p.stem)
+        except ValueError:
+            continue  # ignore stray files that aren't dated editions
+        out.append(p)
+    return sorted(out, key=lambda p: p.stem, reverse=True)
+
+
+def banner(today: datetime, prev, prefix: str) -> str:
+    """
+    Build the archive strip. `prefix` differs between the two copies we write:
+    '' inside archive/, 'archive/' for the root index.html.
+    """
+    parts = ['<a href="%sindex.html">Alle edities</a>' % prefix]
+    parts.append('<span>&middot;</span><a href="%s%s.html">Deze editie (%s)</a>'
+                 % (prefix, today.date().isoformat(), short_date(today)))
+    if prev:
+        parts.append('<span>&middot;</span><a href="%s%s">Vorige editie (%s)</a>'
+                     % (prefix, prev.name, short_date(datetime.fromisoformat(prev.stem))))
+    return "\n  ".join(parts)
 
 
 def main() -> int:
@@ -29,51 +63,60 @@ def main() -> int:
 
     template = (ROOT / "templates" / "index.template.html").read_text(encoding="utf-8")
 
-    sources = " &nbsp;·&nbsp; ".join(h["label"].lower() + ".nl" if not h["label"].startswith("Property")
-                                    else "propertynl.com" for h in payload["health"])
-    dead = [h["label"] for h in payload["health"] if h["items"] == 0]
-    warning = f" &nbsp;·&nbsp; ⚠️ geen items van: {', '.join(dead)}" if dead else ""
-    meta = (f"{dutch_date(generated)} &nbsp;·&nbsp; {len(articles)} artikelen &nbsp;·&nbsp; "
-            f"{sum(1 for a in articles if a['isNew'])} nieuw &nbsp;·&nbsp; "
-            f"laatste {payload['windowDays']} dagen &nbsp;·&nbsp; {sources}{warning}")
-
-    html = (template
-            .replace("__ARTICLES_JSON__", json.dumps(articles, ensure_ascii=False, indent=2))
-            .replace("__DATE_LONG__", f"{today.day} {MONTHS_NL[today.month - 1]} {today.year}")
-            .replace("__HEADER_META__", meta))
-
-    (ROOT / "index.html").write_text(html, encoding="utf-8")
-
+    # Previous edition = newest archived file that isn't today's. Computed
+    # before we write today's copy, so a same-day re-run stays correct.
     ARCHIVE.mkdir(exist_ok=True)
-    dated = ARCHIVE / f"{today.isoformat()}.html"
-    dated.write_text(html, encoding="utf-8")
+    prev = next((p for p in editions() if p.stem != today.isoformat()), None)
 
-    # Rebuild the archive index from what is actually on disk, so it can never
-    # drift out of sync with the files (and re-runs on the same day are safe).
-    entries = sorted((p for p in ARCHIVE.glob("*.html") if p.name != "index.html"),
-                     key=lambda p: p.stem, reverse=True)
-    rows = "\n".join(
-        f'    <li><a href="{p.name}">{dutch_date(datetime.fromisoformat(p.stem))}</a></li>'
-        for p in entries)
+    labels = {"propertynl": "propertynl.com"}
+    sources = " &nbsp;&middot;&nbsp; ".join(
+        labels.get(h["source"], "%s.nl" % h["source"]) for h in payload["health"])
+    dead = [h["label"] for h in payload["health"] if h["items"] == 0]
+    warning = " &nbsp;&middot;&nbsp; \u26a0\ufe0f geen items van: %s" % ", ".join(dead) if dead else ""
+    meta = ("%s &nbsp;&middot;&nbsp; %d artikelen &nbsp;&middot;&nbsp; %d nieuw "
+            "&nbsp;&middot;&nbsp; laatste %s dagen &nbsp;&middot;&nbsp; %s%s"
+            % (dutch_date(generated), len(articles),
+               sum(1 for a in articles if a["isNew"]),
+               payload["windowDays"], sources, warning))
+
+    def build(prefix: str) -> str:
+        return (template
+                .replace("__ARTICLES_JSON__", json.dumps(articles, ensure_ascii=False, indent=2))
+                .replace("__DATE_LONG__", short_date(generated))
+                .replace("__HEADER_META__", meta)
+                .replace("__ARCHIVE_BANNER__", banner(generated, prev, prefix)))
+
+    (ROOT / "index.html").write_text(build("archive/"), encoding="utf-8")
+    dated = ARCHIVE / ("%s.html" % today.isoformat())
+    dated.write_text(build(""), encoding="utf-8")
+
+    # Rebuild the archive index from disk so it can never drift out of sync.
+    all_editions = editions()
+    rows = "\n".join('    <li><a href="%s">%s</a></li>' % (p.name, dutch_date(p))
+                     for p in all_editions)
     (ARCHIVE / "index.html").write_text(
         "<!DOCTYPE html>\n<html lang=\"nl\">\n<head>\n<meta charset=\"UTF-8\">\n"
         "<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n"
-        "<title>Archief — Vastgoed Nieuws Digest</title>\n<style>\n"
+        "<title>Archief \u2014 Vastgoed Nieuws Digest</title>\n<style>\n"
         "body{font-family:'Segoe UI',system-ui,sans-serif;background:#f4f6f9;color:#1f2937;"
         "max-width:720px;margin:0 auto;padding:40px 24px}\n"
         "h1{font-size:22px;color:#1a2e44;margin-bottom:4px}\n"
         "p.sub{color:#6b7280;font-size:13px;margin-bottom:24px}\n"
+        "p.sub a{color:#e07b39}\n"
         "ul{list-style:none;padding:0}\n"
         "li{background:#fff;border:1px solid #dde3ec;border-radius:8px;margin-bottom:8px}\n"
         "li a{display:block;padding:12px 16px;color:#1a2e44;text-decoration:none;font-weight:600}\n"
         "li a:hover{color:#e07b39}\n</style>\n</head>\n<body>\n"
-        "<h1>🏢 Archief — Vastgoed Nieuws Digest</h1>\n"
-        f'<p class="sub"><a href="../index.html">← naar de actuele digest</a> &nbsp;·&nbsp; '
-        f"{len(entries)} edities</p>\n<ul>\n{rows}\n</ul>\n</body>\n</html>\n",
+        "<h1>\U0001f3e2 Archief \u2014 Vastgoed Nieuws Digest</h1>\n"
+        '<p class="sub"><a href="../index.html">\u2190 naar de actuele digest</a> '
+        "&nbsp;&middot;&nbsp; %d edities</p>\n<ul>\n%s\n</ul>\n</body>\n</html>\n"
+        % (len(all_editions), rows),
         encoding="utf-8")
 
-    print(f"wrote index.html ({len(articles)} articles), {dated.relative_to(ROOT)}, "
-          f"archive/index.html ({len(entries)} editions)")
+    print("wrote index.html (%d articles), %s, archive/index.html (%d editions); "
+          "previous edition: %s"
+          % (len(articles), dated.relative_to(ROOT), len(all_editions),
+             prev.stem if prev else "none yet"))
     return 0
 
 
