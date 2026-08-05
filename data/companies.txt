@@ -1,0 +1,39 @@
+# Watchlist — one company per line.
+# Lines starting with # are ignored, so you can group and annotate freely.
+#
+# Notes on matching:
+#   - Matching is case-insensitive and accent-insensitive (Klépierre = Klepierre).
+#   - Word boundaries apply, so "Ahold" will not match "Aholdings".
+#   - "Dutch City Development (DCD)" matches either the full name or "DCD".
+#   - Names under 4 characters are skipped unless whitelisted in collect.py,
+#     because things like "AM" and "b" match half the Dutch language.
+#
+# PASTE YOUR FULL LIST BELOW THIS LINE (replacing these examples).
+
+Blackstone
+NSI
+ASR Real Estate
+AXA Investment Managers
+Union Investment
+ABN AMRO
+Pensioenfonds ABP
+Invesco Real Estate
+VolkerWessels
+Amvest
+Wereldhave
+Xior Student Housing
+Round Hill Capital
+Nuveen
+Heineken
+Ballast Nedam
+Rockfield Real Estate
+Orange Capital Partners
+Brookfield
+Kroonenberg Groep
+Van Wijnen Groep
+Dura Vermeer
+BPD Ontwikkeling
+Vesteda
+Segro
+CTP
+WDP (Warehouses de Pauw)
