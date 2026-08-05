@@ -1,0 +1,1044 @@
+{
+  "generated": "2026-08-05T14:47:11+00:00",
+  "windowDays": 7,
+  "health": [
+    {
+      "source": "vastgoedjournaal",
+      "label": "Vastgoedjournaal",
+      "items": 64,
+      "via": "html-listing",
+      "error": ""
+    },
+    {
+      "source": "propertynl",
+      "label": "PropertyNL",
+      "items": 20,
+      "via": "html-listing",
+      "error": ""
+    },
+    {
+      "source": "vastgoedmarkt",
+      "label": "Vastgoedmarkt",
+      "items": 0,
+      "via": "none",
+      "error": ""
+    },
+    {
+      "source": "vastgoeddata",
+      "label": "Vastgoeddata",
+      "items": 0,
+      "via": "none",
+      "error": ""
+    },
+    {
+      "source": "vastgoednieuws",
+      "label": "Vastgoednieuws",
+      "items": 12,
+      "via": "html-listing",
+      "error": ""
+    },
+    {
+      "source": "vastgoedactueel",
+      "label": "Vastgoedactueel",
+      "items": 10,
+      "via": "rss:https://vastgoedactueel.nl/feed",
+      "error": ""
+    }
+  ],
+  "articles": [
+    {
+      "title": "‘Met onze fabrieken kunnen we in 80 procent van de woningvraag voorzien’",
+      "summary": "Een Morgen-woning kent een grote mate aan variatie, beukmaten en gevelstijlen. VolkerWessels biedt daarbij niet alleen standaard-rijwoningen en twee-onder-een-kappers, maar ook appartementencomplexen tot zeshoog met lift. 'We bieden duurzame, kwalitatief hoogwaardige woningen tegen een aantrekkelijke prijs. Vooral voor corporaties zijn wij daarmee een aantrekkelijke partij', zegt directeur Martin…",
+      "date": "2026-08-05",
+      "source": "vastgoedjournaal",
+      "sourceLabel": "Vastgoedjournaal",
+      "url": "https://vastgoedjournaal.nl/news/71564/met-onze-fabrieken-kunnen-we-in-80-procent-van-de-woningvraag-voorzien",
+      "companies": [
+        "VolkerWessels",
+        "Wonen Limburg"
+      ],
+      "categories": [
+        "Beleid & Gemeente",
+        "Duurzaamheid",
+        "Logistiek",
+        "Nieuwbouw",
+        "Personalia",
+        "Studentenhuisvesting",
+        "Woningmarkt"
+      ],
+      "badges": [],
+      "isNew": true,
+      "id": 1
+    },
+    {
+      "title": "‘Goed wonen voor ouderen’",
+      "summary": "Het Amvest Living & Care Fund, het zorgvastgoedfonds van investment manager en ontwikkelaar Amvest, kiest nadrukkelijk voor uitbreiding van geclusterd wonen voor ouderen. Senioren vinden daar niet alleen een comfortabele, veilige en levensloopbestendige huurwoning. Amvest biedt op die locaties ook een community, een plek waar de bewoners naar elkaar omzien. 'Door sociaal contact te stimuleren…",
+      "date": "2026-08-05",
+      "source": "vastgoedjournaal",
+      "sourceLabel": "Vastgoedjournaal",
+      "url": "https://vastgoedjournaal.nl/news/71568/goed-wonen-voor-ouderen",
+      "companies": [
+        "Amvest"
+      ],
+      "categories": [
+        "Beleggingen",
+        "Nieuwbouw",
+        "Personalia",
+        "Retail",
+        "Woningmarkt",
+        "Zorgvastgoed"
+      ],
+      "badges": [],
+      "isNew": true,
+      "id": 2
+    },
+    {
+      "title": "‘American Dream’ moet met $ 750 mrd weer uitkomen",
+      "summary": "Voorop in vastgoed ‘American Dream’ moet met $ 750 mrd weer uitkomen In Internationaal 15:55, 05 augustus 2026 Door Martin Neyt 377 Views Internationaal Financieel Woningen MobileApp JPMorganChase wil tot 2035 meer dan $750 mrd inzetten om het woningaanbod in de Verenigde Staten uit te breiden en eigenwoningbezit te stimuleren. Dit artikel verder lezen? Log dan in (rechts bovenin) of bekijk de…",
+      "date": "2026-08-05",
+      "source": "propertynl",
+      "sourceLabel": "PropertyNL",
+      "url": "https://propertynl.com/Nieuws/-American-Dream-moet-met--750-mrd-weer-uitkomen/a14b2fdb-dabe-47b4-af14-808902bc3019",
+      "companies": [
+        "Europa Capital",
+        "M&G Real Estate",
+        "Partner Real Estate",
+        "WDP (Warehouses de Pauw)"
+      ],
+      "categories": [
+        "Beleid & Gemeente",
+        "Kantoren",
+        "Logistiek",
+        "Marktoverzicht",
+        "Nieuwbouw",
+        "Personalia",
+        "Transacties",
+        "Woningmarkt"
+      ],
+      "badges": [
+        "buy",
+        "transaction",
+        "market"
+      ],
+      "isNew": true,
+      "id": 3
+    },
+    {
+      "title": "Zomerserie: Die ándere... Stationsstraat",
+      "summary": "Voorop in vastgoed Zomerserie: Die ándere... Stationsstraat In Nieuws 14:09, 31 juli 2026 Door Rob van de Laar 22944 Views Gebiedsontwikkeling MobileApp Deze zomer legt PropertyNL gelijknamige straten in verschillende plaatsen naast elkaar. Die éne kennen we allemaal wel, maar wat heeft de andere te bieden? Van de Stationsstraat zijn er zo'n 160 in ons land. Een aantal ademen allang niet meer de…",
+      "date": "2026-08-05",
+      "source": "propertynl",
+      "sourceLabel": "PropertyNL",
+      "url": "https://propertynl.com/Nieuws/Zomerserie-Die-ndere--Stationsstraat/08c14ce7-87dd-4c7c-a003-c6bbd46bebe0",
+      "companies": [
+        "Europa Capital",
+        "M&G Real Estate",
+        "Partner Real Estate",
+        "WDP (Warehouses de Pauw)"
+      ],
+      "categories": [
+        "Beleid & Gemeente",
+        "Kantoren",
+        "Logistiek",
+        "Marktoverzicht",
+        "Nieuwbouw",
+        "Personalia",
+        "Retail",
+        "Transacties",
+        "Woningmarkt"
+      ],
+      "badges": [
+        "buy",
+        "transaction",
+        "market"
+      ],
+      "isNew": true,
+      "id": 4
+    },
+    {
+      "title": "WDP verwerft logistieke site aan Belgisch-Franse grens",
+      "summary": "",
+      "date": "2026-08-05",
+      "source": "propertynl",
+      "sourceLabel": "PropertyNL",
+      "url": "https://propertynl.com/Nieuws/WDP-verwerft-logistieke-site-aan-Belgisch-Franse-grens/3ac65cf0-5c87-4aa5-adf2-9d30ca352887",
+      "companies": [
+        "WDP (Warehouses de Pauw)"
+      ],
+      "categories": [
+        "Logistiek",
+        "Transacties"
+      ],
+      "badges": [
+        "buy"
+      ],
+      "isNew": true,
+      "id": 5
+    },
+    {
+      "title": "WDP boekt 8% meer huur in eerste halfjaar",
+      "summary": "",
+      "date": "2026-08-05",
+      "source": "propertynl",
+      "sourceLabel": "PropertyNL",
+      "url": "https://propertynl.com/Nieuws/WDP-boekt-8-meer-huur-in-eerste-halfjaar/02e21e6b-99d1-4308-86b0-f69789acf30b",
+      "companies": [
+        "WDP (Warehouses de Pauw)"
+      ],
+      "categories": [
+        "Overig"
+      ],
+      "badges": [
+        "market"
+      ],
+      "isNew": true,
+      "id": 6
+    },
+    {
+      "title": "Voorwoord: De oplossingen liggen klaar, nu nog de wil",
+      "summary": "De woningnood vraagt geen nieuwe analyses, maar uitvoering en bovenal samenwerking. In deze Wocodaspecial staat die gezamenlijke dan ook inspanning centraal. Inventieve producten van ondernemende leveranciers, modulaire bouwers die hun bijdrage willen leveren en provincies die een duit in het zakje doen. Deze special is een voorproefje van de woningconceptenbeurs WOCODA, die op 29 januari gaat…",
+      "date": "2026-08-05",
+      "source": "vastgoedjournaal",
+      "sourceLabel": "Vastgoedjournaal",
+      "url": "https://vastgoedjournaal.nl/news/71666/voorwoord-de-oplossingen-liggen-klaar-nu-nog-de-wil",
+      "companies": [
+        "Amvest",
+        "Provincie Gelderland"
+      ],
+      "categories": [
+        "Beleggingen",
+        "Beleid & Gemeente",
+        "Duurzaamheid",
+        "Nieuwbouw",
+        "Personalia",
+        "Woningmarkt"
+      ],
+      "badges": [],
+      "isNew": true,
+      "id": 7
+    },
+    {
+      "title": "Van Wijnen Verduurzamings kompas: Datagedreven tool voor betere keuzes bij verduurzaming",
+      "summary": "",
+      "date": "2026-08-05",
+      "source": "vastgoedjournaal",
+      "sourceLabel": "Vastgoedjournaal",
+      "url": "https://vastgoedjournaal.nl/news/71596/van-wijnen-verduurzamings-kompas-datagedreven-tool-voor-betere-keuzes-bij-verduurzaming",
+      "companies": [
+        "Van Wijnen Groep"
+      ],
+      "categories": [
+        "Duurzaamheid"
+      ],
+      "badges": [],
+      "isNew": true,
+      "id": 8
+    },
+    {
+      "title": "UMB Group koopt winkelcentrum Veersche Poort in Middelburg",
+      "summary": "",
+      "date": "2026-08-05",
+      "source": "propertynl",
+      "sourceLabel": "PropertyNL",
+      "url": "https://propertynl.com/Nieuws/-UMB-Group-koopt-winkelcentrum-Veersche-Poort-in-Middelburg/9e07e81f-589e-4a7b-879a-ea9dbf380b65",
+      "companies": [
+        "UMB Group"
+      ],
+      "categories": [
+        "Retail",
+        "Transacties"
+      ],
+      "badges": [
+        "buy"
+      ],
+      "isNew": true,
+      "id": 9
+    },
+    {
+      "title": "Toch meer vakantieboekingen dan gedacht",
+      "summary": "Voorop in vastgoed Toch meer vakantieboekingen dan gedacht In Nieuws 12:37, 05 augustus 2026 Door Martin Neyt 1588 Views Internationaal Financieel Horeca MobileApp Reisplatform Booking heeft zijn netto-omzet bijna verdubbeld ten opzichte van het tweede kwartaal van 2025. De netto-omzet kwam in Q2 van dit jaar uit een netto-omzet uit op $ 2 mrd. Eerder ging het bedrijf vanwege de oorlog in het…",
+      "date": "2026-08-05",
+      "source": "propertynl",
+      "sourceLabel": "PropertyNL",
+      "url": "https://propertynl.com/Nieuws/Toch-meer-vakantieboekingen-dan-gedacht/7c3bf836-519e-45dc-b782-b6988599eaaa",
+      "companies": [
+        "Europa Capital",
+        "M&G Real Estate",
+        "Partner Real Estate",
+        "WDP (Warehouses de Pauw)"
+      ],
+      "categories": [
+        "Beleid & Gemeente",
+        "Kantoren",
+        "Logistiek",
+        "Marktoverzicht",
+        "Nieuwbouw",
+        "Personalia",
+        "Retail",
+        "Transacties",
+        "Woningmarkt"
+      ],
+      "badges": [
+        "buy",
+        "transaction",
+        "market"
+      ],
+      "isNew": true,
+      "id": 10
+    },
+    {
+      "title": "SynVest verwerft multi-tenant kantoorgebouw in Nijmegen",
+      "summary": "Voorop in vastgoed SynVest verwerft multi-tenant kantoorgebouw in Nijmegen In Transacties 17:02, 03 augustus 2026 Door Lucas Ligtenberg 432 Views Kantoren Beleggingstransactie SynVest Dutch RealEstate Fund heeft het kantoorgebouw aan de Wijchenseweg 18-22 in Nijmegen aangekocht. Dit artikel verder lezen? Log dan in (rechts bovenin) of bekijk de huidige aanbiedingen op onze abonnee-pagina ! Lucas…",
+      "date": "2026-08-05",
+      "source": "propertynl",
+      "sourceLabel": "PropertyNL",
+      "url": "https://propertynl.com/Nieuws/SynVest-verwerft-multi-tenant-kantoorgebouw-in-Nijmegen/a263141f-804f-4b29-9202-12d0cbfc10de",
+      "companies": [
+        "Europa Capital",
+        "M&G Real Estate",
+        "Partner Real Estate",
+        "WDP (Warehouses de Pauw)"
+      ],
+      "categories": [
+        "Beleggingen",
+        "Beleid & Gemeente",
+        "Kantoren",
+        "Logistiek",
+        "Marktoverzicht",
+        "Nieuwbouw",
+        "Personalia",
+        "Transacties",
+        "Woningmarkt"
+      ],
+      "badges": [
+        "buy",
+        "transaction",
+        "market"
+      ],
+      "isNew": true,
+      "id": 11
+    },
+    {
+      "title": "Stan Kleuskens naar Capital Value Taxaties",
+      "summary": "Voorop in vastgoed Stan Kleuskens naar Capital Value Taxaties In PropertyProfs 14:55, 24 juli 2026 Door Rob van de Laar 931 Views Personalia Taxaties MobileApp Per 20 juli is Stan Kleuskens in dienst getreden bij het taxatieteam van Capital Value. Dit artikel verder lezen? Log dan in (rechts bovenin) of bekijk de huidige aanbiedingen op onze abonnee-pagina ! Rob van de Laar Redacteur Profiel…",
+      "date": "2026-08-05",
+      "source": "propertynl",
+      "sourceLabel": "PropertyNL",
+      "url": "https://propertynl.com/Nieuws/Stan-Kleuskens-naar-Capital-Value-Taxaties/dc36ddbe-9712-487d-a622-bbd3093608da",
+      "companies": [
+        "Europa Capital",
+        "M&G Real Estate",
+        "Partner Real Estate",
+        "WDP (Warehouses de Pauw)"
+      ],
+      "categories": [
+        "Beleid & Gemeente",
+        "Kantoren",
+        "Logistiek",
+        "Marktoverzicht",
+        "Nieuwbouw",
+        "Personalia",
+        "Transacties",
+        "Woningmarkt"
+      ],
+      "badges": [
+        "buy",
+        "rolechange",
+        "transaction",
+        "market"
+      ],
+      "isNew": true,
+      "id": 12
+    },
+    {
+      "title": "Segro accepteert overnamebod Prologis van € 16,1 mrd",
+      "summary": "Voorop in vastgoed Segro accepteert overnamebod Prologis van € 16,1 mrd In Nieuws 14:21, 05 augustus 2026 Door Martin Neyt 1018 Views MobileApp Logistiek Het Britse vastgoedbedrijf Segro heeft ingestemd met een overnamebod van de Amerikaanse sectorgenoot Prologis ter waarde van £ 14 mrd, zo’n € 16,1 mrd. Daarmee komt een wekenlange overnamestrijd ten einde. De transactie behoort naar verwachting…",
+      "date": "2026-08-05",
+      "source": "propertynl",
+      "sourceLabel": "PropertyNL",
+      "url": "https://propertynl.com/Nieuws/Segro-accepteert-overnamebod-Prologis-van--16-1-mrd/40cdc63e-3bf8-400a-bc8e-b316ec4292a3",
+      "companies": [
+        "Europa Capital",
+        "M&G Real Estate",
+        "Partner Real Estate",
+        "WDP (Warehouses de Pauw)"
+      ],
+      "categories": [
+        "Beleggingen",
+        "Beleid & Gemeente",
+        "Kantoren",
+        "Logistiek",
+        "Marktoverzicht",
+        "Nieuwbouw",
+        "Personalia",
+        "Transacties",
+        "Woningmarkt"
+      ],
+      "badges": [
+        "buy",
+        "transaction",
+        "market"
+      ],
+      "isNew": true,
+      "id": 13
+    },
+    {
+      "title": "Retail Normal huurt winkelruimte aan het Veerplein in Vlaardingen Normal huurt per 1 augustus een winkelruimte aan het Veerplein 132 in Vlaardingen van Green Real Estate. De winkel bevindt zich op de begane grond in de historische binnenstad. 4 augustus 2026 om 11:50 | 1 min",
+      "summary": "",
+      "date": "2026-08-05",
+      "source": "vastgoedjournaal",
+      "sourceLabel": "Vastgoedjournaal",
+      "url": "https://vastgoedjournaal.nl/news/73897/normal-huurt-winkelruimte-aan-het-veerplein-in-vlaardingen",
+      "companies": [
+        "Green Real Estate"
+      ],
+      "categories": [
+        "Retail"
+      ],
+      "badges": [
+        "transaction"
+      ],
+      "isNew": true,
+      "id": 14
+    },
+    {
+      "title": "Recordverhuur houdt CTP op koers naar miljard aan huurinkomsten",
+      "summary": "",
+      "date": "2026-08-05",
+      "source": "propertynl",
+      "sourceLabel": "PropertyNL",
+      "url": "https://propertynl.com/Nieuws/Recordverhuur-houdt-CTP-op-koers-naar-miljard-aan-huurinkomsten/e6342519-cbd0-4176-90ca-c5456b799572",
+      "companies": [
+        "CTP"
+      ],
+      "categories": [
+        "Personalia"
+      ],
+      "badges": [],
+      "isNew": true,
+      "id": 15
+    },
+    {
+      "title": "Raymon van Miltenburg stapt over van BAM naar PWC",
+      "summary": "Voorop in vastgoed Raymon van Miltenburg stapt over van BAM naar PWC In PropertyProfs 13:35, 04 augustus 2026 Door Renée Limmen 421 Views Personalia Raymon van Miltenburg (49) treedt bij PwC Nederland in dienst als senior director. Hij wordt onderdeel van het Real Estate Advisory & Valuation-team, dat onder leiding staat van Koniwin Domen. Dit artikel verder lezen? Log dan in (rechts bovenin) of…",
+      "date": "2026-08-05",
+      "source": "propertynl",
+      "sourceLabel": "PropertyNL",
+      "url": "https://propertynl.com/Nieuws/Raymon-van-Miltenburg-stapt-over-van-BAM-naar-PWC/77192cc8-70a7-4ab6-89d5-a7aab0bfce8d",
+      "companies": [
+        "Europa Capital",
+        "M&G Real Estate",
+        "Partner Real Estate",
+        "WDP (Warehouses de Pauw)"
+      ],
+      "categories": [
+        "Beleid & Gemeente",
+        "Kantoren",
+        "Logistiek",
+        "Marktoverzicht",
+        "Nieuwbouw",
+        "Personalia",
+        "Transacties",
+        "Woningmarkt"
+      ],
+      "badges": [
+        "buy",
+        "transaction",
+        "market"
+      ],
+      "isNew": true,
+      "id": 16
+    },
+    {
+      "title": "Raad van State geeft groen licht voor 240 woningen op Philipsterrein",
+      "summary": "Voorop in vastgoed Raad van State geeft groen licht voor 240 woningen op Philipsterrein In Nieuws 15:41, 31 juli 2026 Door Rob van de Laar 29052 Views Juridisch Woningen Gebiedsontwikkeling MobileApp BPD mag van start met de bouw van 240 woningen in het Drukkerijkwartier in Eindhoven. Bezwaren van omwonenden zijn door de Raad van State afgewezen. Dit artikel verder lezen? Log dan in (rechts…",
+      "date": "2026-08-05",
+      "source": "propertynl",
+      "sourceLabel": "PropertyNL",
+      "url": "https://propertynl.com/Nieuws/Raad-van-State-geeft-groen-licht-voor-240-woningen-op-Philipsterrein/7fb9fedf-7589-49f0-9925-d9a1c0d5a4de",
+      "companies": [
+        "De Raad Vastgoed",
+        "Europa Capital",
+        "M&G Real Estate",
+        "Partner Real Estate",
+        "WDP (Warehouses de Pauw)"
+      ],
+      "categories": [
+        "Beleid & Gemeente",
+        "Kantoren",
+        "Logistiek",
+        "Marktoverzicht",
+        "Nieuwbouw",
+        "Personalia",
+        "Transacties",
+        "Woningmarkt"
+      ],
+      "badges": [
+        "buy",
+        "transaction",
+        "market"
+      ],
+      "isNew": true,
+      "id": 17
+    },
+    {
+      "title": "Provincie Gelderland kijkt verder dan nieuwbouw: ‘We zetten vol in op beter benutten’",
+      "summary": "",
+      "date": "2026-08-05",
+      "source": "vastgoedjournaal",
+      "sourceLabel": "Vastgoedjournaal",
+      "url": "https://vastgoedjournaal.nl/news/71626/provincie-gelderland-kijkt-verder-dan-nieuwbouw-we-zetten-vol-in-op-beter-benutten",
+      "companies": [
+        "Provincie Gelderland"
+      ],
+      "categories": [
+        "Beleid & Gemeente",
+        "Nieuwbouw"
+      ],
+      "badges": [],
+      "isNew": true,
+      "id": 18
+    },
+    {
+      "title": "Ontwikkelaars overspoelen Stedin met bouwplannen",
+      "summary": "Voorop in vastgoed Ontwikkelaars overspoelen Stedin met bouwplannen In Nieuws 11:42, 31 juli 2026 Door Rob van de Laar 22934 Views Ontwikkelen Gebiedsontwikkeling MobileApp De tijdelijke stop op stroomaansluitingen in Utrecht heeft bij netbeheerder Stedin gezorgd voor een hausse aan aangemelde woningbouwprojecten die volgens ontwikkelaars wel degelijk een plek op de aansluitlijst verdienen. Dit…",
+      "date": "2026-08-05",
+      "source": "propertynl",
+      "sourceLabel": "PropertyNL",
+      "url": "https://propertynl.com/Nieuws/Ontwikkelaars-overspoelen-Stedin-met-bouwplannen/de26c764-8ef6-4063-8d1e-1a3e26a4cdee",
+      "companies": [
+        "Europa Capital",
+        "M&G Real Estate",
+        "Partner Real Estate",
+        "WDP (Warehouses de Pauw)"
+      ],
+      "categories": [
+        "Beleid & Gemeente",
+        "Kantoren",
+        "Logistiek",
+        "Marktoverzicht",
+        "Nieuwbouw",
+        "Personalia",
+        "Transacties",
+        "Woningmarkt"
+      ],
+      "badges": [
+        "buy",
+        "transaction",
+        "market"
+      ],
+      "isNew": true,
+      "id": 19
+    },
+    {
+      "title": "Oer-Nederlandse projectpartner voor de woningmarkt",
+      "summary": "'We zijn geen leverancier van apparatuur, maar zien onszelf graag als actieve projectpartner gedurende het hele traject, aldus Patrick Nolsen. Als commercieel directeur retail en projecten bij Inventum is hij verantwoordelijk voor de zakelijke markt. Samen met accountmanager projecten Jacob Schaper vertelt hij graag meer over wat Inventum kan betekenen als projectpartner voor de woningmarkt. 'Bij…",
+      "date": "2026-08-05",
+      "source": "vastgoedjournaal",
+      "sourceLabel": "Vastgoedjournaal",
+      "url": "https://vastgoedjournaal.nl/news/71591/oer-nederlandse-projectpartner-voor-de-woningmarkt",
+      "companies": [
+        "Europa Capital"
+      ],
+      "categories": [
+        "Beleggingen",
+        "Duurzaamheid",
+        "Kantoren",
+        "Marktoverzicht",
+        "Nieuwbouw",
+        "Personalia",
+        "Retail",
+        "Woningmarkt"
+      ],
+      "badges": [
+        "market"
+      ],
+      "isNew": true,
+      "id": 20
+    },
+    {
+      "title": "Nieuwe fase voor geWOONhout: ‘Product staat als een huis, nu tijd voor groei’",
+      "summary": "Met de komst van Aafke van der Werf als nieuwe directeur begint de conceptuele houtbouwer geWOONhout aan een nieuw hoofdstuk. Waar de afgelopen jaren vooral in het teken stonden van het doorontwikkelen van circulaire en modulaire woningconcepten van hout, verschuift de focus nu naar schaal, bekendheid en verdere professionalisering. ‘Ons product staat als een huis’, zegt Van der Werf. ‘Vanaf hier…",
+      "date": "2026-08-05",
+      "source": "vastgoedjournaal",
+      "sourceLabel": "Vastgoedjournaal",
+      "url": "https://vastgoedjournaal.nl/news/71614/nieuwe-fase-voor-gewoonhout-product-staat-als-een-huis-nu-tijd-voor-groei",
+      "companies": [
+        "Impact Vastgoed",
+        "Jansen Vastgoed",
+        "Nederlandse Aardolie Maatschappij (NAM)",
+        "Van Wijnen Groep"
+      ],
+      "categories": [
+        "Duurzaamheid",
+        "Nieuwbouw",
+        "Personalia",
+        "Woningmarkt"
+      ],
+      "badges": [
+        "rolechange"
+      ],
+      "isNew": true,
+      "id": 21
+    },
+    {
+      "title": "Ministerie wil geen inzicht geven in verkoop Pompenburgflat",
+      "summary": "Voorop in vastgoed Ministerie wil geen inzicht geven in verkoop Pompenburgflat In Nieuws 16:39, 31 juli 2026 Door Rob van de Laar 28975 Views Juridisch Woningen Gebiedsontwikkeling MobileApp Corporatie Havensteder en de gemeente Rotterdam praten over de verkoop van de te slopen Pompenburgflat. De overheid wil daar geen verdere informatie over verstrekken, blijkt uit een besluit op een…",
+      "date": "2026-08-05",
+      "source": "propertynl",
+      "sourceLabel": "PropertyNL",
+      "url": "https://propertynl.com/Nieuws/Ministerie-wil-geen-inzicht-geven-in-verkoop-Pompenburgflat/4bce0418-706c-4209-b786-3535d041cc94",
+      "companies": [
+        "Europa Capital",
+        "Gemeente Rotterdam",
+        "Havensteder",
+        "M&G Real Estate",
+        "Partner Real Estate",
+        "WDP (Warehouses de Pauw)"
+      ],
+      "categories": [
+        "Beleid & Gemeente",
+        "Kantoren",
+        "Logistiek",
+        "Marktoverzicht",
+        "Nieuwbouw",
+        "Personalia",
+        "Transacties",
+        "Woningmarkt"
+      ],
+      "badges": [
+        "buy",
+        "transaction",
+        "market"
+      ],
+      "isNew": true,
+      "id": 22
+    },
+    {
+      "title": "Met Living Places wil VELUX bouwinnovatie een boost geven",
+      "summary": "Een nieuwe manier om tegen gebouwen en tegen bouwen aan te kijken, zo omschrijft Architect Development Manager Guus Klamerek het initiatief Living Places dat VELUX op de aanstaande WOCODA presenteert. In september 2025 werd Living Places Copenhagen nog bekroond met de prestigieuze New European Bauhaus-prijs in de categorie ‘Shaping a circular industrial ecosystem and supporting life-cycle…",
+      "date": "2026-08-05",
+      "source": "vastgoedjournaal",
+      "sourceLabel": "Vastgoedjournaal",
+      "url": "https://vastgoedjournaal.nl/news/71620/met-living-places-wil-velux-bouwinnovatie-een-boost-geven",
+      "companies": [
+        "Bouwgroep Dijkstra Draisma"
+      ],
+      "categories": [
+        "Beleggingen",
+        "Beleid & Gemeente",
+        "Duurzaamheid",
+        "Kantoren",
+        "Nieuwbouw",
+        "Personalia",
+        "Woningmarkt"
+      ],
+      "badges": [],
+      "isNew": true,
+      "id": 23
+    },
+    {
+      "title": "Meldpunt agressieve verkoop woningverduurzaming geopend",
+      "summary": "Voorop in vastgoed Meldpunt agressieve verkoop woningverduurzaming geopend In Nieuws 10:17, 05 augustus 2026 Door Martin Neyt 2485 Views Woningen Duurzaamheid MobileApp Vereniging Eigen Huis heeft woensdag een meldpunt geopend voor huiseigenaren die zich onder druk gezet, misleid of onvoldoende geïnformeerd voelen bij de verkoop van verduurzamingsproducten en -diensten. De vereniging ontvangt…",
+      "date": "2026-08-05",
+      "source": "propertynl",
+      "sourceLabel": "PropertyNL",
+      "url": "https://propertynl.com/Nieuws/Meldpunt-agressieve-verkoop-woningverduurzaming-geopend/740283a6-aad7-4770-a61b-44dd03cf8ef8",
+      "companies": [
+        "Europa Capital",
+        "M&G Real Estate",
+        "Partner Real Estate",
+        "WDP (Warehouses de Pauw)"
+      ],
+      "categories": [
+        "Beleid & Gemeente",
+        "Duurzaamheid",
+        "Kantoren",
+        "Logistiek",
+        "Marktoverzicht",
+        "Nieuwbouw",
+        "Personalia",
+        "Transacties",
+        "Woningmarkt"
+      ],
+      "badges": [
+        "buy",
+        "transaction",
+        "market"
+      ],
+      "isNew": true,
+      "id": 24
+    },
+    {
+      "title": "Marktmeester Verplaatsbare Woningen: Dienstbaar aan de groei van de flexibele woningmarkt",
+      "summary": "Verplaatsbare woningen zijn een duurzame en hoogwaardige aanvulling op de te krappe woningmarkt, maar realisatie is voor gemeenten en corporaties niet altijd makkelijk. RVO treedt op als marktmeester en probeert partijen met bestaande verplaatsbare woningen in contact te brengen met geïnteresseerde afnemers. Ook helpt het Expertteam Woningbouw gemeenten met advies en praktische hulp. De gemeente…",
+      "date": "2026-08-05",
+      "source": "vastgoedjournaal",
+      "sourceLabel": "Vastgoedjournaal",
+      "url": "https://vastgoedjournaal.nl/news/71593/marktmeester-verplaatsbare-woningen-dienstbaar-aan-de-groei-van-de-flexibele-woningmarkt",
+      "companies": [
+        "Gemeente Alkmaar"
+      ],
+      "categories": [
+        "Beleid & Gemeente",
+        "Duurzaamheid",
+        "Nieuwbouw",
+        "Personalia",
+        "Transacties",
+        "Woningmarkt"
+      ],
+      "badges": [
+        "sale",
+        "buy"
+      ],
+      "isNew": true,
+      "id": 25
+    },
+    {
+      "title": "Mall living: Amerikaanse winkelcentra moeten wooncomplexen worden",
+      "summary": "Voorop in vastgoed Mall living: Amerikaanse winkelcentra moeten wooncomplexen worden In Internationaal 15:34, 29 juli 2026 Door Martin Neyt 6083 Views Ontwikkelen Internationaal MobileApp Transformaties Wie heeft er niet van gedroomd; wonen in een winkelcentrum. In de VS hebben ontwikkelaars plannen voor de transformatie van pakweg 200 malls tot appartementen plus winkels en leisure. Dit artikel…",
+      "date": "2026-08-05",
+      "source": "propertynl",
+      "sourceLabel": "PropertyNL",
+      "url": "https://propertynl.com/Nieuws/Mall-living-Amerikaanse-winkelcentra-moeten-wooncomplexen-worden/e38ec871-41f9-4157-a73f-eca794fc6019",
+      "companies": [
+        "Europa Capital",
+        "M&G Real Estate",
+        "Partner Real Estate",
+        "WDP (Warehouses de Pauw)"
+      ],
+      "categories": [
+        "Beleid & Gemeente",
+        "Hotels",
+        "Kantoren",
+        "Logistiek",
+        "Marktoverzicht",
+        "Nieuwbouw",
+        "Personalia",
+        "Retail",
+        "Transacties",
+        "Woningmarkt"
+      ],
+      "badges": [
+        "buy",
+        "transaction",
+        "market"
+      ],
+      "isNew": true,
+      "id": 26
+    },
+    {
+      "title": "Layers XL Amstelveen volledig verhuurd",
+      "summary": "Voorop in vastgoed Layers XL Amstelveen volledig verhuurd In Transacties 16:17, 05 augustus 2026 Door Martin Neyt 40 Views Bedrijfsruimte Gebruikerstransactie MobileApp Alle 10 nieuwbouw bedrijfsunits van Layers XL aan de Afmijnstraat 81-99 in Amstelveen zijn onlangs verhuurd. Dit artikel verder lezen? Log dan in (rechts bovenin) of bekijk de huidige aanbiedingen op onze abonnee-pagina ! Martin…",
+      "date": "2026-08-05",
+      "source": "propertynl",
+      "sourceLabel": "PropertyNL",
+      "url": "https://propertynl.com/Nieuws/Layers-XL-Amstelveen-volledig-verhuurd/0b59252b-7cff-4b1f-83e9-54bef7d3b2fc",
+      "companies": [
+        "Europa Capital",
+        "M&G Real Estate",
+        "Partner Real Estate",
+        "WDP (Warehouses de Pauw)"
+      ],
+      "categories": [
+        "Beleid & Gemeente",
+        "Kantoren",
+        "Logistiek",
+        "Marktoverzicht",
+        "Nieuwbouw",
+        "Personalia",
+        "Transacties",
+        "Woningmarkt"
+      ],
+      "badges": [
+        "buy",
+        "transaction",
+        "market"
+      ],
+      "isNew": true,
+      "id": 27
+    },
+    {
+      "title": "Kies voor de opbouw van levendige communities",
+      "summary": "Merits Partners ontwikkelt met passie levensloopbestendige koopappartementen voor ouderen. Maar directeur Bart Timmers wil met het Blooming Senior Living-concept graag meer impact maken. 'Het gaat mij om meer dan goed wonen en zorg faciliteren als het nodig is, het is ook belangrijk te bouwen van communities; gemeenschappen waar ouderen naar elkaar omkijken. En zo plekken te bieden waar senioren…",
+      "date": "2026-08-05",
+      "source": "vastgoedjournaal",
+      "sourceLabel": "Vastgoedjournaal",
+      "url": "https://vastgoedjournaal.nl/news/71563/kies-voor-de-opbouw-van-levendige-communities",
+      "companies": [
+        "Impact Vastgoed",
+        "Rabobank"
+      ],
+      "categories": [
+        "Beleid & Gemeente",
+        "Nieuwbouw",
+        "Personalia",
+        "Woningmarkt"
+      ],
+      "badges": [
+        "transaction"
+      ],
+      "isNew": true,
+      "id": 28
+    },
+    {
+      "title": "Keller Keukens introduceert bereikbare biobased keuken",
+      "summary": "Duurzame keuzes zijn voor woningcorporatie Arcade Mensen en Wonen een echte ‘no-brainer’, zoals ze het zelf noemen. Dus is de keuze voor de Enduura Elba van Keller Keukens heel logisch. Deze eerste op grote schaal geproduceerde biobased keuken past naadloos bij het eigen duurzaamheidsbeleid. Waarin lef tonen en een stapje extra zetten soms nodig zijn, aldus Kevin Weij, regisseur duurzaamheid bij…",
+      "date": "2026-08-05",
+      "source": "vastgoedjournaal",
+      "sourceLabel": "Vastgoedjournaal",
+      "url": "https://vastgoedjournaal.nl/news/71560/keller-keukens-introduceert-bereikbare-biobased-keuken",
+      "companies": [
+        "Impact Vastgoed",
+        "Partner Real Estate"
+      ],
+      "categories": [
+        "Beleid & Gemeente",
+        "Duurzaamheid",
+        "Kantoren",
+        "Logistiek",
+        "Nieuwbouw",
+        "Personalia",
+        "Woningmarkt"
+      ],
+      "badges": [],
+      "isNew": true,
+      "id": 29
+    },
+    {
+      "title": "Invesco verkoopt luxehotel Andaz Amsterdam aan investeerdersconsortium",
+      "summary": "",
+      "date": "2026-08-05",
+      "source": "vastgoedjournaal",
+      "sourceLabel": "Vastgoedjournaal",
+      "url": "https://vastgoedjournaal.nl/news/73886/invesco-verkoopt-luxehotel-andaz-amsterdam-aan-investeerdersconsortium",
+      "companies": [
+        "Invesco Real Estate"
+      ],
+      "categories": [
+        "Beleggingen",
+        "Hotels",
+        "Transacties"
+      ],
+      "badges": [
+        "sale",
+        "buy"
+      ],
+      "isNew": true,
+      "id": 30
+    },
+    {
+      "title": "GOLDBECK: ‘We gaan ons de komende jaren ook in Nederland als woningbouwer op de kaart zetten’",
+      "summary": "De woningbouwopgave in Nederland vraagt om bouwers die structureel opschalen, sneller en voorspelbaar leveren en daarmee betaalbaar kunnen bouwen. ‘Met onze aanpak bieden wij hier nu een integraal antwoord op’, zegt Managing Director Vincent Vierwind van GOLDBECK Nederland. Het van oorsprong Duitse familiebedrijf beschikt over zestien eigen fabrieken in Europa en zet ook in Nederland vol in op de…",
+      "date": "2026-08-05",
+      "source": "vastgoedjournaal",
+      "sourceLabel": "Vastgoedjournaal",
+      "url": "https://vastgoedjournaal.nl/news/71561/goldbeck-we-gaan-ons-de-komende-jaren-ook-in-nederland-als-woningbouwer-op-de-kaart-zetten",
+      "companies": [
+        "Europa Capital",
+        "Provincie Gelderland"
+      ],
+      "categories": [
+        "Beleggingen",
+        "Beleid & Gemeente",
+        "Duurzaamheid",
+        "Kantoren",
+        "Logistiek",
+        "Nieuwbouw",
+        "Personalia",
+        "Woningmarkt"
+      ],
+      "badges": [],
+      "isNew": true,
+      "id": 31
+    },
+    {
+      "title": "Een maatschappelijk betrokken internetprovider die denkt vanuit vastgoed",
+      "summary": "'Wij zijn ontstaan vanuit het vastgoed en denken vanuit het vastgoed, met de Rembrandt Toren in Amsterdam als basis van ons Internet netwerk. We noemen onszelf dan ook graag Utelisys The Real Estate Internet Company ® ', aldus Hans Bodewus, algemeen directeur van Utelisys. Middels haar OPTA registraties een volwaardig Nederlands  telecombedrijf, vergelijkbaar met de twee marktleiders, maar als…",
+      "date": "2026-08-05",
+      "source": "vastgoedjournaal",
+      "sourceLabel": "Vastgoedjournaal",
+      "url": "https://vastgoedjournaal.nl/news/71594/een-maatschappelijk-betrokken-internetprovider-die-denkt-vanuit-vastgoed",
+      "companies": [
+        "Amvest",
+        "Partner Real Estate"
+      ],
+      "categories": [
+        "Beleggingen",
+        "Hotels",
+        "Kantoren",
+        "Marktoverzicht",
+        "Nieuwbouw",
+        "Personalia",
+        "Retail",
+        "Studentenhuisvesting",
+        "Woningmarkt"
+      ],
+      "badges": [
+        "transaction",
+        "market"
+      ],
+      "isNew": true,
+      "id": 32
+    },
+    {
+      "title": "DHG verkoopt 12,7 hectare haventerrein aan Verbrugge, focus op ontwikkeling logistiek",
+      "summary": "",
+      "date": "2026-08-05",
+      "source": "vastgoednieuws",
+      "sourceLabel": "Vastgoednieuws",
+      "url": "https://vastgoednieuws.nl/news/1478/dhg-verkoopt-12-7-hectare-haventerrein-aan-verbrugge-focus-op-ontwikkeling-logistiek",
+      "companies": [
+        "David Hart Groep (DHG)"
+      ],
+      "categories": [
+        "Logistiek",
+        "Nieuwbouw",
+        "Transacties"
+      ],
+      "badges": [
+        "sale",
+        "buy"
+      ],
+      "isNew": true,
+      "id": 33
+    },
+    {
+      "title": "DHG verhuurt Smartlog Europort aan Karl Rapp",
+      "summary": "",
+      "date": "2026-08-05",
+      "source": "vastgoednieuws",
+      "sourceLabel": "Vastgoednieuws",
+      "url": "https://vastgoednieuws.nl/news/1480/dhg-verhuurt-smartlog-europort-aan-karl-rapp",
+      "companies": [
+        "David Hart Groep (DHG)"
+      ],
+      "categories": [
+        "Overig"
+      ],
+      "badges": [
+        "transaction"
+      ],
+      "isNew": true,
+      "id": 34
+    },
+    {
+      "title": "BPD ziet eerste helft 2026 aantal woningtransacties sterk dalen",
+      "summary": "Voorop in vastgoed BPD ziet eerste helft 2026 aantal woningtransacties sterk dalen In Nieuws 14:13, 04 augustus 2026 Door Bert Pots 8893 Views Woningen Gebiedsontwikkeling BPD heeft in het eerste helft van dit jaar in Nederland slechts 1.329 woningen verkocht, blijkt uit de jongste halfjaarcijfers van Rabobank. In de eerste helft van 2025 werden nog 2.166 woningen verkocht. Rabobank wijt het…",
+      "date": "2026-08-05",
+      "source": "propertynl",
+      "sourceLabel": "PropertyNL",
+      "url": "https://propertynl.com/Nieuws/BPD-ziet-eerste-helft-2026-aantal-woningtransacties-sterk-dalen/8e4ba0c6-37b1-4b96-ba3b-b6f2ce25e1dc",
+      "companies": [
+        "Europa Capital",
+        "M&G Real Estate",
+        "Partner Real Estate",
+        "Rabobank",
+        "WDP (Warehouses de Pauw)"
+      ],
+      "categories": [
+        "Beleggingen",
+        "Beleid & Gemeente",
+        "Kantoren",
+        "Logistiek",
+        "Marktoverzicht",
+        "Nieuwbouw",
+        "Personalia",
+        "Transacties",
+        "Woningmarkt"
+      ],
+      "badges": [
+        "sale",
+        "buy",
+        "transaction",
+        "market"
+      ],
+      "isNew": true,
+      "id": 35
+    },
+    {
+      "title": "Aantal fastfoodzaken in 20 jaar bijna verdubbeld",
+      "summary": "Voorop in vastgoed Aantal fastfoodzaken in 20 jaar bijna verdubbeld In Nieuws 12:01, 05 augustus 2026 Door Martin Neyt 1769 Views Marktonderzoek Horeca MobileApp Terwijl het Chinees-Indisch restaurant en de klassieke snackbar steeds meer uit het straatbeeld verdwijnen, groeit het aantal fastfoodzaken rap. Dit artikel verder lezen? Log dan in (rechts bovenin) of bekijk de huidige aanbiedingen op…",
+      "date": "2026-08-05",
+      "source": "propertynl",
+      "sourceLabel": "PropertyNL",
+      "url": "https://propertynl.com/Nieuws/Aantal-fastfoodzaken-in-20-jaar-bijna-verdubbeld/da919b9f-759c-4122-8fea-ece590559587",
+      "companies": [
+        "Europa Capital",
+        "M&G Real Estate",
+        "Partner Real Estate",
+        "WDP (Warehouses de Pauw)"
+      ],
+      "categories": [
+        "Beleid & Gemeente",
+        "Kantoren",
+        "Logistiek",
+        "Marktoverzicht",
+        "Nieuwbouw",
+        "Personalia",
+        "Retail",
+        "Transacties",
+        "Woningmarkt"
+      ],
+      "badges": [
+        "buy",
+        "transaction",
+        "market"
+      ],
+      "isNew": true,
+      "id": 36
+    },
+    {
+      "title": "1Box Self Storage huurt kantoorruimte in Amsterdam",
+      "summary": "Voorop in vastgoed 1Box Self Storage huurt kantoorruimte in Amsterdam In Transacties 16:04, 03 augustus 2026 Door Lucas Ligtenberg 281 Views Kantoren Gebruikerstransactie 1Box heeft een huurovereenkomst gesloten voor circa 470 m² vvo turnkey kantoorruimte op de vierde verdieping van Campus Cees. Dit artikel verder lezen? Log dan in (rechts bovenin) of bekijk de huidige aanbiedingen op onze…",
+      "date": "2026-08-05",
+      "source": "propertynl",
+      "sourceLabel": "PropertyNL",
+      "url": "https://propertynl.com/Nieuws/1Box-Self-Storage-huurt-kantoorruimte-in-Amsterdam/0a422e8d-173e-4c23-956b-a13c427fc892",
+      "companies": [
+        "Europa Capital",
+        "M&G Real Estate",
+        "Partner Real Estate",
+        "WDP (Warehouses de Pauw)"
+      ],
+      "categories": [
+        "Beleid & Gemeente",
+        "Kantoren",
+        "Logistiek",
+        "Marktoverzicht",
+        "Nieuwbouw",
+        "Personalia",
+        "Studentenhuisvesting",
+        "Transacties",
+        "Woningmarkt"
+      ],
+      "badges": [
+        "buy",
+        "transaction",
+        "market"
+      ],
+      "isNew": true,
+      "id": 37
+    },
+    {
+      "title": "10 jaar conceptueel maatwerk: Stout ConceptenHUIS viert jubileum op WOCODA",
+      "summary": "Hoe zorg je dat een woonwens niet alleen werkelijkheid wordt, maar ook efficiënt, betaalbaar en toekomstbestendig? Ontwikkelende bouwer Bouwonderneming Stout laat zien hoe dat kan. Met het Stout ConceptenHUIS brengt het bedrijf al tien jaar woonconcepten die flexibel inspelen op de wensen van opdrachtgevers én bewoners. Commercieel directeur Jan Korevaar en Arjan Meerkerk, inhoudelijk…",
+      "date": "2026-08-05",
+      "source": "vastgoedjournaal",
+      "sourceLabel": "Vastgoedjournaal",
+      "url": "https://vastgoedjournaal.nl/news/71566/10-jaar-conceptueel-maatwerk-stout-conceptenhuis-viert-jubileum-op-wocoda",
+      "companies": [
+        "Partner Real Estate"
+      ],
+      "categories": [
+        "Beleid & Gemeente",
+        "Nieuwbouw",
+        "Personalia",
+        "Woningmarkt"
+      ],
+      "badges": [],
+      "isNew": true,
+      "id": 38
+    }
+  ]
+}
