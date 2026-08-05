@@ -1,5 +1,5 @@
 {
-  "generated": "2026-08-05T14:47:11+00:00",
+  "generated": "2026-08-05T15:04:46+00:00",
   "windowDays": 7,
   "health": [
     {
@@ -12,7 +12,7 @@
     {
       "source": "propertynl",
       "label": "PropertyNL",
-      "items": 20,
+      "items": 21,
       "via": "html-listing",
       "error": ""
     },
@@ -67,7 +67,7 @@
         "Woningmarkt"
       ],
       "badges": [],
-      "isNew": true,
+      "isNew": false,
       "id": 1
     },
     {
@@ -89,12 +89,12 @@
         "Zorgvastgoed"
       ],
       "badges": [],
-      "isNew": true,
+      "isNew": false,
       "id": 2
     },
     {
       "title": "‘American Dream’ moet met $ 750 mrd weer uitkomen",
-      "summary": "Voorop in vastgoed ‘American Dream’ moet met $ 750 mrd weer uitkomen In Internationaal 15:55, 05 augustus 2026 Door Martin Neyt 377 Views Internationaal Financieel Woningen MobileApp JPMorganChase wil tot 2035 meer dan $750 mrd inzetten om het woningaanbod in de Verenigde Staten uit te breiden en eigenwoningbezit te stimuleren. Dit artikel verder lezen? Log dan in (rechts bovenin) of bekijk de…",
+      "summary": "Voorop in vastgoed ‘American Dream’ moet met $ 750 mrd weer uitkomen In Internationaal 15:55, 05 augustus 2026 Door Martin Neyt 487 Views Internationaal Financieel Woningen MobileApp JPMorganChase wil tot 2035 meer dan $750 mrd inzetten om het woningaanbod in de Verenigde Staten uit te breiden en eigenwoningbezit te stimuleren. Dit artikel verder lezen? Log dan in (rechts bovenin) of bekijk de…",
       "date": "2026-08-05",
       "source": "propertynl",
       "sourceLabel": "PropertyNL",
@@ -107,6 +107,7 @@
       ],
       "categories": [
         "Beleid & Gemeente",
+        "Duurzaamheid",
         "Kantoren",
         "Logistiek",
         "Marktoverzicht",
@@ -120,12 +121,12 @@
         "transaction",
         "market"
       ],
-      "isNew": true,
+      "isNew": false,
       "id": 3
     },
     {
       "title": "Zomerserie: Die ándere... Stationsstraat",
-      "summary": "Voorop in vastgoed Zomerserie: Die ándere... Stationsstraat In Nieuws 14:09, 31 juli 2026 Door Rob van de Laar 22944 Views Gebiedsontwikkeling MobileApp Deze zomer legt PropertyNL gelijknamige straten in verschillende plaatsen naast elkaar. Die éne kennen we allemaal wel, maar wat heeft de andere te bieden? Van de Stationsstraat zijn er zo'n 160 in ons land. Een aantal ademen allang niet meer de…",
+      "summary": "Voorop in vastgoed Zomerserie: Die ándere... Stationsstraat In Nieuws 14:09, 31 juli 2026 Door Rob van de Laar 22946 Views Gebiedsontwikkeling MobileApp Deze zomer legt PropertyNL gelijknamige straten in verschillende plaatsen naast elkaar. Die éne kennen we allemaal wel, maar wat heeft de andere te bieden? Van de Stationsstraat zijn er zo'n 160 in ons land. Een aantal ademen allang niet meer de…",
       "date": "2026-08-05",
       "source": "propertynl",
       "sourceLabel": "PropertyNL",
@@ -138,6 +139,7 @@
       ],
       "categories": [
         "Beleid & Gemeente",
+        "Duurzaamheid",
         "Kantoren",
         "Logistiek",
         "Marktoverzicht",
@@ -152,7 +154,7 @@
         "transaction",
         "market"
       ],
-      "isNew": true,
+      "isNew": false,
       "id": 4
     },
     {
@@ -172,7 +174,7 @@
       "badges": [
         "buy"
       ],
-      "isNew": true,
+      "isNew": false,
       "id": 5
     },
     {
@@ -191,7 +193,7 @@
       "badges": [
         "market"
       ],
-      "isNew": true,
+      "isNew": false,
       "id": 6
     },
     {
@@ -214,7 +216,7 @@
         "Woningmarkt"
       ],
       "badges": [],
-      "isNew": true,
+      "isNew": false,
       "id": 7
     },
     {
@@ -231,7 +233,7 @@
         "Duurzaamheid"
       ],
       "badges": [],
-      "isNew": true,
+      "isNew": false,
       "id": 8
     },
     {
@@ -251,12 +253,12 @@
       "badges": [
         "buy"
       ],
-      "isNew": true,
+      "isNew": false,
       "id": 9
     },
     {
       "title": "Toch meer vakantieboekingen dan gedacht",
-      "summary": "Voorop in vastgoed Toch meer vakantieboekingen dan gedacht In Nieuws 12:37, 05 augustus 2026 Door Martin Neyt 1588 Views Internationaal Financieel Horeca MobileApp Reisplatform Booking heeft zijn netto-omzet bijna verdubbeld ten opzichte van het tweede kwartaal van 2025. De netto-omzet kwam in Q2 van dit jaar uit een netto-omzet uit op $ 2 mrd. Eerder ging het bedrijf vanwege de oorlog in het…",
+      "summary": "Voorop in vastgoed Toch meer vakantieboekingen dan gedacht In Nieuws 12:37, 05 augustus 2026 Door Martin Neyt 1693 Views Internationaal Financieel Horeca MobileApp Reisplatform Booking heeft zijn netto-omzet bijna verdubbeld ten opzichte van het tweede kwartaal van 2025. De netto-omzet kwam in Q2 van dit jaar uit een netto-omzet uit op $ 2 mrd. Eerder ging het bedrijf vanwege de oorlog in het…",
       "date": "2026-08-05",
       "source": "propertynl",
       "sourceLabel": "PropertyNL",
@@ -269,6 +271,7 @@
       ],
       "categories": [
         "Beleid & Gemeente",
+        "Duurzaamheid",
         "Kantoren",
         "Logistiek",
         "Marktoverzicht",
@@ -283,12 +286,12 @@
         "transaction",
         "market"
       ],
-      "isNew": true,
+      "isNew": false,
       "id": 10
     },
     {
       "title": "SynVest verwerft multi-tenant kantoorgebouw in Nijmegen",
-      "summary": "Voorop in vastgoed SynVest verwerft multi-tenant kantoorgebouw in Nijmegen In Transacties 17:02, 03 augustus 2026 Door Lucas Ligtenberg 432 Views Kantoren Beleggingstransactie SynVest Dutch RealEstate Fund heeft het kantoorgebouw aan de Wijchenseweg 18-22 in Nijmegen aangekocht. Dit artikel verder lezen? Log dan in (rechts bovenin) of bekijk de huidige aanbiedingen op onze abonnee-pagina ! Lucas…",
+      "summary": "Voorop in vastgoed SynVest verwerft multi-tenant kantoorgebouw in Nijmegen In Transacties 17:02, 03 augustus 2026 Door Lucas Ligtenberg 433 Views Kantoren Beleggingstransactie SynVest Dutch RealEstate Fund heeft het kantoorgebouw aan de Wijchenseweg 18-22 in Nijmegen aangekocht. Dit artikel verder lezen? Log dan in (rechts bovenin) of bekijk de huidige aanbiedingen op onze abonnee-pagina ! Lucas…",
       "date": "2026-08-05",
       "source": "propertynl",
       "sourceLabel": "PropertyNL",
@@ -302,6 +305,7 @@
       "categories": [
         "Beleggingen",
         "Beleid & Gemeente",
+        "Duurzaamheid",
         "Kantoren",
         "Logistiek",
         "Marktoverzicht",
@@ -315,12 +319,12 @@
         "transaction",
         "market"
       ],
-      "isNew": true,
+      "isNew": false,
       "id": 11
     },
     {
       "title": "Stan Kleuskens naar Capital Value Taxaties",
-      "summary": "Voorop in vastgoed Stan Kleuskens naar Capital Value Taxaties In PropertyProfs 14:55, 24 juli 2026 Door Rob van de Laar 931 Views Personalia Taxaties MobileApp Per 20 juli is Stan Kleuskens in dienst getreden bij het taxatieteam van Capital Value. Dit artikel verder lezen? Log dan in (rechts bovenin) of bekijk de huidige aanbiedingen op onze abonnee-pagina ! Rob van de Laar Redacteur Profiel…",
+      "summary": "Voorop in vastgoed Stan Kleuskens naar Capital Value Taxaties In PropertyProfs 14:55, 24 juli 2026 Door Rob van de Laar 932 Views Personalia Taxaties MobileApp Per 20 juli is Stan Kleuskens in dienst getreden bij het taxatieteam van Capital Value. Dit artikel verder lezen? Log dan in (rechts bovenin) of bekijk de huidige aanbiedingen op onze abonnee-pagina ! Rob van de Laar Redacteur Profiel…",
       "date": "2026-08-05",
       "source": "propertynl",
       "sourceLabel": "PropertyNL",
@@ -333,6 +337,7 @@
       ],
       "categories": [
         "Beleid & Gemeente",
+        "Duurzaamheid",
         "Kantoren",
         "Logistiek",
         "Marktoverzicht",
@@ -347,12 +352,12 @@
         "transaction",
         "market"
       ],
-      "isNew": true,
+      "isNew": false,
       "id": 12
     },
     {
       "title": "Segro accepteert overnamebod Prologis van € 16,1 mrd",
-      "summary": "Voorop in vastgoed Segro accepteert overnamebod Prologis van € 16,1 mrd In Nieuws 14:21, 05 augustus 2026 Door Martin Neyt 1018 Views MobileApp Logistiek Het Britse vastgoedbedrijf Segro heeft ingestemd met een overnamebod van de Amerikaanse sectorgenoot Prologis ter waarde van £ 14 mrd, zo’n € 16,1 mrd. Daarmee komt een wekenlange overnamestrijd ten einde. De transactie behoort naar verwachting…",
+      "summary": "Voorop in vastgoed Segro accepteert overnamebod Prologis van € 16,1 mrd In Nieuws 14:21, 05 augustus 2026 Door Martin Neyt 1128 Views MobileApp Logistiek Het Britse vastgoedbedrijf Segro heeft ingestemd met een overnamebod van de Amerikaanse sectorgenoot Prologis ter waarde van £ 14 mrd, zo’n € 16,1 mrd. Daarmee komt een wekenlange overnamestrijd ten einde. De transactie behoort naar verwachting…",
       "date": "2026-08-05",
       "source": "propertynl",
       "sourceLabel": "PropertyNL",
@@ -366,6 +371,7 @@
       "categories": [
         "Beleggingen",
         "Beleid & Gemeente",
+        "Duurzaamheid",
         "Kantoren",
         "Logistiek",
         "Marktoverzicht",
@@ -379,7 +385,7 @@
         "transaction",
         "market"
       ],
-      "isNew": true,
+      "isNew": false,
       "id": 13
     },
     {
@@ -398,7 +404,7 @@
       "badges": [
         "transaction"
       ],
-      "isNew": true,
+      "isNew": false,
       "id": 14
     },
     {
@@ -415,12 +421,12 @@
         "Personalia"
       ],
       "badges": [],
-      "isNew": true,
+      "isNew": false,
       "id": 15
     },
     {
       "title": "Raymon van Miltenburg stapt over van BAM naar PWC",
-      "summary": "Voorop in vastgoed Raymon van Miltenburg stapt over van BAM naar PWC In PropertyProfs 13:35, 04 augustus 2026 Door Renée Limmen 421 Views Personalia Raymon van Miltenburg (49) treedt bij PwC Nederland in dienst als senior director. Hij wordt onderdeel van het Real Estate Advisory & Valuation-team, dat onder leiding staat van Koniwin Domen. Dit artikel verder lezen? Log dan in (rechts bovenin) of…",
+      "summary": "Voorop in vastgoed Raymon van Miltenburg stapt over van BAM naar PWC In PropertyProfs 13:35, 04 augustus 2026 Door Renée Limmen 428 Views Personalia Raymon van Miltenburg (49) treedt bij PwC Nederland in dienst als senior director. Hij wordt onderdeel van het Real Estate Advisory & Valuation-team, dat onder leiding staat van Koniwin Domen. Dit artikel verder lezen? Log dan in (rechts bovenin) of…",
       "date": "2026-08-05",
       "source": "propertynl",
       "sourceLabel": "PropertyNL",
@@ -433,6 +439,7 @@
       ],
       "categories": [
         "Beleid & Gemeente",
+        "Duurzaamheid",
         "Kantoren",
         "Logistiek",
         "Marktoverzicht",
@@ -446,12 +453,12 @@
         "transaction",
         "market"
       ],
-      "isNew": true,
+      "isNew": false,
       "id": 16
     },
     {
       "title": "Raad van State geeft groen licht voor 240 woningen op Philipsterrein",
-      "summary": "Voorop in vastgoed Raad van State geeft groen licht voor 240 woningen op Philipsterrein In Nieuws 15:41, 31 juli 2026 Door Rob van de Laar 29052 Views Juridisch Woningen Gebiedsontwikkeling MobileApp BPD mag van start met de bouw van 240 woningen in het Drukkerijkwartier in Eindhoven. Bezwaren van omwonenden zijn door de Raad van State afgewezen. Dit artikel verder lezen? Log dan in (rechts…",
+      "summary": "Voorop in vastgoed Raad van State geeft groen licht voor 240 woningen op Philipsterrein In Nieuws 15:41, 31 juli 2026 Door Rob van de Laar 29053 Views Juridisch Woningen Gebiedsontwikkeling MobileApp BPD mag van start met de bouw van 240 woningen in het Drukkerijkwartier in Eindhoven. Bezwaren van omwonenden zijn door de Raad van State afgewezen. Dit artikel verder lezen? Log dan in (rechts…",
       "date": "2026-08-05",
       "source": "propertynl",
       "sourceLabel": "PropertyNL",
@@ -465,6 +472,7 @@
       ],
       "categories": [
         "Beleid & Gemeente",
+        "Duurzaamheid",
         "Kantoren",
         "Logistiek",
         "Marktoverzicht",
@@ -478,7 +486,7 @@
         "transaction",
         "market"
       ],
-      "isNew": true,
+      "isNew": false,
       "id": 17
     },
     {
@@ -496,12 +504,12 @@
         "Nieuwbouw"
       ],
       "badges": [],
-      "isNew": true,
+      "isNew": false,
       "id": 18
     },
     {
       "title": "Ontwikkelaars overspoelen Stedin met bouwplannen",
-      "summary": "Voorop in vastgoed Ontwikkelaars overspoelen Stedin met bouwplannen In Nieuws 11:42, 31 juli 2026 Door Rob van de Laar 22934 Views Ontwikkelen Gebiedsontwikkeling MobileApp De tijdelijke stop op stroomaansluitingen in Utrecht heeft bij netbeheerder Stedin gezorgd voor een hausse aan aangemelde woningbouwprojecten die volgens ontwikkelaars wel degelijk een plek op de aansluitlijst verdienen. Dit…",
+      "summary": "Voorop in vastgoed Ontwikkelaars overspoelen Stedin met bouwplannen In Nieuws 11:42, 31 juli 2026 Door Rob van de Laar 22935 Views Ontwikkelen Gebiedsontwikkeling MobileApp De tijdelijke stop op stroomaansluitingen in Utrecht heeft bij netbeheerder Stedin gezorgd voor een hausse aan aangemelde woningbouwprojecten die volgens ontwikkelaars wel degelijk een plek op de aansluitlijst verdienen. Dit…",
       "date": "2026-08-05",
       "source": "propertynl",
       "sourceLabel": "PropertyNL",
@@ -514,6 +522,7 @@
       ],
       "categories": [
         "Beleid & Gemeente",
+        "Duurzaamheid",
         "Kantoren",
         "Logistiek",
         "Marktoverzicht",
@@ -527,7 +536,7 @@
         "transaction",
         "market"
       ],
-      "isNew": true,
+      "isNew": false,
       "id": 19
     },
     {
@@ -553,7 +562,7 @@
       "badges": [
         "market"
       ],
-      "isNew": true,
+      "isNew": false,
       "id": 20
     },
     {
@@ -578,12 +587,12 @@
       "badges": [
         "rolechange"
       ],
-      "isNew": true,
+      "isNew": false,
       "id": 21
     },
     {
       "title": "Ministerie wil geen inzicht geven in verkoop Pompenburgflat",
-      "summary": "Voorop in vastgoed Ministerie wil geen inzicht geven in verkoop Pompenburgflat In Nieuws 16:39, 31 juli 2026 Door Rob van de Laar 28975 Views Juridisch Woningen Gebiedsontwikkeling MobileApp Corporatie Havensteder en de gemeente Rotterdam praten over de verkoop van de te slopen Pompenburgflat. De overheid wil daar geen verdere informatie over verstrekken, blijkt uit een besluit op een…",
+      "summary": "Voorop in vastgoed Ministerie wil geen inzicht geven in verkoop Pompenburgflat In Nieuws 16:39, 31 juli 2026 Door Rob van de Laar 28977 Views Juridisch Woningen Gebiedsontwikkeling MobileApp Corporatie Havensteder en de gemeente Rotterdam praten over de verkoop van de te slopen Pompenburgflat. De overheid wil daar geen verdere informatie over verstrekken, blijkt uit een besluit op een…",
       "date": "2026-08-05",
       "source": "propertynl",
       "sourceLabel": "PropertyNL",
@@ -598,6 +607,7 @@
       ],
       "categories": [
         "Beleid & Gemeente",
+        "Duurzaamheid",
         "Kantoren",
         "Logistiek",
         "Marktoverzicht",
@@ -611,7 +621,7 @@
         "transaction",
         "market"
       ],
-      "isNew": true,
+      "isNew": false,
       "id": 22
     },
     {
@@ -634,12 +644,12 @@
         "Woningmarkt"
       ],
       "badges": [],
-      "isNew": true,
+      "isNew": false,
       "id": 23
     },
     {
       "title": "Meldpunt agressieve verkoop woningverduurzaming geopend",
-      "summary": "Voorop in vastgoed Meldpunt agressieve verkoop woningverduurzaming geopend In Nieuws 10:17, 05 augustus 2026 Door Martin Neyt 2485 Views Woningen Duurzaamheid MobileApp Vereniging Eigen Huis heeft woensdag een meldpunt geopend voor huiseigenaren die zich onder druk gezet, misleid of onvoldoende geïnformeerd voelen bij de verkoop van verduurzamingsproducten en -diensten. De vereniging ontvangt…",
+      "summary": "Voorop in vastgoed Meldpunt agressieve verkoop woningverduurzaming geopend In Nieuws 10:17, 05 augustus 2026 Door Martin Neyt 2537 Views Woningen Duurzaamheid MobileApp Vereniging Eigen Huis heeft woensdag een meldpunt geopend voor huiseigenaren die zich onder druk gezet, misleid of onvoldoende geïnformeerd voelen bij de verkoop van verduurzamingsproducten en -diensten. De vereniging ontvangt…",
       "date": "2026-08-05",
       "source": "propertynl",
       "sourceLabel": "PropertyNL",
@@ -666,7 +676,7 @@
         "transaction",
         "market"
       ],
-      "isNew": true,
+      "isNew": false,
       "id": 24
     },
     {
@@ -691,12 +701,12 @@
         "sale",
         "buy"
       ],
-      "isNew": true,
+      "isNew": false,
       "id": 25
     },
     {
       "title": "Mall living: Amerikaanse winkelcentra moeten wooncomplexen worden",
-      "summary": "Voorop in vastgoed Mall living: Amerikaanse winkelcentra moeten wooncomplexen worden In Internationaal 15:34, 29 juli 2026 Door Martin Neyt 6083 Views Ontwikkelen Internationaal MobileApp Transformaties Wie heeft er niet van gedroomd; wonen in een winkelcentrum. In de VS hebben ontwikkelaars plannen voor de transformatie van pakweg 200 malls tot appartementen plus winkels en leisure. Dit artikel…",
+      "summary": "Voorop in vastgoed Mall living: Amerikaanse winkelcentra moeten wooncomplexen worden In Internationaal 15:34, 29 juli 2026 Door Martin Neyt 6084 Views Ontwikkelen Internationaal MobileApp Transformaties Wie heeft er niet van gedroomd; wonen in een winkelcentrum. In de VS hebben ontwikkelaars plannen voor de transformatie van pakweg 200 malls tot appartementen plus winkels en leisure. Dit artikel…",
       "date": "2026-08-05",
       "source": "propertynl",
       "sourceLabel": "PropertyNL",
@@ -709,6 +719,7 @@
       ],
       "categories": [
         "Beleid & Gemeente",
+        "Duurzaamheid",
         "Hotels",
         "Kantoren",
         "Logistiek",
@@ -724,12 +735,12 @@
         "transaction",
         "market"
       ],
-      "isNew": true,
+      "isNew": false,
       "id": 26
     },
     {
       "title": "Layers XL Amstelveen volledig verhuurd",
-      "summary": "Voorop in vastgoed Layers XL Amstelveen volledig verhuurd In Transacties 16:17, 05 augustus 2026 Door Martin Neyt 40 Views Bedrijfsruimte Gebruikerstransactie MobileApp Alle 10 nieuwbouw bedrijfsunits van Layers XL aan de Afmijnstraat 81-99 in Amstelveen zijn onlangs verhuurd. Dit artikel verder lezen? Log dan in (rechts bovenin) of bekijk de huidige aanbiedingen op onze abonnee-pagina ! Martin…",
+      "summary": "Voorop in vastgoed Layers XL Amstelveen volledig verhuurd In Transacties 16:17, 05 augustus 2026 Door Martin Neyt 52 Views Bedrijfsruimte Gebruikerstransactie MobileApp Alle 10 nieuwbouw bedrijfsunits van Layers XL aan de Afmijnstraat 81-99 in Amstelveen zijn onlangs verhuurd. Dit artikel verder lezen? Log dan in (rechts bovenin) of bekijk de huidige aanbiedingen op onze abonnee-pagina ! Martin…",
       "date": "2026-08-05",
       "source": "propertynl",
       "sourceLabel": "PropertyNL",
@@ -742,6 +753,7 @@
       ],
       "categories": [
         "Beleid & Gemeente",
+        "Duurzaamheid",
         "Kantoren",
         "Logistiek",
         "Marktoverzicht",
@@ -755,7 +767,7 @@
         "transaction",
         "market"
       ],
-      "isNew": true,
+      "isNew": false,
       "id": 27
     },
     {
@@ -778,7 +790,7 @@
       "badges": [
         "transaction"
       ],
-      "isNew": true,
+      "isNew": false,
       "id": 28
     },
     {
@@ -802,7 +814,7 @@
         "Woningmarkt"
       ],
       "badges": [],
-      "isNew": true,
+      "isNew": false,
       "id": 29
     },
     {
@@ -824,7 +836,7 @@
         "sale",
         "buy"
       ],
-      "isNew": true,
+      "isNew": false,
       "id": 30
     },
     {
@@ -849,7 +861,7 @@
         "Woningmarkt"
       ],
       "badges": [],
-      "isNew": true,
+      "isNew": false,
       "id": 31
     },
     {
@@ -878,7 +890,7 @@
         "transaction",
         "market"
       ],
-      "isNew": true,
+      "isNew": false,
       "id": 32
     },
     {
@@ -900,7 +912,7 @@
         "sale",
         "buy"
       ],
-      "isNew": true,
+      "isNew": false,
       "id": 33
     },
     {
@@ -919,50 +931,16 @@
       "badges": [
         "transaction"
       ],
-      "isNew": true,
+      "isNew": false,
       "id": 34
     },
     {
-      "title": "BPD ziet eerste helft 2026 aantal woningtransacties sterk dalen",
-      "summary": "Voorop in vastgoed BPD ziet eerste helft 2026 aantal woningtransacties sterk dalen In Nieuws 14:13, 04 augustus 2026 Door Bert Pots 8893 Views Woningen Gebiedsontwikkeling BPD heeft in het eerste helft van dit jaar in Nederland slechts 1.329 woningen verkocht, blijkt uit de jongste halfjaarcijfers van Rabobank. In de eerste helft van 2025 werden nog 2.166 woningen verkocht. Rabobank wijt het…",
+      "title": "Circulair spijkerbroekenmerk MUD Jeans failliet",
+      "summary": "Voorop in vastgoed Circulair spijkerbroekenmerk MUD Jeans failliet In Nieuws 16:58, 05 augustus 2026 Door Martin Neyt 99 Views Financieel Retail MobileApp De rechtbank in Amsterdam heeft woensdag het Nederlandse duurzame spijkerbroekenmerk MUD Jeans failliet verklaard. Dit artikel verder lezen? Log dan in (rechts bovenin) of bekijk de huidige aanbiedingen op onze abonnee-pagina ! Martin Neyt…",
       "date": "2026-08-05",
       "source": "propertynl",
       "sourceLabel": "PropertyNL",
-      "url": "https://propertynl.com/Nieuws/BPD-ziet-eerste-helft-2026-aantal-woningtransacties-sterk-dalen/8e4ba0c6-37b1-4b96-ba3b-b6f2ce25e1dc",
-      "companies": [
-        "Europa Capital",
-        "M&G Real Estate",
-        "Partner Real Estate",
-        "Rabobank",
-        "WDP (Warehouses de Pauw)"
-      ],
-      "categories": [
-        "Beleggingen",
-        "Beleid & Gemeente",
-        "Kantoren",
-        "Logistiek",
-        "Marktoverzicht",
-        "Nieuwbouw",
-        "Personalia",
-        "Transacties",
-        "Woningmarkt"
-      ],
-      "badges": [
-        "sale",
-        "buy",
-        "transaction",
-        "market"
-      ],
-      "isNew": true,
-      "id": 35
-    },
-    {
-      "title": "Aantal fastfoodzaken in 20 jaar bijna verdubbeld",
-      "summary": "Voorop in vastgoed Aantal fastfoodzaken in 20 jaar bijna verdubbeld In Nieuws 12:01, 05 augustus 2026 Door Martin Neyt 1769 Views Marktonderzoek Horeca MobileApp Terwijl het Chinees-Indisch restaurant en de klassieke snackbar steeds meer uit het straatbeeld verdwijnen, groeit het aantal fastfoodzaken rap. Dit artikel verder lezen? Log dan in (rechts bovenin) of bekijk de huidige aanbiedingen op…",
-      "date": "2026-08-05",
-      "source": "propertynl",
-      "sourceLabel": "PropertyNL",
-      "url": "https://propertynl.com/Nieuws/Aantal-fastfoodzaken-in-20-jaar-bijna-verdubbeld/da919b9f-759c-4122-8fea-ece590559587",
+      "url": "https://propertynl.com/Nieuws/Circulair-spijkerbroekenmerk-MUD-Jeans-failliet/6ac8fa47-0ee1-44b9-b24c-e4354bb76165",
       "companies": [
         "Europa Capital",
         "M&G Real Estate",
@@ -971,6 +949,7 @@
       ],
       "categories": [
         "Beleid & Gemeente",
+        "Duurzaamheid",
         "Kantoren",
         "Logistiek",
         "Marktoverzicht",
@@ -986,7 +965,75 @@
         "market"
       ],
       "isNew": true,
+      "id": 35
+    },
+    {
+      "title": "BPD ziet eerste helft 2026 aantal woningtransacties sterk dalen",
+      "summary": "Voorop in vastgoed BPD ziet eerste helft 2026 aantal woningtransacties sterk dalen In Nieuws 14:13, 04 augustus 2026 Door Bert Pots 8897 Views Woningen Gebiedsontwikkeling BPD heeft in het eerste helft van dit jaar in Nederland slechts 1.329 woningen verkocht, blijkt uit de jongste halfjaarcijfers van Rabobank. In de eerste helft van 2025 werden nog 2.166 woningen verkocht. Rabobank wijt het…",
+      "date": "2026-08-05",
+      "source": "propertynl",
+      "sourceLabel": "PropertyNL",
+      "url": "https://propertynl.com/Nieuws/BPD-ziet-eerste-helft-2026-aantal-woningtransacties-sterk-dalen/8e4ba0c6-37b1-4b96-ba3b-b6f2ce25e1dc",
+      "companies": [
+        "Europa Capital",
+        "M&G Real Estate",
+        "Partner Real Estate",
+        "Rabobank",
+        "WDP (Warehouses de Pauw)"
+      ],
+      "categories": [
+        "Beleggingen",
+        "Beleid & Gemeente",
+        "Duurzaamheid",
+        "Kantoren",
+        "Logistiek",
+        "Marktoverzicht",
+        "Nieuwbouw",
+        "Personalia",
+        "Transacties",
+        "Woningmarkt"
+      ],
+      "badges": [
+        "sale",
+        "buy",
+        "transaction",
+        "market"
+      ],
+      "isNew": false,
       "id": 36
+    },
+    {
+      "title": "Aantal fastfoodzaken in 20 jaar bijna verdubbeld",
+      "summary": "Voorop in vastgoed Aantal fastfoodzaken in 20 jaar bijna verdubbeld In Nieuws 12:01, 05 augustus 2026 Door Martin Neyt 1878 Views Marktonderzoek Horeca MobileApp Terwijl het Chinees-Indisch restaurant en de klassieke snackbar steeds meer uit het straatbeeld verdwijnen, groeit het aantal fastfoodzaken rap. Dit artikel verder lezen? Log dan in (rechts bovenin) of bekijk de huidige aanbiedingen op…",
+      "date": "2026-08-05",
+      "source": "propertynl",
+      "sourceLabel": "PropertyNL",
+      "url": "https://propertynl.com/Nieuws/Aantal-fastfoodzaken-in-20-jaar-bijna-verdubbeld/da919b9f-759c-4122-8fea-ece590559587",
+      "companies": [
+        "Europa Capital",
+        "M&G Real Estate",
+        "Partner Real Estate",
+        "WDP (Warehouses de Pauw)"
+      ],
+      "categories": [
+        "Beleid & Gemeente",
+        "Duurzaamheid",
+        "Kantoren",
+        "Logistiek",
+        "Marktoverzicht",
+        "Nieuwbouw",
+        "Personalia",
+        "Retail",
+        "Transacties",
+        "Woningmarkt"
+      ],
+      "badges": [
+        "buy",
+        "transaction",
+        "market"
+      ],
+      "isNew": false,
+      "id": 37
     },
     {
       "title": "1Box Self Storage huurt kantoorruimte in Amsterdam",
@@ -1003,6 +1050,7 @@
       ],
       "categories": [
         "Beleid & Gemeente",
+        "Duurzaamheid",
         "Kantoren",
         "Logistiek",
         "Marktoverzicht",
@@ -1017,8 +1065,8 @@
         "transaction",
         "market"
       ],
-      "isNew": true,
-      "id": 37
+      "isNew": false,
+      "id": 38
     },
     {
       "title": "10 jaar conceptueel maatwerk: Stout ConceptenHUIS viert jubileum op WOCODA",
@@ -1037,8 +1085,8 @@
         "Woningmarkt"
       ],
       "badges": [],
-      "isNew": true,
-      "id": 38
+      "isNew": false,
+      "id": 39
     }
   ]
 }
