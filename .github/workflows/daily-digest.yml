@@ -18,6 +18,7 @@ concurrency:
 jobs:
   digest:
     runs-on: ubuntu-latest
+    timeout-minutes: 30
     steps:
       - name: Is it 09:00 in Amsterdam?
         id: gate
@@ -50,9 +51,10 @@ jobs:
       - name: Collect articles
         if: steps.gate.outputs.run == 'yes'
         env:
-          WINDOW_DAYS: "7"
-          FETCH_BODIES: "1"
-          BODY_LIMIT: "80"
+          INGEST_DAYS: "1"    # only add articles published today
+          WINDOW_DAYS: "7"    # keep them on the page for 7 days
+          FETCH_PAGES: "1"
+          PAGE_LIMIT: "120"
         run: python scripts/collect.py
 
       - name: Render digest
@@ -64,7 +66,7 @@ jobs:
         run: |
           git config user.name  "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add index.html archive data/articles.json
+          git add index.html data/articles.json
           if git diff --cached --quiet; then
             echo "Nothing changed today — no commit."
             exit 0
