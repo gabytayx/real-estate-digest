@@ -95,14 +95,17 @@ def main() -> int:
                       "date": now.date().isoformat(), "source": "vastgoedjournaal",
                       "sourceLabel": "Vastgoedjournaal", "url": "https://e.com/1",
                       "companies": ["Segro"], "categories": ["Logistiek"],
-                      "badges": ["buy"], "isNew": True}]}
+                      "badges": ["buy"], "isNew": True,
+                      "customers": ["Segro"], "prospects": [], "keyDeal": True}]}
     (collect.DATA / "articles.json").write_text(json.dumps(fixture), encoding="utf-8")
     r = subprocess.run([sys.executable, str(ROOT / "scripts" / "render.py")],
                        capture_output=True, text=True)
     print("  " + (r.stdout.strip() or r.stderr.strip()))
     html = (ROOT / "index.html").read_text(encoding="utf-8")
     for probe, expect in [("Segro koopt logistiek pand", True), ("__ARTICLES_JSON__", False),
-                          ("__HEADER_META__", False), ("archive", False)]:
+                          ("__HEADER_META__", False), ("__ARCHIVE_BANNER__", False),
+                          ("key-deal-mark", True), ("Bestaande Klanten", True),
+                          ("prefers-reduced-motion", True)]:
         ok = (probe in html) == expect
         fails += 0 if ok else 1
         print("  %s html %s %r" % ("ok  " if ok else "FAIL",
