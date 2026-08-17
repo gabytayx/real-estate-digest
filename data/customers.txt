@@ -1,0 +1,82 @@
+# EXISTING CUSTOMERS — one per line. Lines starting with # are ignored.
+#
+# These names are matched the same way as data/companies.txt (case-, accent-
+# and punctuation-insensitive, with optional Group/Groep/Holding suffixes),
+# so they do not have to be spelled identically to the watchlist entry.
+#
+# Any customer not already in companies.txt is added to the watchlist
+# automatically and reported in the run log, so a customer can never go
+# unmonitored because of a spelling difference.
+#
+# PASTE YOUR CUSTOMER LIST BELOW THIS LINE.
+Alzayani
+AM
+Aroundtown
+Aviva Investors
+Batenburg Techniek N.V.
+Being
+Benkey
+Bouwhuis Groep
+Burgstate
+Caransa
+Catella Investment Management Benelux
+CK Capital Partners
+Cornerstone Real Estate
+Deltabrug
+DHG
+DHS Real Estate
+DTZ Investors
+Dura Vermeer
+Dutch RE
+DVM BV
+Edmond de Rothschild
+Equity Estate
+Fabory Nederland B.V.
+Focus Real Estate (Everglow)
+Frame Offices
+Global Holdings Management Group
+Hartelt FM
+Hinke Fongers Beheer BV
+IMP
+Kadans
+Lenferink Groep Zwolle
+Leyten Vastgoed
+Lister Buildings
+M7 Real Estate
+Maarsen groep
+MAC³PARK
+Millten
+Multi Netherlands
+Neo Capital
+Nexus RE
+NL Asset Management
+NLV
+Ping Properties
+PPF Real Estate
+Profound
+Prologis
+Property Partners
+Provast
+Quan
+Renschdael Groep
+Schouten Zekerheid
+Schroders
+Skymark
+State Street Global Advisors
+Stoneflow
+Stoneweg
+Swiss Life Asset Managers
+tB Investments
+Time Equities
+Timeless Investments
+Tribes
+Unifore
+Urbz Capital
+Van Der Meijden Vastgoed
+VGE REM
+VodafoneZiggo
+VORM
+VVS Group
+Waarborg Vastgoed
+Zandbergen World's Finest Meat
+Zorginstelling De Opbouw
