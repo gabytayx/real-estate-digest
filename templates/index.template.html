@@ -23,6 +23,44 @@
   * { box-sizing: border-box; margin: 0; padding: 0; }
   body { font-family: 'Segoe UI', system-ui, -apple-system, sans-serif; background: var(--bg); color: var(--text); font-size: 14px; }
 
+
+  /* ---- existing-customer highlighting ---- */
+  .tab-count {
+    display: inline-block; min-width: 18px; padding: 1px 6px; margin-left: 4px;
+    border-radius: 9px; background: rgba(0,0,0,0.08);
+    font-size: 11px; font-weight: 700; vertical-align: middle;
+  }
+  .tab-btn.active .tab-count { background: rgba(224,123,57,0.18); color: #b4541c; }
+  .tag-customer {
+    background: #fff4e6; color: #b4541c; border: 1px solid #f0c9a3; font-weight: 600;
+  }
+  .article-card.is-key-deal {
+    position: relative;
+    border-left: 4px solid #e07b39;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.06), 0 0 0 1px rgba(224,123,57,0.25);
+  }
+  .key-deal-mark {
+    position: absolute; left: -15px; top: 18px;
+    width: 26px; height: 26px; border-radius: 50%;
+    background: #e07b39; color: #fff;
+    font-size: 16px; font-weight: 800; line-height: 26px; text-align: center;
+    box-shadow: 0 2px 6px rgba(224,123,57,0.45);
+    animation: keyDealPulse 1.8s ease-in-out infinite;
+    z-index: 2;
+  }
+  @keyframes keyDealPulse {
+    0%, 100% { transform: scale(1);    box-shadow: 0 2px 6px rgba(224,123,57,0.45), 0 0 0 0 rgba(224,123,57,0.55); }
+    50%      { transform: scale(1.12); box-shadow: 0 2px 8px rgba(224,123,57,0.55), 0 0 0 9px rgba(224,123,57,0); }
+  }
+  /* Never animate for anyone who has asked their system not to. */
+  @media (prefers-reduced-motion: reduce) {
+    .key-deal-mark { animation: none; }
+  }
+  @media (max-width: 700px) {
+    .key-deal-mark { left: -10px; top: 12px; width: 22px; height: 22px;
+                     line-height: 22px; font-size: 14px; }
+  }
+
   .site-header {
     background: var(--primary);
     color: #fff;
@@ -312,10 +350,11 @@
 
 <!-- TAB BAR -->
 <div class="tab-bar" role="tablist">
-  <button class="tab-btn active" data-tab="all"     onclick="switchTab('all')">Alle Artikelen</button>
-  <button class="tab-btn"        data-tab="cat"     onclick="switchTab('cat')">Per Categorie</button>
-  <button class="tab-btn"        data-tab="company" onclick="switchTab('company')">Per Bedrijf</button>
-  <button class="tab-btn"        data-tab="day"     onclick="switchTab('day')">Per Dag</button>
+  <button class="tab-btn active" data-tab="customer" onclick="switchTab('customer')">Existing Business <span class="tab-count" id="tabCountCustomer"></span></button>
+  <button class="tab-btn"        data-tab="prospect" onclick="switchTab('prospect')">New Business <span class="tab-count" id="tabCountProspect"></span></button>
+  <button class="tab-btn"        data-tab="cat"      onclick="switchTab('cat')">Per Categorie</button>
+  <button class="tab-btn"        data-tab="company"  onclick="switchTab('company')">Per Bedrijf</button>
+  <button class="tab-btn"        data-tab="day"      onclick="switchTab('day')">Alles Per Dag</button>
 </div>
 
 <!-- MAIN LAYOUT -->
@@ -392,7 +431,7 @@ const ARTICLES = __ARTICLES_JSON__;
 let activeCompanies = new Set();
 let activeCategories = new Set();
 let activeBadges = new Set();
-let currentTab = 'all';
+let currentTab = 'customer';
 
 // ============================================================
 // HELPERS
@@ -418,6 +457,11 @@ function getUniqueCategories() {
 
 function filteredArticles() {
   return ARTICLES.filter(a => {
+    // Customer and prospect tabs are mutually exclusive views; an article
+    // mentioning both a customer and a prospect appears in both.
+    const cust = a.customers || [], pros = a.prospects || a.companies || [];
+    if (currentTab === 'customer' && !cust.length) return false;
+    if (currentTab === 'prospect' && !pros.length) return false;
     if (activeCompanies.size && !a.companies.some(c => activeCompanies.has(c))) return false;
     if (activeCategories.size && !a.categories.some(c => activeCategories.has(c))) return false;
     if (activeBadges.size) {
@@ -473,7 +517,8 @@ function renderBadge(b) {
 function renderCard(article) {
   const newCls = article.isNew ? ' is-new' : '';
   const badges    = article.badges.map(renderBadge).join('');
-  const companies = article.companies.map(c =>
+  const custSet   = new Set(article.customers || []);
+  const companies = article.companies.filter(c => !custSet.has(c)).map(c =>
     `<span class="tag tag-company" onclick="quickFilterCompany('${c.replace(/'/g,"\\'")}',event)">${c}</span>`
   ).join('');
   const cats = article.categories.map(c =>
@@ -485,14 +530,22 @@ function renderCard(article) {
     vastgoednieuws:'vastgoednieuws', vastgoedactueel:'vastgoedactueel'
   };
   const srcCls = srcMap[article.source] || '';
+  const keyCls  = article.keyDeal ? ' is-key-deal' : '';
+  const keyMark = article.keyDeal
+    ? `<span class="key-deal-mark" title="Klant koopt of verkoopt een gebouw" aria-label="Klantdeal">!</span>`
+    : '';
+  const custTags = (article.customers || []).map(c =>
+    `<span class="tag tag-customer" onclick="quickFilterCompany('${c.replace(/'/g,"\\'")}',event)">⭐ ${c}</span>`
+  ).join('');
   return `
-    <div class="article-card${newCls}" data-id="${article.id}">
+    <div class="article-card${newCls}${keyCls}" data-id="${article.id}">
+      ${keyMark}
       <div class="card-header">
         <span class="card-source ${srcCls}">${article.sourceLabel}</span>
         <div class="card-title"><a href="${article.url}" target="_blank" rel="noopener">${article.title}</a></div>
       </div>
       <p class="card-summary">${article.summary}</p>
-      <div class="card-footer">${badges}${companies}${cats}</div>
+      <div class="card-footer">${badges}${custTags}${companies}${cats}</div>
     </div>`;
 }
 
@@ -615,11 +668,23 @@ function filterCompanySearch(q) {
 // ============================================================
 // TABS
 // ============================================================
+function updateTabCounts() {
+  const c = ARTICLES.filter(a => (a.customers || []).length).length;
+  const p = ARTICLES.filter(a => (a.prospects || a.companies || []).length).length;
+  const k = ARTICLES.filter(a => a.keyDeal).length;
+  const ce = document.getElementById('tabCountCustomer');
+  const pe = document.getElementById('tabCountProspect');
+  if (ce) ce.textContent = k ? `${c} / ${k}!` : c;
+  if (ce) ce.title = k ? `${c} klantartikelen, waarvan ${k} koop/verkoop` : `${c} klantartikelen`;
+  if (pe) pe.textContent = p;
+}
+
 function switchTab(tab) {
   currentTab = tab;
   document.querySelectorAll('.tab-btn').forEach(b=>b.classList.toggle('active',b.dataset.tab===tab));
   document.getElementById('catTabView').classList.toggle('hidden',tab!=='cat');
   document.getElementById('companyTabView').classList.toggle('hidden',tab!=='company');
+  updateTabCounts();
   renderArticles();
 }
 
@@ -656,6 +721,7 @@ function buildSidebar() {
 // ============================================================
 buildSidebar();
 renderArticles();
+updateTabCounts();
 </script>
 </body>
 </html>
