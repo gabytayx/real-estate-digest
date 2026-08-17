@@ -1,0 +1,73 @@
+{
+  "generated": "2026-08-17T11:28:23+00:00",
+  "windowDays": 7,
+  "ingestDays": 2,
+  "health": [
+    {
+      "source": "vastgoedjournaal",
+      "label": "Vastgoedjournaal",
+      "items": 59,
+      "via": "html-listing",
+      "error": ""
+    },
+    {
+      "source": "propertynl",
+      "label": "PropertyNL",
+      "items": 18,
+      "via": "html-listing",
+      "error": ""
+    },
+    {
+      "source": "vastgoedmarkt",
+      "label": "Vastgoedmarkt",
+      "items": 0,
+      "via": "none",
+      "error": ""
+    },
+    {
+      "source": "vastgoeddata",
+      "label": "Vastgoeddata",
+      "items": 0,
+      "via": "none",
+      "error": ""
+    },
+    {
+      "source": "vastgoednieuws",
+      "label": "Vastgoednieuws",
+      "items": 10,
+      "via": "html-listing",
+      "error": ""
+    },
+    {
+      "source": "vastgoedactueel",
+      "label": "Vastgoedactueel",
+      "items": 0,
+      "via": "none",
+      "error": ""
+    }
+  ],
+  "articles": [
+    {
+      "title": "Krakers vangen bot, Dudok kan Diepeveen verkopen",
+      "summary": "Even dreigen krakers roet in het roet te gooien maar Dudok Real Estate kan alsbnog tijdig het monumentale Diepeveengebouw in Rotterdam verkopen aan Stadsherstel.",
+      "date": "2026-08-17",
+      "source": "propertynl",
+      "sourceLabel": "PropertyNL",
+      "url": "https://propertynl.com/Nieuws/Krakers-vangen-bot-Dudok-kan-Diepeveen-verkopen/b67537ae-c93d-416a-b006-961f0d8397a7",
+      "companies": [
+        "Dudok Groep"
+      ],
+      "customers": [],
+      "prospects": [
+        "Dudok Groep"
+      ],
+      "categories": [
+        "Overig"
+      ],
+      "badges": [],
+      "keyDeal": false,
+      "isNew": true,
+      "id": 1
+    }
+  ]
+}
