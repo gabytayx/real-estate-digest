@@ -1,12 +1,12 @@
 {
-  "generated": "2026-08-17T07:56:33+00:00",
+  "generated": "2026-08-17T09:22:38+00:00",
   "windowDays": 7,
   "ingestDays": 1,
   "health": [
     {
       "source": "vastgoedjournaal",
       "label": "Vastgoedjournaal",
-      "items": 59,
+      "items": 60,
       "via": "html-listing",
       "error": ""
     },
