@@ -443,10 +443,8 @@ def main() -> int:
                 text_full = "%s %s" % (text, body)
                 folded_full = fold(text_full)
                 hits = match_companies(text_full, folded_full, watchlist)
-                if hits:
-                    folded = folded_full
-                    if not item["summary"]:
-                        item["summary"] = body[:400].rsplit(" ", 1)[0] + "\u2026"
+                if hits and not item["summary"]:
+                    item["summary"] = body[:400].rsplit(" ", 1)[0] + "\u2026"
 
         if dt is None:
             stats["undated"] += 1   # no verifiable date -> never assume today
@@ -458,7 +456,10 @@ def main() -> int:
             stats["no_match"] += 1
             continue
 
-        cats, badges = classify(folded)
+        # Classify on title + teaser only. Running the keyword rules over a
+        # full article body matches almost every category and badge, which is
+        # how one story ends up tagged Logistiek + Personalia + Duurzaamheid.
+        cats, badges = classify(fold("%s %s" % (item["title"], item["summary"])))
         fresh.append({"title": item["title"], "summary": item["summary"] or "",
                       "date": dt.date().isoformat(), "source": item["source"],
                       "sourceLabel": item["sourceLabel"], "url": url,
