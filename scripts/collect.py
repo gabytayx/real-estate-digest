@@ -72,11 +72,29 @@ CASE_SENSITIVE = {"NSI", "DWS", "TPG", "VGP", "CTP", "WDP", "SEGRO", "KPN", "DSM
                   "CRV", "DVM", "ZWB", "HIM", "SF Group", "VB Groep", "3B Group",
                   "O Capital", "FOUR-D", "AT Capital", "TCN", "HTM"}
 
-# Corporate-form suffixes only. Deliberately excludes "vastgoed", "capital",
-# "investments" and "real estate": stripping those turns "Green Real Estate"
-# into "green" and "De Raad Vastgoed" into "de raad", which match constantly.
-SUFFIXES = ("group", "groep", "holding", "holdings", "beheer", "bv", "nv")
-MIN_BASE = 6  # a suffix-stripped alias must be at least this long to be used
+# Two tiers of optional suffix, because "Meerdervoort Group" and "Invesco Real
+# Estate" are routinely written without the suffix, but blindly stripping
+# sector words turns "Green Real Estate" into the search term "green".
+SUFFIX_CORP = ("group", "groep", "holding", "holdings", "beheer", "bv", "nv")
+SUFFIX_SECTOR = ("real estate", "vastgoed", "capital", "investments", "invest",
+                 "properties", "property", "development", "ontwikkeling")
+
+# Words too generic to stand alone as a company identifier.
+GENERIC = {"green", "base", "urban", "prime", "next", "first", "city", "world",
+           "core", "park", "dutch", "holland", "europa", "europe", "partner",
+           "partners", "impact", "global", "nieuw", "new", "open", "real",
+           "estate", "property", "invest", "capital", "vastgoed", "groep",
+           "group", "holding", "united", "royal", "koninklijke", "algemene",
+           "nederlandse", "nederland", "amsterdam", "rotterdam", "utrecht"}
+ARTICLE_PREFIXES = ("de ", "het ", "van ", "der ", "den ", "'t ")
+
+
+def _usable_base(base: str, min_len: int) -> bool:
+    if len(base) < min_len or base in GENERIC or base in JUNK:
+        return False
+    if base.startswith(ARTICLE_PREFIXES):
+        return False   # "De Raad Vastgoed" -> "de raad" matches ordinary prose
+    return True
 
 
 def fold(s: str) -> str:
@@ -95,10 +113,16 @@ def fold(s: str) -> str:
 
 
 def strip_suffix(folded_name: str) -> str | None:
-    for suf in SUFFIXES:
+    """'meerdervoort group' -> 'meerdervoort', so a bare mention still matches."""
+    for suf in SUFFIX_CORP:
         if folded_name.endswith(" " + suf):
             base = folded_name[: -len(suf) - 1].strip()
-            if len(base) >= MIN_BASE and base not in JUNK:
+            if _usable_base(base, 5):
+                return base
+    for suf in SUFFIX_SECTOR:
+        if folded_name.endswith(" " + suf):
+            base = folded_name[: -len(suf) - 1].strip()
+            if _usable_base(base, 6):
                 return base
     return None
 
@@ -138,8 +162,51 @@ def load_companies() -> list[dict]:
                     variants.add(base)
             pats = [re.compile(r"(?<!\w)%s(?!\w)" % re.escape(v)) for v in variants if v]
         if pats:
-            out.append({"name": name, "patterns": pats, "cs": cs})
+            keys = {fold(a) for a in aliases}
+            for a in aliases:
+                base = strip_suffix(fold(a))
+                if base:
+                    keys.add(base)
+            out.append({"name": name, "patterns": pats, "cs": cs, "keys": keys})
     return out
+
+
+def load_customers(watchlist: list[dict]) -> tuple[set, list[str]]:
+    """
+    Read data/customers.txt and return (set of canonical watchlist names that
+    are customers, list of names auto-added to the watchlist).
+
+    Customers absent from companies.txt are appended to the watchlist rather
+    than ignored: a customer silently going unmonitored because of a spelling
+    difference is the worst possible failure here.
+    """
+    path = DATA / "customers.txt"
+    if not path.exists():
+        return set(), []
+    wanted = []
+    for line in path.read_text(encoding="utf-8").splitlines():
+        name = line.strip()
+        if name and not name.startswith("#"):
+            wanted.append(name)
+
+    customer_names, added = set(), []
+    for name in wanted:
+        key = fold(name)
+        base = strip_suffix(key)
+        hit = next((e for e in watchlist
+                    if key in e["keys"] or (base and base in e["keys"])), None)
+        if hit:
+            customer_names.add(hit["name"])
+            continue
+        # Not on the watchlist yet - add it so it is actually monitored.
+        pats = [re.compile(r"(?<!\w)%s(?!\w)" % re.escape(key))]
+        if name in CASE_SENSITIVE:
+            pats = [re.compile(r"(?<!\w)%s(?!\w)" % re.escape(name))]
+        watchlist.append({"name": name, "patterns": pats,
+                          "cs": name in CASE_SENSITIVE, "keys": {key}})
+        customer_names.add(name)
+        added.append(name)
+    return customer_names, added
 
 
 def match_companies(text: str, folded: str, watchlist: list[dict]) -> list[str]:
@@ -166,9 +233,10 @@ CATEGORY_RULES = {
                   "opslag", "bedrijfspand", re.compile(r"\bdc\b")],
     "Beleggingen": ["belegger", "belegging", "fonds", "investeer", "acquisitie",
                     "portefeuille", "rendement", "yield", "kapitaal"],
-    "Transacties": ["verkocht", "verkoopt", "gekocht", "koopt", "verworven", "verwerft",
-                    "aangekocht", "overgenomen", "neemt over", "transactie",
-                    "afgestoten", re.compile(r"\bdeal\b")],
+    "Transacties": ["verkocht", "verkoopt", re.compile(r"\bgekocht\b"),
+                    re.compile(r"\bkoopt\b"), "verworven", "verwerft", "aangekocht",
+                    "overgenomen", "neemt over", "transactie", "afgestoten",
+                    re.compile(r"\bdeal\b")],
     "Personalia": ["benoemd", "benoeming", "aangesteld", "treedt aan", "stapt op",
                    "opvolger", "nieuwe directeur", "nieuwe ceo", "nieuwe cfo",
                    "directie", "start als", ROLE_MOVE],
@@ -192,8 +260,11 @@ CATEGORY_RULES = {
 BADGE_RULES = {
     "sale": ["verkocht", "verkoopt", "afgestoten", "van de hand", "desinvest",
              "doet afstand"],
-    "buy": ["gekocht", "koopt", "verworven", "verwerft", "aangekocht", "overgenomen",
-            "neemt over", "acquireert", "breidt portefeuille uit"],
+    # "koopt" must be word-bounded: as a bare substring it sits inside
+    # "verkoopt", so every sale was also being tagged as a purchase.
+    "buy": [re.compile(r"\bkoopt\b"), re.compile(r"\bgekocht\b"), "verworven",
+            "verwerft", "aangekocht", "overgenomen", "neemt over", "acquireert",
+            "breidt portefeuille uit", re.compile(r"\bkoopt terug\b")],
     "rolechange": ["benoemd", "benoeming", "aangesteld", "treedt aan", "stapt op",
                    "vertrekt bij", "opvolger", "nieuwe directeur", "nieuwe ceo",
                    "nieuwe cfo", "nieuwe coo", "nieuwe bestuurder", "directielid",
@@ -330,7 +401,7 @@ def scrape_listing(source: dict) -> list[dict]:
     return items
 
 
-PAGE_CACHE: dict[str, tuple[str, object]] = {}
+PAGE_CACHE: dict[str, tuple[str, object, str]] = {}
 
 # Where publication dates hide in practice, in order of trustworthiness.
 META_KEYS = [("meta", {"property": "article:published_time"}, "content"),
@@ -341,11 +412,18 @@ META_KEYS = [("meta", {"property": "article:published_time"}, "content"),
              ("time", {"datetime": True}, "datetime")]
 
 
-def fetch_page(url: str) -> tuple[str, object]:
-    """Return (body_text, published_dt_or_None), fetching at most once per URL."""
+def fetch_page(url: str) -> tuple[str, object, str]:
+    """
+    Return (article_text, published_dt_or_None, teaser).
+
+    Only text inside the article body is returned. Breadcrumbs, byline blocks,
+    view counters, tag lists and "gerelateerd" rails are stripped first: left
+    in, they poison the summary, inflate the category tags, and cause company
+    names that merely appear in a sidebar to match every article on the site.
+    """
     if url in PAGE_CACHE:
         return PAGE_CACHE[url]
-    body, published = "", None
+    body, published, teaser = "", None, ""
     r = get(url)
     if r:
         soup = BeautifulSoup(r.text, "html.parser")
@@ -371,13 +449,35 @@ def fetch_page(url: str) -> tuple[str, object]:
                 if published:
                     break
 
-        for junk in soup(["script", "style", "nav", "footer", "header", "aside", "form"]):
+        # The publisher's own teaser beats anything we could cut from the body.
+        for attrs in ({"property": "og:description"}, {"name": "description"}):
+            el = soup.find("meta", attrs=attrs)
+            if el and (el.get("content") or "").strip():
+                teaser = el["content"].strip()
+                break
+
+        for junk in soup(["script", "style", "nav", "footer", "header", "aside",
+                          "form", "figcaption", "noscript"]):
             junk.decompose()
-        node = soup.find("article") or soup.find("main") or soup.body
+        for junk in soup.select(
+                "[class*=breadcrumb], [class*=byline], [class*=author], [class*=meta],"
+                "[class*=share], [class*=social], [class*=tag], [class*=views],"
+                "[class*=related], [class*=gerelateerd], [class*=popular],"
+                "[class*=gelezen], [class*=sidebar], [class*=widget], [class*=advert],"
+                "[class*=banner], [class*=newsletter], [class*=nieuwsbrief],"
+                "[class*=agenda], [class*=comment], [id*=sidebar], [id*=related]"):
+            junk.decompose()
+
+        # Require a real article container. Falling back to <body> is what
+        # dragged whole-page chrome into the matching text.
+        node = soup.find("article") or soup.find(attrs={"class": "article-body"}) \
+            or soup.find(attrs={"itemprop": "articleBody"}) or soup.find("main")
         if node:
-            body = node.get_text(" ", strip=True)[:20000]
+            paras = [p.get_text(" ", strip=True) for p in node.find_all("p")]
+            paras = [x for x in paras if len(x) > 40]
+            body = " ".join(paras)[:20000] or node.get_text(" ", strip=True)[:20000]
         time.sleep(0.6)  # be a polite guest
-    PAGE_CACHE[url] = (body, published)
+    PAGE_CACHE[url] = (body, published, teaser)
     return PAGE_CACHE[url]
 
 
@@ -388,12 +488,16 @@ def fetch_page(url: str) -> tuple[str, object]:
 def main() -> int:
     sources = json.loads((DATA / "sources.json").read_text(encoding="utf-8"))
     watchlist = load_companies()
+    customers, auto_added = load_customers(watchlist)
     now = datetime.now(timezone.utc)
     today = now.date()
     ingest_from = today - timedelta(days=INGEST_DAYS - 1)
     keep_from = today - timedelta(days=WINDOW_DAYS - 1)
-    print("watchlist: %d usable names | ingest from %s | keep from %s"
-          % (len(watchlist), ingest_from, keep_from))
+    print("watchlist: %d usable names (%d customers) | ingest from %s | keep from %s"
+          % (len(watchlist), len(customers), ingest_from, keep_from))
+    if auto_added:
+        print("::notice::added to watchlist from customers.txt (not in companies.txt): %s"
+              % ", ".join(auto_added))
 
     previous = {}
     prev_path = DATA / "articles.json"
@@ -424,7 +528,8 @@ def main() -> int:
     for item in raw:
         by_url.setdefault(item["url"], item)
 
-    stats = {"undated": 0, "too_old": 0, "no_match": 0, "pages": 0}
+    stats = {"undated": 0, "too_old": 0, "no_match": 0, "pages": 0,
+         "stale_dropped": 0}
     fresh = []
     for url, item in by_url.items():
         dt = item["dt"]
@@ -435,15 +540,17 @@ def main() -> int:
         # Fetch the page when we need the date, or when the teaser had no
         # company hit and the body might. Either way it is one request.
         if FETCH_PAGES and stats["pages"] < PAGE_LIMIT and (dt is None or not hits):
-            body, published = fetch_page(url)
+            body, published, teaser = fetch_page(url)
             stats["pages"] += 1
             if dt is None:
                 dt = published
+            if teaser and not item["summary"]:
+                item["summary"] = teaser
             if body and not hits:
                 text_full = "%s %s" % (text, body)
                 folded_full = fold(text_full)
                 hits = match_companies(text_full, folded_full, watchlist)
-                if hits and not item["summary"]:
+                if hits and not item["summary"] and body:
                     item["summary"] = body[:400].rsplit(" ", 1)[0] + "\u2026"
 
         if dt is None:
@@ -460,10 +567,16 @@ def main() -> int:
         # full article body matches almost every category and badge, which is
         # how one story ends up tagged Logistiek + Personalia + Duurzaamheid.
         cats, badges = classify(fold("%s %s" % (item["title"], item["summary"])))
+        cust = [h for h in hits if h in customers]
+        pros = [h for h in hits if h not in customers]
         fresh.append({"title": item["title"], "summary": item["summary"] or "",
                       "date": dt.date().isoformat(), "source": item["source"],
                       "sourceLabel": item["sourceLabel"], "url": url,
-                      "companies": hits, "categories": cats, "badges": badges,
+                      "companies": hits, "customers": cust, "prospects": pros,
+                      "categories": cats, "badges": badges,
+                      # A customer buying or selling a building is the single
+                      # thing this digest exists to surface.
+                      "keyDeal": bool(cust) and bool({"sale", "buy"} & set(badges)),
                       "isNew": url not in previous})
 
     # Carry over previously collected articles that have not aged out yet.
@@ -472,10 +585,23 @@ def main() -> int:
     for url, old in previous.items():
         if url in articles:
             continue
-        if old.get("date", "") >= keep_from.isoformat():
-            old = dict(old, isNew=False)
-            articles[url] = old
-            carried += 1
+        # Re-validate rather than trusting the stored value. A date written by
+        # an older buggy version stays wrong forever otherwise, and a wrong
+        # date that looks recent survives every subsequent run.
+        stored = old.get("date", "")
+        if not (keep_from.isoformat() <= stored <= today.isoformat()):
+            stats["stale_dropped"] += 1
+            continue
+        old = dict(old, isNew=False)
+        # Backfill fields for records written before the customer split existed.
+        if "customers" not in old:
+            hits = old.get("companies", [])
+            old["customers"] = [h for h in hits if h in customers]
+            old["prospects"] = [h for h in hits if h not in customers]
+            old["keyDeal"] = (bool(old["customers"])
+                              and bool({"sale", "buy"} & set(old.get("badges", []))))
+        articles[url] = old
+        carried += 1
 
     out_articles = sorted(articles.values(),
                           key=lambda a: (a["date"], a["title"]), reverse=True)
@@ -490,11 +616,24 @@ def main() -> int:
         "articles": out_articles,
     }, ensure_ascii=False, indent=2), encoding="utf-8")
 
+    n_cust = sum(1 for a in out_articles if a.get("customers"))
+    n_key = sum(1 for a in out_articles if a.get("keyDeal"))
     print("candidates %d -> new %d, carried over %d, total %d"
           % (len(by_url), len(fresh), carried, len(out_articles)))
-    print("  dropped: %d undated, %d outside ingest window, %d no watchlist match"
-          " | %d pages fetched" % (stats["undated"], stats["too_old"],
-                                   stats["no_match"], stats["pages"]))
+    print("  %d customer articles, of which %d are buy/sell deals" % (n_cust, n_key))
+    print("  dropped: %d undated, %d outside ingest window, %d no watchlist match,"
+          " %d carried records with bad dates | %d pages fetched"
+          % (stats["undated"], stats["too_old"], stats["no_match"],
+             stats["stale_dropped"], stats["pages"]))
+
+    if out_articles:
+        from collections import Counter
+        counts = Counter(c for a in out_articles for c in a["companies"])
+        suspicious = [(n, k) for n, k in counts.most_common()
+                      if k >= 5 and k > 0.4 * len(out_articles)]
+        for name, k in suspicious:
+            print("::warning::'%s' matched %d of %d articles - likely appearing in "
+                  "page furniture rather than the news itself" % (name, k, len(out_articles)))
 
     dead = [h["label"] for h in health if h["items"] == 0]
     if dead:
