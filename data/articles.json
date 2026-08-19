@@ -1,19 +1,19 @@
 {
-  "generated": "2026-08-18T07:44:38+00:00",
+  "generated": "2026-08-19T07:45:39+00:00",
   "windowDays": 7,
   "ingestDays": 2,
   "health": [
     {
       "source": "vastgoedjournaal",
       "label": "Vastgoedjournaal",
-      "items": 58,
+      "items": 63,
       "via": "html-listing",
       "error": ""
     },
     {
       "source": "propertynl",
       "label": "PropertyNL",
-      "items": 19,
+      "items": 21,
       "via": "html-listing",
       "error": ""
     },
@@ -48,6 +48,50 @@
   ],
   "articles": [
     {
+      "title": "Sebastiaan Rietberg assetmanager ARC Real Estate Partners",
+      "summary": "Sebastiaan Rietberg is per 1 augustus in dienst getreden bij ARC Real Estate Partners.",
+      "date": "2026-08-18",
+      "source": "propertynl",
+      "sourceLabel": "PropertyNL",
+      "url": "https://propertynl.com/Nieuws/Sebastiaan-Rietberg-assetmanager-ARC-Real-Estate-Partners/ec3304b5-922d-4aa1-9e50-546d30f74ba1",
+      "companies": [
+        "ARC Real Estate Partners"
+      ],
+      "customers": [],
+      "prospects": [
+        "ARC Real Estate Partners"
+      ],
+      "categories": [
+        "Overig"
+      ],
+      "badges": [],
+      "keyDeal": false,
+      "isNew": true,
+      "id": 1
+    },
+    {
+      "title": "Eigen Haard: extra woningbouw in Lisserbroek financieel onmogelijk",
+      "summary": "Eigen Haard heeft geen middelen voor de bouw extra van 750 betaalbare huurwoningen in Lisserbroek, zo laat de woningstichting weten.",
+      "date": "2026-08-18",
+      "source": "propertynl",
+      "sourceLabel": "PropertyNL",
+      "url": "https://propertynl.com/Nieuws/Eigen-Haard-extra-woningbouw-in-Lisserbroek-financieel-onmogelijk/37a84cd4-c3af-4277-85a6-980ed5622858",
+      "companies": [
+        "Eigen Haard"
+      ],
+      "customers": [],
+      "prospects": [
+        "Eigen Haard"
+      ],
+      "categories": [
+        "Woningmarkt"
+      ],
+      "badges": [],
+      "keyDeal": false,
+      "isNew": true,
+      "id": 2
+    },
+    {
       "title": "Krakers vangen bot, Dudok kan Diepeveen verkopen",
       "summary": "Even dreigen krakers roet in het roet te gooien maar Dudok Real Estate kan alsbnog tijdig het monumentale Diepeveengebouw in Rotterdam verkopen aan Stadsherstel.",
       "date": "2026-08-17",
@@ -67,7 +111,7 @@
       "badges": [],
       "keyDeal": false,
       "isNew": false,
-      "id": 1
+      "id": 3
     }
   ]
 }
