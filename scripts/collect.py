@@ -141,10 +141,16 @@ def load_companies() -> list[dict]:
             continue
         seen.add(key)
 
-        aliases = [name]
-        m = re.match(r"^(.*?)\s*\(([^)]+)\)\s*$", name)
-        if m:
-            aliases = [m.group(1).strip(), m.group(2).strip()]
+        # "Emro Real Estate | Emro" lets you add a short form the press
+        # actually uses, without weakening the automatic rules for everyone.
+        if "|" in name:
+            parts = [x.strip() for x in name.split("|") if x.strip()]
+            name, aliases = parts[0], parts
+        else:
+            aliases = [name]
+            m = re.match(r"^(.*?)\s*\(([^)]+)\)\s*$", name)
+            if m:
+                aliases = [m.group(1).strip(), m.group(2).strip()]
 
         cs = any(a in CASE_SENSITIVE for a in aliases)
         if cs:
@@ -306,6 +312,38 @@ def get(url: str):
     except requests.RequestException:
         pass
     return None
+
+
+NL_MONTHS = {"januari": 1, "februari": 2, "maart": 3, "april": 4, "mei": 5,
+             "juni": 6, "juli": 7, "augustus": 8, "september": 9, "oktober": 10,
+             "november": 11, "december": 12,
+             "jan": 1, "feb": 2, "mrt": 3, "apr": 4, "jun": 6, "jul": 7,
+             "aug": 8, "sep": 9, "okt": 10, "nov": 11, "dec": 12}
+
+NL_DATE_RE = re.compile(
+    r"\b(\d{1,2})\s+(" + "|".join(sorted(NL_MONTHS, key=len, reverse=True)) + r")\.?\s+(\d{4})\b",
+    re.IGNORECASE)
+
+
+def parse_dutch_date(text: str):
+    """
+    Pull a Dutch-formatted date out of visible page text, e.g. '14 april 2026'.
+    Needed because several of these sites publish no date metadata at all and
+    render the date only as body text. Takes the earliest match in the page,
+    which is where the article's own date sits - later matches tend to belong
+    to related-article teasers.
+    """
+    m = NL_DATE_RE.search(text)
+    if not m:
+        return None
+    day, month, year = int(m.group(1)), NL_MONTHS[m.group(2).lower()], int(m.group(3))
+    try:
+        dt = datetime(year, month, day, tzinfo=timezone.utc)
+    except ValueError:
+        return None
+    if dt > datetime.now(timezone.utc) + timedelta(days=1):
+        return None
+    return dt
 
 
 def parse_date(value):
@@ -476,6 +514,12 @@ def fetch_page(url: str) -> tuple[str, object, str]:
             paras = [p.get_text(" ", strip=True) for p in node.find_all("p")]
             paras = [x for x in paras if len(x) > 40]
             body = " ".join(paras)[:20000] or node.get_text(" ", strip=True)[:20000]
+
+        # Last resort: several of these sites ship no date metadata at all and
+        # print the date as plain text near the headline.
+        if not published:
+            head = (node or soup).get_text(" ", strip=True)[:1200]
+            published = parse_dutch_date(head)
         time.sleep(0.6)  # be a polite guest
     PAGE_CACHE[url] = (body, published, teaser)
     return PAGE_CACHE[url]
