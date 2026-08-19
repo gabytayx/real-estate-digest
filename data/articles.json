@@ -1,19 +1,19 @@
 {
-  "generated": "2026-08-19T07:45:39+00:00",
+  "generated": "2026-08-19T08:31:45+00:00",
   "windowDays": 7,
   "ingestDays": 2,
   "health": [
     {
       "source": "vastgoedjournaal",
       "label": "Vastgoedjournaal",
-      "items": 63,
+      "items": 64,
       "via": "html-listing",
       "error": ""
     },
     {
       "source": "propertynl",
       "label": "PropertyNL",
-      "items": 21,
+      "items": 22,
       "via": "html-listing",
       "error": ""
     },
@@ -66,7 +66,7 @@
       ],
       "badges": [],
       "keyDeal": false,
-      "isNew": true,
+      "isNew": false,
       "id": 1
     },
     {
@@ -88,7 +88,7 @@
       ],
       "badges": [],
       "keyDeal": false,
-      "isNew": true,
+      "isNew": false,
       "id": 2
     },
     {
