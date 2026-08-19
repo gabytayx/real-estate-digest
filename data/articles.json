@@ -1,5 +1,5 @@
 {
-  "generated": "2026-08-19T08:31:45+00:00",
+  "generated": "2026-08-19T10:08:41+00:00",
   "windowDays": 7,
   "ingestDays": 2,
   "health": [
@@ -13,7 +13,7 @@
     {
       "source": "propertynl",
       "label": "PropertyNL",
-      "items": 22,
+      "items": 20,
       "via": "html-listing",
       "error": ""
     },
@@ -27,8 +27,8 @@
     {
       "source": "vastgoeddata",
       "label": "Vastgoeddata",
-      "items": 0,
-      "via": "none",
+      "items": 23,
+      "via": "html-listing",
       "error": ""
     },
     {
