@@ -51,7 +51,7 @@ jobs:
       - name: Collect articles
         if: steps.gate.outputs.run == 'yes'
         env:
-          INGEST_DAYS: "2"    # today + yesterday: a 09:00 run cannot
+          INGEST_DAYS: "7"    # today + yesterday: a 09:00 run cannot
                               # see articles published later that day
           WINDOW_DAYS: "7"    # keep them on the page for 7 days
           FETCH_PAGES: "1"
