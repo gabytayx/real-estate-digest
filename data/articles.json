@@ -1,12 +1,12 @@
 {
-  "generated": "2026-08-20T07:23:36+00:00",
+  "generated": "2026-08-20T07:44:49+00:00",
   "windowDays": 7,
-  "ingestDays": 2,
+  "ingestDays": 7,
   "health": [
     {
       "source": "vastgoedjournaal",
       "label": "Vastgoedjournaal",
-      "items": 65,
+      "items": 66,
       "via": "html-listing",
       "error": ""
     },
@@ -112,6 +112,28 @@
       "keyDeal": false,
       "isNew": false,
       "id": 3
+    },
+    {
+      "title": "WDP-baas Uwents: 'We laten de toekomst niet aan de Amerikanen'",
+      "summary": "Het Belgische WDP wordt met Argan een Europese topspeler in logistiek vastgoed. CEO Joost Uwents noemt groei noodzaak, alleen al om Amerikaanse spelers de pas af te snijden. 'We hebben Europese kampioenen nodig, ook in het vastgoed.'",
+      "date": "2026-08-14",
+      "source": "propertynl",
+      "sourceLabel": "PropertyNL",
+      "url": "https://propertynl.com/Nieuws/WDP-baas-Uwents--We-laten-de-toekomst-niet-aan-de-Amerikanen/c1c226da-fb93-47e6-a6bd-1e3b0508842c",
+      "companies": [
+        "WDP (Warehouses de Pauw)"
+      ],
+      "customers": [],
+      "prospects": [
+        "WDP (Warehouses de Pauw)"
+      ],
+      "categories": [
+        "Logistiek"
+      ],
+      "badges": [],
+      "keyDeal": false,
+      "isNew": true,
+      "id": 4
     }
   ]
 }
