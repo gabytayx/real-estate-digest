@@ -1,5 +1,5 @@
 {
-  "generated": "2026-08-20T07:44:49+00:00",
+  "generated": "2026-08-20T07:48:12+00:00",
   "windowDays": 7,
   "ingestDays": 7,
   "health": [
@@ -132,7 +132,7 @@
       ],
       "badges": [],
       "keyDeal": false,
-      "isNew": true,
+      "isNew": false,
       "id": 4
     }
   ]
