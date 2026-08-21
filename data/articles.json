@@ -1,5 +1,5 @@
 {
-  "generated": "2026-08-21T07:49:29+00:00",
+  "generated": "2026-08-21T08:00:25+00:00",
   "windowDays": 7,
   "ingestDays": 2,
   "health": [
@@ -48,6 +48,30 @@
   ],
   "articles": [
     {
+      "title": "Ruim 100 woningen op erfenis V&D en Rabobank in Enschede",
+      "summary": "De transformatie van twee voormalige iconen uit de binnenstad van Enschede levert meer dan honderd nieuwe woningen op. In het voormalige V&D-pand en het oude Rabobankkantoor wordt volop gebouwd aan een mix van woningen, zorgfuncties en commerciële ruimte.",
+      "date": "2026-08-21",
+      "source": "propertynl",
+      "sourceLabel": "PropertyNL",
+      "url": "https://propertynl.com/Nieuws/Ruim-100-woningen-op-erfenis-V-D-en-Rabobank-in-Enschede/c01f51fb-c595-409a-9e6a-4baa26e700e0",
+      "companies": [
+        "Rabobank"
+      ],
+      "customers": [],
+      "prospects": [
+        "Rabobank"
+      ],
+      "categories": [
+        "Kantoren",
+        "Nieuwbouw",
+        "Woningmarkt"
+      ],
+      "badges": [],
+      "keyDeal": false,
+      "isNew": true,
+      "id": 1
+    },
+    {
       "title": "Van Neerbos  directeur Strategie bij Havensteder",
       "summary": "Per 1 november treedt Matthijs van Neerbos in dienst als directeur Strategie bij Havensteder. Hij volgt Bart Kesselaar op, die de functie sinds 2018 vervult.",
       "date": "2026-08-20",
@@ -66,8 +90,8 @@
       ],
       "badges": [],
       "keyDeal": false,
-      "isNew": true,
-      "id": 1
+      "isNew": false,
+      "id": 2
     },
     {
       "title": "Starterslening steeds vaker noodzakelijk",
@@ -90,8 +114,8 @@
         "market"
       ],
       "keyDeal": false,
-      "isNew": true,
-      "id": 2
+      "isNew": false,
+      "id": 3
     },
     {
       "title": "Amres doet twee kantoorpanden in Almere van de hand",
@@ -117,8 +141,8 @@
         "sale"
       ],
       "keyDeal": false,
-      "isNew": true,
-      "id": 3
+      "isNew": false,
+      "id": 4
     },
     {
       "title": "Sebastiaan Rietberg assetmanager ARC Real Estate Partners",
@@ -140,7 +164,7 @@
       "badges": [],
       "keyDeal": false,
       "isNew": false,
-      "id": 4
+      "id": 5
     },
     {
       "title": "Eigen Haard: extra woningbouw in Lisserbroek financieel onmogelijk",
@@ -162,7 +186,7 @@
       "badges": [],
       "keyDeal": false,
       "isNew": false,
-      "id": 5
+      "id": 6
     },
     {
       "title": "Krakers vangen bot, Dudok kan Diepeveen verkopen",
@@ -184,7 +208,7 @@
       "badges": [],
       "keyDeal": false,
       "isNew": false,
-      "id": 6
+      "id": 7
     }
   ]
 }
