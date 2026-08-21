@@ -1,19 +1,19 @@
 {
-  "generated": "2026-08-20T07:48:12+00:00",
+  "generated": "2026-08-21T07:49:29+00:00",
   "windowDays": 7,
-  "ingestDays": 7,
+  "ingestDays": 2,
   "health": [
     {
       "source": "vastgoedjournaal",
       "label": "Vastgoedjournaal",
-      "items": 66,
+      "items": 64,
       "via": "html-listing",
       "error": ""
     },
     {
       "source": "propertynl",
       "label": "PropertyNL",
-      "items": 23,
+      "items": 24,
       "via": "html-listing",
       "error": ""
     },
@@ -48,6 +48,79 @@
   ],
   "articles": [
     {
+      "title": "Van Neerbos  directeur Strategie bij Havensteder",
+      "summary": "Per 1 november treedt Matthijs van Neerbos in dienst als directeur Strategie bij Havensteder. Hij volgt Bart Kesselaar op, die de functie sinds 2018 vervult.",
+      "date": "2026-08-20",
+      "source": "propertynl",
+      "sourceLabel": "PropertyNL",
+      "url": "https://propertynl.com/Nieuws/Van-Neerbos-directeur-Strategie-bij-Havensteder/f263a427-77a8-4d99-87ce-674b4881d0ef",
+      "companies": [
+        "Havensteder"
+      ],
+      "customers": [],
+      "prospects": [
+        "Havensteder"
+      ],
+      "categories": [
+        "Overig"
+      ],
+      "badges": [],
+      "keyDeal": false,
+      "isNew": true,
+      "id": 1
+    },
+    {
+      "title": "Starterslening steeds vaker noodzakelijk",
+      "summary": "Starters maken in toenemende mate gebruik van een starterslening bij de aankoop van hun eerste woning. In het eerste halfjaar van 2026 had 8,3% van de starters met een hypotheek ook zo’n aanvullende lening. Tegelijkertijd nam het totale aantal nieuw afgesloten hypotheken toe ten opzichte van een jaar eerder. Dat blijkt uit cijfers van het […]",
+      "date": "2026-08-20",
+      "source": "vastgoedactueel",
+      "sourceLabel": "Vastgoedactueel",
+      "url": "https://vastgoedactueel.nl/starterslening-steeds-vaker-noodzakelijk/",
+      "companies": [
+        "Nederlandse Aardolie Maatschappij (NAM)"
+      ],
+      "customers": [],
+      "prospects": [
+        "Nederlandse Aardolie Maatschappij (NAM)"
+      ],
+      "categories": [
+        "Woningmarkt"
+      ],
+      "badges": [
+        "market"
+      ],
+      "keyDeal": false,
+      "isNew": true,
+      "id": 2
+    },
+    {
+      "title": "Amres doet twee kantoorpanden in Almere van de hand",
+      "summary": "Amres heeft de kantoorpanden aan de Flevostraat 4-10 en de Brouwerstraat 2-8 verkocht aan ontwikkelend belegger Zanoli.",
+      "date": "2026-08-20",
+      "source": "propertynl",
+      "sourceLabel": "PropertyNL",
+      "url": "https://propertynl.com/Nieuws/Amres-doet-twee-kantoorpanden-in-Almere-van-de-hand/3a0445f6-f06f-42a9-b7c2-f2c199cbf8e1",
+      "companies": [
+        "Amres"
+      ],
+      "customers": [],
+      "prospects": [
+        "Amres"
+      ],
+      "categories": [
+        "Beleggingen",
+        "Kantoren",
+        "Nieuwbouw",
+        "Transacties"
+      ],
+      "badges": [
+        "sale"
+      ],
+      "keyDeal": false,
+      "isNew": true,
+      "id": 3
+    },
+    {
       "title": "Sebastiaan Rietberg assetmanager ARC Real Estate Partners",
       "summary": "Sebastiaan Rietberg is per 1 augustus in dienst getreden bij ARC Real Estate Partners.",
       "date": "2026-08-18",
@@ -67,7 +140,7 @@
       "badges": [],
       "keyDeal": false,
       "isNew": false,
-      "id": 1
+      "id": 4
     },
     {
       "title": "Eigen Haard: extra woningbouw in Lisserbroek financieel onmogelijk",
@@ -89,7 +162,7 @@
       "badges": [],
       "keyDeal": false,
       "isNew": false,
-      "id": 2
+      "id": 5
     },
     {
       "title": "Krakers vangen bot, Dudok kan Diepeveen verkopen",
@@ -111,29 +184,7 @@
       "badges": [],
       "keyDeal": false,
       "isNew": false,
-      "id": 3
-    },
-    {
-      "title": "WDP-baas Uwents: 'We laten de toekomst niet aan de Amerikanen'",
-      "summary": "Het Belgische WDP wordt met Argan een Europese topspeler in logistiek vastgoed. CEO Joost Uwents noemt groei noodzaak, alleen al om Amerikaanse spelers de pas af te snijden. 'We hebben Europese kampioenen nodig, ook in het vastgoed.'",
-      "date": "2026-08-14",
-      "source": "propertynl",
-      "sourceLabel": "PropertyNL",
-      "url": "https://propertynl.com/Nieuws/WDP-baas-Uwents--We-laten-de-toekomst-niet-aan-de-Amerikanen/c1c226da-fb93-47e6-a6bd-1e3b0508842c",
-      "companies": [
-        "WDP (Warehouses de Pauw)"
-      ],
-      "customers": [],
-      "prospects": [
-        "WDP (Warehouses de Pauw)"
-      ],
-      "categories": [
-        "Logistiek"
-      ],
-      "badges": [],
-      "keyDeal": false,
-      "isNew": false,
-      "id": 4
+      "id": 6
     }
   ]
 }
