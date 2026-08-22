@@ -1,19 +1,19 @@
 {
-  "generated": "2026-08-21T08:00:25+00:00",
+  "generated": "2026-08-22T07:37:14+00:00",
   "windowDays": 7,
   "ingestDays": 2,
   "health": [
     {
       "source": "vastgoedjournaal",
       "label": "Vastgoedjournaal",
-      "items": 64,
+      "items": 65,
       "via": "html-listing",
       "error": ""
     },
     {
       "source": "propertynl",
       "label": "PropertyNL",
-      "items": 24,
+      "items": 21,
       "via": "html-listing",
       "error": ""
     },
@@ -48,6 +48,30 @@
   ],
   "articles": [
     {
+      "title": "Ruim 100 woningen op erfenis V&D en Rabobank in Hengelo",
+      "summary": "De transformatie van twee voormalige iconen uit de binnenstad van Hengelo levert meer dan honderd nieuwe woningen op. In het voormalige V&D-pand en het oude Rabobankkantoor wordt volop gebouwd aan een mix van woningen, zorgfuncties en commerciële ruimte.",
+      "date": "2026-08-21",
+      "source": "propertynl",
+      "sourceLabel": "PropertyNL",
+      "url": "https://propertynl.com/Nieuws/Ruim-100-woningen-op-erfenis-V-D-en-Rabobank-in-Hengelo/c01f51fb-c595-409a-9e6a-4baa26e700e0",
+      "companies": [
+        "Rabobank"
+      ],
+      "customers": [],
+      "prospects": [
+        "Rabobank"
+      ],
+      "categories": [
+        "Kantoren",
+        "Nieuwbouw",
+        "Woningmarkt"
+      ],
+      "badges": [],
+      "keyDeal": false,
+      "isNew": true,
+      "id": 1
+    },
+    {
       "title": "Ruim 100 woningen op erfenis V&D en Rabobank in Enschede",
       "summary": "De transformatie van twee voormalige iconen uit de binnenstad van Enschede levert meer dan honderd nieuwe woningen op. In het voormalige V&D-pand en het oude Rabobankkantoor wordt volop gebouwd aan een mix van woningen, zorgfuncties en commerciële ruimte.",
       "date": "2026-08-21",
@@ -68,8 +92,32 @@
       ],
       "badges": [],
       "keyDeal": false,
+      "isNew": false,
+      "id": 2
+    },
+    {
+      "title": "Nacex huurt logistieke ruimte op SEGRO Park Amsterdam Airport",
+      "summary": "Nacex by Logista Netherlands heeft 1.404 m² logistieke ruimte gehuurd in het nieuw opgeleverde complex Barnsteen op SEGRO Park Amsterdam Airport (SPAA) in Hoofddorp.",
+      "date": "2026-08-21",
+      "source": "propertynl",
+      "sourceLabel": "PropertyNL",
+      "url": "https://propertynl.com/Nieuws/Nacex-huurt-logistieke-ruimte-op-SEGRO-Park-Amsterdam-Airport/478c6c1b-97aa-43c1-8162-5303b90335fa",
+      "companies": [
+        "SEGRO"
+      ],
+      "customers": [],
+      "prospects": [
+        "SEGRO"
+      ],
+      "categories": [
+        "Logistiek"
+      ],
+      "badges": [
+        "transaction"
+      ],
+      "keyDeal": false,
       "isNew": true,
-      "id": 1
+      "id": 3
     },
     {
       "title": "Van Neerbos  directeur Strategie bij Havensteder",
@@ -91,7 +139,7 @@
       "badges": [],
       "keyDeal": false,
       "isNew": false,
-      "id": 2
+      "id": 4
     },
     {
       "title": "Starterslening steeds vaker noodzakelijk",
@@ -115,7 +163,7 @@
       ],
       "keyDeal": false,
       "isNew": false,
-      "id": 3
+      "id": 5
     },
     {
       "title": "Amres doet twee kantoorpanden in Almere van de hand",
@@ -142,7 +190,7 @@
       ],
       "keyDeal": false,
       "isNew": false,
-      "id": 4
+      "id": 6
     },
     {
       "title": "Sebastiaan Rietberg assetmanager ARC Real Estate Partners",
@@ -164,7 +212,7 @@
       "badges": [],
       "keyDeal": false,
       "isNew": false,
-      "id": 5
+      "id": 7
     },
     {
       "title": "Eigen Haard: extra woningbouw in Lisserbroek financieel onmogelijk",
@@ -186,7 +234,7 @@
       "badges": [],
       "keyDeal": false,
       "isNew": false,
-      "id": 6
+      "id": 8
     },
     {
       "title": "Krakers vangen bot, Dudok kan Diepeveen verkopen",
@@ -208,7 +256,7 @@
       "badges": [],
       "keyDeal": false,
       "isNew": false,
-      "id": 7
+      "id": 9
     }
   ]
 }
