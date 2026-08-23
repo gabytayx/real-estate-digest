@@ -1,5 +1,5 @@
 {
-  "generated": "2026-08-22T07:37:14+00:00",
+  "generated": "2026-08-23T07:39:24+00:00",
   "windowDays": 7,
   "ingestDays": 2,
   "health": [
@@ -13,7 +13,7 @@
     {
       "source": "propertynl",
       "label": "PropertyNL",
-      "items": 21,
+      "items": 18,
       "via": "html-listing",
       "error": ""
     },
@@ -41,8 +41,8 @@
     {
       "source": "vastgoedactueel",
       "label": "Vastgoedactueel",
-      "items": 10,
-      "via": "rss",
+      "items": 0,
+      "via": "none",
       "error": ""
     }
   ],
@@ -68,7 +68,7 @@
       ],
       "badges": [],
       "keyDeal": false,
-      "isNew": true,
+      "isNew": false,
       "id": 1
     },
     {
@@ -116,7 +116,7 @@
         "transaction"
       ],
       "keyDeal": false,
-      "isNew": true,
+      "isNew": false,
       "id": 3
     },
     {
