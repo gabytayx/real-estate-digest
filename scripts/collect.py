@@ -38,7 +38,7 @@ DATA = ROOT / "data"
 WINDOW_DAYS = int(os.environ.get("WINDOW_DAYS", "7"))
 INGEST_DAYS = int(os.environ.get("INGEST_DAYS", "1"))
 FETCH_PAGES = os.environ.get("FETCH_PAGES", "1") != "0"
-PAGE_LIMIT = int(os.environ.get("PAGE_LIMIT", "120"))
+PAGE_LIMIT = int(os.environ.get("PAGE_LIMIT", "400"))
 TIMEOUT = 25
 UA = "real-estate-digest/1.0 (+https://github.com/gabytayx/real-estate-digest)"
 
@@ -325,6 +325,36 @@ NL_DATE_RE = re.compile(
     re.IGNORECASE)
 
 
+NUM_DATE_RE = re.compile(r"\b(\d{1,2})[-/](\d{1,2})[-/](\d{4})\b")
+ISO_DATE_RE = re.compile(r"\b(\d{4})-(\d{2})-(\d{2})\b")
+
+
+def parse_any_date(text: str):
+    """Try Dutch textual, then dd-mm-yyyy, then yyyy-mm-dd."""
+    dt = parse_dutch_date(text)
+    if dt:
+        return dt
+    m = NUM_DATE_RE.search(text)
+    if m:
+        d, mo, y = int(m.group(1)), int(m.group(2)), int(m.group(3))
+        try:
+            dt = datetime(y, mo, d, tzinfo=timezone.utc)
+            if dt <= datetime.now(timezone.utc) + timedelta(days=1):
+                return dt
+        except ValueError:
+            pass
+    m = ISO_DATE_RE.search(text)
+    if m:
+        try:
+            dt = datetime(int(m.group(1)), int(m.group(2)), int(m.group(3)),
+                          tzinfo=timezone.utc)
+            if dt <= datetime.now(timezone.utc) + timedelta(days=1):
+                return dt
+        except ValueError:
+            pass
+    return None
+
+
 def parse_dutch_date(text: str):
     """
     Pull a Dutch-formatted date out of visible page text, e.g. '14 april 2026'.
@@ -510,16 +540,25 @@ def fetch_page(url: str) -> tuple[str, object, str]:
         # dragged whole-page chrome into the matching text.
         node = soup.find("article") or soup.find(attrs={"class": "article-body"}) \
             or soup.find(attrs={"itemprop": "articleBody"}) or soup.find("main")
-        if node:
-            paras = [p.get_text(" ", strip=True) for p in node.find_all("p")]
-            paras = [x for x in paras if len(x) > 40]
-            body = " ".join(paras)[:20000] or node.get_text(" ", strip=True)[:20000]
+        # Not every site wraps its copy in a recognisable container. Falling
+        # back to the page's own paragraphs is safe now that the junk blocks
+        # above have already been removed, and without this fallback whole
+        # sources yield nothing at all.
+        scope = node or soup.body or soup
+        paras = [x.get_text(" ", strip=True) for x in scope.find_all("p")]
+        paras = [x for x in paras if len(x) > 40]
+        body = " ".join(paras)[:20000]
+        if not body:
+            body = scope.get_text(" ", strip=True)[:20000]
 
-        # Last resort: several of these sites ship no date metadata at all and
-        # print the date as plain text near the headline.
+        # Several of these sites ship no date metadata at all and print the
+        # date only as visible text near the headline.
         if not published:
-            head = (node or soup).get_text(" ", strip=True)[:1200]
-            published = parse_dutch_date(head)
+            el = soup.find("time")
+            if el:
+                published = parse_any_date(el.get_text(" ", strip=True))
+        if not published:
+            published = parse_any_date(scope.get_text(" ", strip=True)[:2000])
         time.sleep(0.6)  # be a polite guest
     PAGE_CACHE[url] = (body, published, teaser)
     return PAGE_CACHE[url]
@@ -573,7 +612,11 @@ def main() -> int:
         by_url.setdefault(item["url"], item)
 
     stats = {"undated": 0, "too_old": 0, "no_match": 0, "pages": 0,
-         "stale_dropped": 0}
+             "stale_dropped": 0}
+    # Per-source funnel, persisted into articles.json so a starved source is
+    # visible in the repo without anyone having to read the workflow log.
+    funnel = {s["key"]: {"candidates": 0, "undated": 0, "too_old": 0,
+                         "no_match": 0, "kept": 0} for s in sources}
     fresh = []
     for url, item in by_url.items():
         dt = item["dt"]
@@ -597,15 +640,22 @@ def main() -> int:
                 if hits and not item["summary"] and body:
                     item["summary"] = body[:400].rsplit(" ", 1)[0] + "\u2026"
 
+        f = funnel.setdefault(item["source"], {"candidates": 0, "undated": 0,
+                                               "too_old": 0, "no_match": 0, "kept": 0})
+        f["candidates"] += 1
         if dt is None:
             stats["undated"] += 1   # no verifiable date -> never assume today
+            f["undated"] += 1
             continue
         if dt.date() < ingest_from:
             stats["too_old"] += 1
+            f["too_old"] += 1
             continue
         if not hits:
             stats["no_match"] += 1
+            f["no_match"] += 1
             continue
+        f["kept"] += 1
 
         # Classify on title + teaser only. Running the keyword rules over a
         # full article body matches almost every category and badge, which is
@@ -657,6 +707,8 @@ def main() -> int:
         "windowDays": WINDOW_DAYS,
         "ingestDays": INGEST_DAYS,
         "health": health,
+        "funnel": funnel,
+        "stats": stats,
         "articles": out_articles,
     }, ensure_ascii=False, indent=2), encoding="utf-8")
 
@@ -678,6 +730,14 @@ def main() -> int:
         for name, k in suspicious:
             print("::warning::'%s' matched %d of %d articles - likely appearing in "
                   "page furniture rather than the news itself" % (name, k, len(out_articles)))
+
+    print("  per-source funnel (candidates -> kept):")
+    for k, f in funnel.items():
+        print("    %-18s %4d cand  %4d undated  %4d too old  %4d no match  -> %d kept"
+              % (k, f["candidates"], f["undated"], f["too_old"], f["no_match"], f["kept"]))
+        if f["candidates"] >= 10 and f["kept"] == 0:
+            print("::warning::source '%s' produced %d candidates but kept none"
+                  % (k, f["candidates"]))
 
     dead = [h["label"] for h in health if h["items"] == 0]
     if dead:
