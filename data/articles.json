@@ -1,19 +1,19 @@
 {
-  "generated": "2026-08-25T07:50:21+00:00",
+  "generated": "2026-08-26T07:26:47+00:00",
   "windowDays": 7,
   "ingestDays": 2,
   "health": [
     {
       "source": "vastgoedjournaal",
       "label": "Vastgoedjournaal",
-      "items": 66,
+      "items": 64,
       "via": "html-listing",
       "error": ""
     },
     {
       "source": "propertynl",
       "label": "PropertyNL",
-      "items": 19,
+      "items": 24,
       "via": "html-listing",
       "error": ""
     },
@@ -48,6 +48,78 @@
   ],
   "articles": [
     {
+      "title": "Segro verhuurt aan CSafe Global in Segro Logistics Centre Schiphol",
+      "summary": "Segro heeft een huurovereenkomst gesloten met CSafe Global Coöperatief voor 9.723 m² aan Dreamstreet 21 in Segro Logistics Centre Schiphol op Schiphol Trade Park, Hoofddorp. Met de verhuizing verdubbelt CSafe Global bijna haar ruimte.",
+      "date": "2026-08-25",
+      "source": "propertynl",
+      "sourceLabel": "PropertyNL",
+      "url": "https://propertynl.com/Nieuws/Segro-verhuurt-aan-CSafe-Global-in-Segro-Logistics-Centre-Schiphol/0657ccff-92eb-461b-affb-21e3274c7d1e",
+      "companies": [
+        "Schiphol"
+      ],
+      "customers": [],
+      "prospects": [
+        "Schiphol"
+      ],
+      "categories": [
+        "Overig"
+      ],
+      "badges": [
+        "transaction"
+      ],
+      "keyDeal": false,
+      "isNew": true,
+      "id": 1
+    },
+    {
+      "title": "Kroonenberg Groep verhuurt aan Gamma en Jysk in Amsterdam",
+      "summary": "Kroonenberg Groep heeft overeenstemming bereikt met Gamma en Jysk voor langjarige huurovereenkomsten aan de Spaklerweg in Amsterdam.",
+      "date": "2026-08-25",
+      "source": "propertynl",
+      "sourceLabel": "PropertyNL",
+      "url": "https://propertynl.com/Nieuws/Kroonenberg-Groep-verhuurt-aan-Gamma-en-Jysk-in-Amsterdam/04ea5687-2378-4b50-b4df-534609c67568",
+      "companies": [
+        "Kroonenberg Groep"
+      ],
+      "customers": [],
+      "prospects": [
+        "Kroonenberg Groep"
+      ],
+      "categories": [
+        "Overig"
+      ],
+      "badges": [
+        "transaction"
+      ],
+      "keyDeal": false,
+      "isNew": true,
+      "id": 2
+    },
+    {
+      "title": "Dirk Brounen treedt toe tot raad van commissarissen Amvest",
+      "summary": "Dirk Brounen is per 1 augustus 2026 benoemd tot lid van de raad van commissarissen van Amvest. De benoeming is goedgekeurd door de algemene vergadering van aandeelhouders.",
+      "date": "2026-08-25",
+      "source": "propertynl",
+      "sourceLabel": "PropertyNL",
+      "url": "https://propertynl.com/Nieuws/Dirk-Brounen-treedt-toe-tot-raad-van-commissarissen-Amvest/6e4cba04-2015-4d54-be48-234f7c10cc6b",
+      "companies": [
+        "Amvest"
+      ],
+      "customers": [],
+      "prospects": [
+        "Amvest"
+      ],
+      "categories": [
+        "Personalia"
+      ],
+      "badges": [
+        "rolechange"
+      ],
+      "keyDeal": false,
+      "isNew": true,
+      "id": 3
+    },
+    {
       "title": "Bridges Real Estate koopt mixed-use gebouw in centrum Utrecht",
       "summary": "Bridges Real Estate heeft gebouw Vredenburg 17–19 in het centrum van Utrecht overgenomen van Redevco.",
       "date": "2026-08-25",
@@ -68,8 +140,32 @@
         "buy"
       ],
       "keyDeal": false,
+      "isNew": false,
+      "id": 4
+    },
+    {
+      "title": "Bridges Real Estate koopt mixed-use gebouw in Utrecht",
+      "summary": "Bridges Real Estate heeft het multifunctionele gebouw aan Vredenburg 17–19 in het centrum van Utrecht aangekocht. Het pand meet 6.361 m² verhuurbaar...",
+      "date": "2026-08-25",
+      "source": "vastgoeddata",
+      "sourceLabel": "Vastgoeddata",
+      "url": "https://www.vastgoeddata.nl/article/d4c9136c-a057-11f1-b96f-464e1662e283/bridges-real-estate-koopt-mixed-use-gebouw-in-utrecht",
+      "companies": [
+        "Bridges Real Estate"
+      ],
+      "customers": [],
+      "prospects": [
+        "Bridges Real Estate"
+      ],
+      "categories": [
+        "Transacties"
+      ],
+      "badges": [
+        "buy"
+      ],
+      "keyDeal": false,
       "isNew": true,
-      "id": 1
+      "id": 5
     },
     {
       "title": "Ruim 100 woningen op erfenis V&D en Rabobank in Hengelo",
@@ -93,7 +189,7 @@
       "badges": [],
       "keyDeal": false,
       "isNew": false,
-      "id": 2
+      "id": 6
     },
     {
       "title": "Ruim 100 woningen op erfenis V&D en Rabobank in Enschede",
@@ -117,7 +213,7 @@
       "badges": [],
       "keyDeal": false,
       "isNew": false,
-      "id": 3
+      "id": 7
     },
     {
       "title": "Nacex huurt logistieke ruimte op SEGRO Park Amsterdam Airport",
@@ -141,7 +237,7 @@
       ],
       "keyDeal": false,
       "isNew": false,
-      "id": 4
+      "id": 8
     },
     {
       "title": "Van Neerbos  directeur Strategie bij Havensteder",
@@ -163,7 +259,7 @@
       "badges": [],
       "keyDeal": false,
       "isNew": false,
-      "id": 5
+      "id": 9
     },
     {
       "title": "Starterslening steeds vaker noodzakelijk",
@@ -187,7 +283,7 @@
       ],
       "keyDeal": false,
       "isNew": false,
-      "id": 6
+      "id": 10
     },
     {
       "title": "Amres doet twee kantoorpanden in Almere van de hand",
@@ -214,7 +310,7 @@
       ],
       "keyDeal": false,
       "isNew": false,
-      "id": 7
+      "id": 11
     }
   ]
 }
