@@ -1,19 +1,19 @@
 {
-  "generated": "2026-08-26T07:51:56+00:00",
+  "generated": "2026-08-26T09:15:29+00:00",
   "windowDays": 7,
   "ingestDays": 2,
   "health": [
     {
       "source": "vastgoedjournaal",
       "label": "Vastgoedjournaal",
-      "items": 64,
+      "items": 66,
       "via": "html-listing",
       "error": ""
     },
     {
       "source": "propertynl",
       "label": "PropertyNL",
-      "items": 24,
+      "items": 23,
       "via": "html-listing",
       "error": ""
     },
@@ -48,18 +48,18 @@
   ],
   "funnel": {
     "vastgoedjournaal": {
-      "candidates": 64,
-      "undated": 64,
+      "candidates": 66,
+      "undated": 66,
       "too_old": 0,
       "no_match": 0,
       "kept": 0
     },
     "propertynl": {
-      "candidates": 24,
+      "candidates": 23,
       "undated": 0,
-      "too_old": 11,
+      "too_old": 9,
       "no_match": 8,
-      "kept": 5
+      "kept": 6
     },
     "vastgoedmarkt": {
       "candidates": 0,
@@ -71,8 +71,8 @@
     "vastgoeddata": {
       "candidates": 23,
       "undated": 0,
-      "too_old": 16,
-      "no_match": 3,
+      "too_old": 15,
+      "no_match": 4,
       "kept": 4
     },
     "vastgoednieuws": {
@@ -91,13 +91,35 @@
     }
   },
   "stats": {
-    "undated": 74,
-    "too_old": 36,
-    "no_match": 12,
+    "undated": 76,
+    "too_old": 33,
+    "no_match": 13,
     "pages": 120,
     "stale_dropped": 0
   },
   "articles": [
+    {
+      "title": "Wie krijgt het horeca-imperium van Dolly Parton?",
+      "summary": "De Amerikaanse countryzangeres Dolly Parton, die dinsdag op 80-jarige leeftijd overleed, laat naast een omvangrijke muziekcatalogus een horeca- en entertainmentimperium na.",
+      "date": "2026-08-26",
+      "source": "propertynl",
+      "sourceLabel": "PropertyNL",
+      "url": "https://propertynl.com/Nieuws/Wie-krijgt-het-horeca-imperium-van-Dolly-Parton/1f487d1c-bf5b-409c-91a8-c6164c535a11",
+      "companies": [
+        "Chalet Group"
+      ],
+      "customers": [],
+      "prospects": [
+        "Chalet Group"
+      ],
+      "categories": [
+        "Retail"
+      ],
+      "badges": [],
+      "keyDeal": false,
+      "isNew": true,
+      "id": 1
+    },
     {
       "title": "Twee huurtransacties in kantoorgebouw Munthof Amsterdam",
       "summary": "In kantoorgebouw Munthof aan de Reguliersdwarsstraat 58 in Amsterdam zijn twee langjarige huurovereenkomsten gesloten. Uitblinqers huurt 1.000 m² vvo...",
@@ -120,8 +142,8 @@
         "transaction"
       ],
       "keyDeal": false,
-      "isNew": true,
-      "id": 1
+      "isNew": false,
+      "id": 2
     },
     {
       "title": "Segro verhuurt aan CSafe Global in Segro Logistics Centre Schiphol",
@@ -145,7 +167,7 @@
       ],
       "keyDeal": false,
       "isNew": false,
-      "id": 2
+      "id": 3
     },
     {
       "title": "Kroonenberg Groep verhuurt aan Gamma en Jysk in Amsterdam",
@@ -169,7 +191,7 @@
       ],
       "keyDeal": false,
       "isNew": false,
-      "id": 3
+      "id": 4
     },
     {
       "title": "Huurtransactie 25 augustus 2026",
@@ -193,34 +215,7 @@
         "transaction"
       ],
       "keyDeal": false,
-      "isNew": true,
-      "id": 4
-    },
-    {
-      "title": "Huurtransactie 25 augustus 2026",
-      "summary": "CSafe Global heeft een huurovereenkomst gesloten met SEGRO voor 9.723 m² logistieke bedrijfsruimte aan Dreamstreet 21 in Hoofddorp. Het pand maakt deel uit van...",
-      "date": "2026-08-25",
-      "source": "vastgoeddata",
-      "sourceLabel": "Vastgoeddata",
-      "url": "https://www.vastgoeddata.nl/article/b95adbef-a08d-11f1-b96f-464e1662e283/csafe-huurt-9-723-m-van-segro-in-hoofddorp",
-      "companies": [
-        "SEGRO",
-        "Schiphol"
-      ],
-      "customers": [],
-      "prospects": [
-        "SEGRO",
-        "Schiphol"
-      ],
-      "categories": [
-        "Logistiek",
-        "Transacties"
-      ],
-      "badges": [
-        "transaction"
-      ],
-      "keyDeal": false,
-      "isNew": true,
+      "isNew": false,
       "id": 5
     },
     {
@@ -244,7 +239,7 @@
         "transaction"
       ],
       "keyDeal": false,
-      "isNew": true,
+      "isNew": false,
       "id": 6
     },
     {
@@ -272,6 +267,30 @@
       "id": 7
     },
     {
+      "title": "CSafe huurt 9.723 m² van SEGRO in Hoofddorp",
+      "summary": "CSafe Global heeft een huurovereenkomst gesloten met SEGRO voor 9.723 m² logistieke bedrijfsruimte aan Dreamstreet 21 in Hoofddorp. Het pand maakt deel uit van...",
+      "date": "2026-08-25",
+      "source": "vastgoeddata",
+      "sourceLabel": "Vastgoeddata",
+      "url": "https://www.vastgoeddata.nl/article/b95adbef-a08d-11f1-b96f-464e1662e283/csafe-huurt-9-723-m-van-segro-in-hoofddorp",
+      "companies": [
+        "SEGRO"
+      ],
+      "customers": [],
+      "prospects": [
+        "SEGRO"
+      ],
+      "categories": [
+        "Logistiek"
+      ],
+      "badges": [
+        "transaction"
+      ],
+      "keyDeal": false,
+      "isNew": false,
+      "id": 8
+    },
+    {
       "title": "Bridges Real Estate koopt mixed-use gebouw in centrum Utrecht",
       "summary": "Bridges Real Estate heeft gebouw Vredenburg 17–19 in het centrum van Utrecht overgenomen van Redevco.",
       "date": "2026-08-25",
@@ -293,7 +312,7 @@
       ],
       "keyDeal": false,
       "isNew": false,
-      "id": 8
+      "id": 9
     },
     {
       "title": "Bridges Real Estate koopt mixed-use gebouw in Utrecht",
@@ -317,7 +336,7 @@
       ],
       "keyDeal": false,
       "isNew": false,
-      "id": 9
+      "id": 10
     },
     {
       "title": "Ruim 100 woningen op erfenis V&D en Rabobank in Hengelo",
@@ -341,7 +360,7 @@
       "badges": [],
       "keyDeal": false,
       "isNew": false,
-      "id": 10
+      "id": 11
     },
     {
       "title": "Ruim 100 woningen op erfenis V&D en Rabobank in Enschede",
@@ -365,7 +384,7 @@
       "badges": [],
       "keyDeal": false,
       "isNew": false,
-      "id": 11
+      "id": 12
     },
     {
       "title": "Nacex huurt logistieke ruimte op SEGRO Park Amsterdam Airport",
@@ -389,7 +408,7 @@
       ],
       "keyDeal": false,
       "isNew": false,
-      "id": 12
+      "id": 13
     },
     {
       "title": "Van Neerbos  directeur Strategie bij Havensteder",
@@ -411,7 +430,7 @@
       "badges": [],
       "keyDeal": false,
       "isNew": false,
-      "id": 13
+      "id": 14
     },
     {
       "title": "Starterslening steeds vaker noodzakelijk",
@@ -435,7 +454,7 @@
       ],
       "keyDeal": false,
       "isNew": false,
-      "id": 14
+      "id": 15
     },
     {
       "title": "Amres doet twee kantoorpanden in Almere van de hand",
@@ -462,7 +481,7 @@
       ],
       "keyDeal": false,
       "isNew": false,
-      "id": 15
+      "id": 16
     }
   ]
 }
