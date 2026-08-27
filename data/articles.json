@@ -1,19 +1,19 @@
 {
-  "generated": "2026-08-26T09:15:29+00:00",
+  "generated": "2026-08-27T11:03:24+00:00",
   "windowDays": 7,
   "ingestDays": 2,
   "health": [
     {
       "source": "vastgoedjournaal",
       "label": "Vastgoedjournaal",
-      "items": 66,
+      "items": 67,
       "via": "html-listing",
       "error": ""
     },
     {
       "source": "propertynl",
       "label": "PropertyNL",
-      "items": 23,
+      "items": 25,
       "via": "html-listing",
       "error": ""
     },
@@ -48,18 +48,18 @@
   ],
   "funnel": {
     "vastgoedjournaal": {
-      "candidates": 66,
-      "undated": 66,
+      "candidates": 67,
+      "undated": 67,
       "too_old": 0,
       "no_match": 0,
       "kept": 0
     },
     "propertynl": {
-      "candidates": 23,
+      "candidates": 25,
       "undated": 0,
-      "too_old": 9,
-      "no_match": 8,
-      "kept": 6
+      "too_old": 11,
+      "no_match": 10,
+      "kept": 4
     },
     "vastgoedmarkt": {
       "candidates": 0,
@@ -71,9 +71,9 @@
     "vastgoeddata": {
       "candidates": 23,
       "undated": 0,
-      "too_old": 15,
-      "no_match": 4,
-      "kept": 4
+      "too_old": 17,
+      "no_match": 3,
+      "kept": 3
     },
     "vastgoednieuws": {
       "candidates": 10,
@@ -85,19 +85,143 @@
     "vastgoedactueel": {
       "candidates": 10,
       "undated": 0,
-      "too_old": 9,
-      "no_match": 1,
+      "too_old": 8,
+      "no_match": 2,
       "kept": 0
     }
   },
   "stats": {
-    "undated": 76,
-    "too_old": 33,
-    "no_match": 13,
+    "undated": 77,
+    "too_old": 36,
+    "no_match": 15,
     "pages": 120,
-    "stale_dropped": 0
+    "stale_dropped": 3
   },
   "articles": [
+    {
+      "title": "Naessens levert nieuw dc Jysk op",
+      "summary": "Hoofdaannemer Willy Naessens en bouwpartner Vrolijk hebben het nieuwe distributiecentrum van Jysk in Lelystad opgeleverd.",
+      "date": "2026-08-27",
+      "source": "propertynl",
+      "sourceLabel": "PropertyNL",
+      "url": "https://propertynl.com/Nieuws/Naessens-levert-nieuw-dc-Jysk-op/0e88a415-4c9c-41d1-b4f0-65a1205b3da9",
+      "companies": [
+        "Willy Naessens"
+      ],
+      "customers": [],
+      "prospects": [
+        "Willy Naessens"
+      ],
+      "categories": [
+        "Logistiek"
+      ],
+      "badges": [],
+      "keyDeal": false,
+      "isNew": true,
+      "id": 1
+    },
+    {
+      "title": "JYSK neemt nieuw distributiecentrum in Lelystad in ontvangst",
+      "summary": "JYSK heeft de sleutels ontvangen van zijn nieuwe distributiecentrum aan de Buitenhavenweg 48 Lelystad. Met de sleuteloverdracht is de bouwfase van het 147.000...",
+      "date": "2026-08-27",
+      "source": "vastgoeddata",
+      "sourceLabel": "Vastgoeddata",
+      "url": "https://www.vastgoeddata.nl/article/ebfd2b4f-a1e5-11f1-b96f-464e1662e283/jysk-neemt-nieuw-distributiecentrum-in-lelystad-in-ontvangst",
+      "companies": [
+        "Nederlandse Aardolie Maatschappij (NAM)",
+        "Willy Naessens"
+      ],
+      "customers": [],
+      "prospects": [
+        "Nederlandse Aardolie Maatschappij (NAM)",
+        "Willy Naessens"
+      ],
+      "categories": [
+        "Logistiek"
+      ],
+      "badges": [],
+      "keyDeal": false,
+      "isNew": true,
+      "id": 2
+    },
+    {
+      "title": "Huurtransactie 27 augustus 2026",
+      "summary": "Logistiek dienstverlener LX Pantos heeft zijn huurovereenkomst voor 825 m² kantoorruimte aan de Siriusdreef 30-72 in Hoofddorp langjarig verlengd. De...",
+      "date": "2026-08-27",
+      "source": "vastgoeddata",
+      "sourceLabel": "Vastgoeddata",
+      "url": "https://www.vastgoeddata.nl/article/36e9f11f-a1f9-11f1-b96f-464e1662e283/lx-pantos-verlengt-huur-in-hoofddorp",
+      "companies": [
+        "BNP Paribas Real Estate",
+        "Schiphol"
+      ],
+      "customers": [],
+      "prospects": [
+        "BNP Paribas Real Estate",
+        "Schiphol"
+      ],
+      "categories": [
+        "Kantoren",
+        "Logistiek",
+        "Transacties"
+      ],
+      "badges": [
+        "transaction"
+      ],
+      "keyDeal": false,
+      "isNew": true,
+      "id": 3
+    },
+    {
+      "title": "Een bancaire afwijzing zegt niets over de kwaliteit van een project",
+      "summary": "Je hebt een pand op het oog. De taxatie is rond, je brengt eigen vermogen in en de rekensom klopt. Toch wijst de bank de financieringsaanvraag af. Voor veel vastgoedondernemers voelt dat als het einde van het project. Alsof er een definitief oordeel over het project is geveld. Alternatieve financier",
+      "date": "2026-08-27",
+      "source": "propertynl",
+      "sourceLabel": "PropertyNL",
+      "url": "https://propertynl.com/Nieuws/Een-bancaire-afwijzing-zegt-niets-over-de-kwaliteit-van-een-project/cb50cdb6-13c2-41e7-8bd3-3a0613e3a645",
+      "companies": [
+        "VORM"
+      ],
+      "customers": [
+        "VORM"
+      ],
+      "prospects": [],
+      "categories": [
+        "Overig"
+      ],
+      "badges": [
+        "transaction"
+      ],
+      "keyDeal": false,
+      "isNew": false,
+      "id": 4
+    },
+    {
+      "title": "Carrière 27 augustus 2026",
+      "summary": "Maarten Donkers wordt de nieuwe directeur Research & Data Intelligence bij Capital Value. Per 1 september  krijgt hij de leiding over het researchteam. Hij...",
+      "date": "2026-08-27",
+      "source": "vastgoeddata",
+      "sourceLabel": "Vastgoeddata",
+      "url": "https://www.vastgoeddata.nl/article/4ae569b3-a14a-11f1-b96f-464e1662e283/maarten-donkers-nieuwe-directeur-research-bij-capital-value",
+      "companies": [
+        "FGH Bank",
+        "Rabobank"
+      ],
+      "customers": [],
+      "prospects": [
+        "FGH Bank",
+        "Rabobank"
+      ],
+      "categories": [
+        "Personalia"
+      ],
+      "badges": [
+        "rolechange"
+      ],
+      "keyDeal": false,
+      "isNew": true,
+      "id": 5
+    },
     {
       "title": "Wie krijgt het horeca-imperium van Dolly Parton?",
       "summary": "De Amerikaanse countryzangeres Dolly Parton, die dinsdag op 80-jarige leeftijd overleed, laat naast een omvangrijke muziekcatalogus een horeca- en entertainmentimperium na.",
@@ -117,8 +241,59 @@
       ],
       "badges": [],
       "keyDeal": false,
+      "isNew": false,
+      "id": 6
+    },
+    {
+      "title": "Raad van State haalt streep door bezwaren plan Poort van Hoorn",
+      "summary": "De bezwaren tegen het bestemmingsplan Stationsgebied van de gemeente Hoorn zijn ongegrond, zo heeft de Afdeling bestuursrechtspraak van de Raad van State woensdag geoordeeld.",
+      "date": "2026-08-26",
+      "source": "propertynl",
+      "sourceLabel": "PropertyNL",
+      "url": "https://propertynl.com/Nieuws/Raad-van-State-haalt-streep-door-bezwaren-plan-Poort-van-Hoorn/cf651bbd-ee4e-4a4f-9cc4-bb6dd9684c54",
+      "companies": [
+        "Ballast Nedam",
+        "Blauwhoed Groep"
+      ],
+      "customers": [],
+      "prospects": [
+        "Ballast Nedam",
+        "Blauwhoed Groep"
+      ],
+      "categories": [
+        "Beleid & Gemeente"
+      ],
+      "badges": [],
+      "keyDeal": false,
       "isNew": true,
-      "id": 1
+      "id": 7
+    },
+    {
+      "title": "Noord-Brabant investeert € 150 mln voor 500 zorgwoningen",
+      "summary": "De provincie Noord-Brabant wil € 150 mln investeren in Achmea Dutch Health Care Property Fund, dat zich richt op het ontwikkelen van woningen met zorg.",
+      "date": "2026-08-26",
+      "source": "propertynl",
+      "sourceLabel": "PropertyNL",
+      "url": "https://propertynl.com/Nieuws/Noord-Brabant-investeert--150-mln-voor-500-zorgwoningen/bd74a8ac-ebf2-49fd-a95e-53175a9c7ae6",
+      "companies": [
+        "Achmea",
+        "Provincie Noord-Brabant"
+      ],
+      "customers": [],
+      "prospects": [
+        "Achmea",
+        "Provincie Noord-Brabant"
+      ],
+      "categories": [
+        "Beleggingen",
+        "Beleid & Gemeente",
+        "Nieuwbouw",
+        "Woningmarkt"
+      ],
+      "badges": [],
+      "keyDeal": false,
+      "isNew": true,
+      "id": 8
     },
     {
       "title": "Twee huurtransacties in kantoorgebouw Munthof Amsterdam",
@@ -143,7 +318,7 @@
       ],
       "keyDeal": false,
       "isNew": false,
-      "id": 2
+      "id": 9
     },
     {
       "title": "Segro verhuurt aan CSafe Global in Segro Logistics Centre Schiphol",
@@ -167,7 +342,7 @@
       ],
       "keyDeal": false,
       "isNew": false,
-      "id": 3
+      "id": 10
     },
     {
       "title": "Kroonenberg Groep verhuurt aan Gamma en Jysk in Amsterdam",
@@ -191,7 +366,7 @@
       ],
       "keyDeal": false,
       "isNew": false,
-      "id": 4
+      "id": 11
     },
     {
       "title": "Huurtransactie 25 augustus 2026",
@@ -216,31 +391,7 @@
       ],
       "keyDeal": false,
       "isNew": false,
-      "id": 5
-    },
-    {
-      "title": "Een bancaire afwijzing zegt niets over de kwaliteit van een project",
-      "summary": "Je hebt een pand op het oog. De taxatie is rond, je brengt eigen vermogen in en de rekensom klopt. Toch wijst de bank de financieringsaanvraag af. Voor veel vastgoedondernemers voelt dat als het einde van het project. Alsof er een definitief oordeel over het project is geveld. Alternatieve financier",
-      "date": "2026-08-25",
-      "source": "propertynl",
-      "sourceLabel": "PropertyNL",
-      "url": "https://propertynl.com/Nieuws/Een-bancaire-afwijzing-zegt-niets-over-de-kwaliteit-van-een-project/cb50cdb6-13c2-41e7-8bd3-3a0613e3a645",
-      "companies": [
-        "VORM"
-      ],
-      "customers": [
-        "VORM"
-      ],
-      "prospects": [],
-      "categories": [
-        "Overig"
-      ],
-      "badges": [
-        "transaction"
-      ],
-      "keyDeal": false,
-      "isNew": false,
-      "id": 6
+      "id": 12
     },
     {
       "title": "Dirk Brounen treedt toe tot raad van commissarissen Amvest",
@@ -264,7 +415,7 @@
       ],
       "keyDeal": false,
       "isNew": false,
-      "id": 7
+      "id": 13
     },
     {
       "title": "CSafe huurt 9.723 m² van SEGRO in Hoofddorp",
@@ -288,7 +439,7 @@
       ],
       "keyDeal": false,
       "isNew": false,
-      "id": 8
+      "id": 14
     },
     {
       "title": "Bridges Real Estate koopt mixed-use gebouw in centrum Utrecht",
@@ -312,7 +463,7 @@
       ],
       "keyDeal": false,
       "isNew": false,
-      "id": 9
+      "id": 15
     },
     {
       "title": "Bridges Real Estate koopt mixed-use gebouw in Utrecht",
@@ -336,7 +487,7 @@
       ],
       "keyDeal": false,
       "isNew": false,
-      "id": 10
+      "id": 16
     },
     {
       "title": "Ruim 100 woningen op erfenis V&D en Rabobank in Hengelo",
@@ -360,7 +511,7 @@
       "badges": [],
       "keyDeal": false,
       "isNew": false,
-      "id": 11
+      "id": 17
     },
     {
       "title": "Ruim 100 woningen op erfenis V&D en Rabobank in Enschede",
@@ -384,7 +535,7 @@
       "badges": [],
       "keyDeal": false,
       "isNew": false,
-      "id": 12
+      "id": 18
     },
     {
       "title": "Nacex huurt logistieke ruimte op SEGRO Park Amsterdam Airport",
@@ -408,80 +559,7 @@
       ],
       "keyDeal": false,
       "isNew": false,
-      "id": 13
-    },
-    {
-      "title": "Van Neerbos  directeur Strategie bij Havensteder",
-      "summary": "Per 1 november treedt Matthijs van Neerbos in dienst als directeur Strategie bij Havensteder. Hij volgt Bart Kesselaar op, die de functie sinds 2018 vervult.",
-      "date": "2026-08-20",
-      "source": "propertynl",
-      "sourceLabel": "PropertyNL",
-      "url": "https://propertynl.com/Nieuws/Van-Neerbos-directeur-Strategie-bij-Havensteder/f263a427-77a8-4d99-87ce-674b4881d0ef",
-      "companies": [
-        "Havensteder"
-      ],
-      "customers": [],
-      "prospects": [
-        "Havensteder"
-      ],
-      "categories": [
-        "Overig"
-      ],
-      "badges": [],
-      "keyDeal": false,
-      "isNew": false,
-      "id": 14
-    },
-    {
-      "title": "Starterslening steeds vaker noodzakelijk",
-      "summary": "Starters maken in toenemende mate gebruik van een starterslening bij de aankoop van hun eerste woning. In het eerste halfjaar van 2026 had 8,3% van de starters met een hypotheek ook zo’n aanvullende lening. Tegelijkertijd nam het totale aantal nieuw afgesloten hypotheken toe ten opzichte van een jaar eerder. Dat blijkt uit cijfers van het […]",
-      "date": "2026-08-20",
-      "source": "vastgoedactueel",
-      "sourceLabel": "Vastgoedactueel",
-      "url": "https://vastgoedactueel.nl/starterslening-steeds-vaker-noodzakelijk/",
-      "companies": [
-        "Nederlandse Aardolie Maatschappij (NAM)"
-      ],
-      "customers": [],
-      "prospects": [
-        "Nederlandse Aardolie Maatschappij (NAM)"
-      ],
-      "categories": [
-        "Woningmarkt"
-      ],
-      "badges": [
-        "market"
-      ],
-      "keyDeal": false,
-      "isNew": false,
-      "id": 15
-    },
-    {
-      "title": "Amres doet twee kantoorpanden in Almere van de hand",
-      "summary": "Amres heeft de kantoorpanden aan de Flevostraat 4-10 en de Brouwerstraat 2-8 verkocht aan ontwikkelend belegger Zanoli.",
-      "date": "2026-08-20",
-      "source": "propertynl",
-      "sourceLabel": "PropertyNL",
-      "url": "https://propertynl.com/Nieuws/Amres-doet-twee-kantoorpanden-in-Almere-van-de-hand/3a0445f6-f06f-42a9-b7c2-f2c199cbf8e1",
-      "companies": [
-        "Amres"
-      ],
-      "customers": [],
-      "prospects": [
-        "Amres"
-      ],
-      "categories": [
-        "Beleggingen",
-        "Kantoren",
-        "Nieuwbouw",
-        "Transacties"
-      ],
-      "badges": [
-        "sale"
-      ],
-      "keyDeal": false,
-      "isNew": false,
-      "id": 16
+      "id": 19
     }
   ]
 }
