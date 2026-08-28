@@ -1,19 +1,19 @@
 {
-  "generated": "2026-08-27T11:03:24+00:00",
+  "generated": "2026-08-28T07:29:49+00:00",
   "windowDays": 7,
   "ingestDays": 2,
   "health": [
     {
       "source": "vastgoedjournaal",
       "label": "Vastgoedjournaal",
-      "items": 67,
+      "items": 65,
       "via": "html-listing",
       "error": ""
     },
     {
       "source": "propertynl",
       "label": "PropertyNL",
-      "items": 25,
+      "items": 24,
       "via": "html-listing",
       "error": ""
     },
@@ -48,18 +48,18 @@
   ],
   "funnel": {
     "vastgoedjournaal": {
-      "candidates": 67,
-      "undated": 67,
+      "candidates": 65,
+      "undated": 65,
       "too_old": 0,
       "no_match": 0,
       "kept": 0
     },
     "propertynl": {
-      "candidates": 25,
+      "candidates": 24,
       "undated": 0,
-      "too_old": 11,
-      "no_match": 10,
-      "kept": 4
+      "too_old": 15,
+      "no_match": 6,
+      "kept": 3
     },
     "vastgoedmarkt": {
       "candidates": 0,
@@ -71,8 +71,8 @@
     "vastgoeddata": {
       "candidates": 23,
       "undated": 0,
-      "too_old": 17,
-      "no_match": 3,
+      "too_old": 19,
+      "no_match": 1,
       "kept": 3
     },
     "vastgoednieuws": {
@@ -91,9 +91,9 @@
     }
   },
   "stats": {
-    "undated": 77,
-    "too_old": 36,
-    "no_match": 15,
+    "undated": 75,
+    "too_old": 42,
+    "no_match": 9,
     "pages": 120,
     "stale_dropped": 3
   },
@@ -117,7 +117,7 @@
       ],
       "badges": [],
       "keyDeal": false,
-      "isNew": true,
+      "isNew": false,
       "id": 1
     },
     {
@@ -141,7 +141,7 @@
       ],
       "badges": [],
       "keyDeal": false,
-      "isNew": true,
+      "isNew": false,
       "id": 2
     },
     {
@@ -169,8 +169,35 @@
         "transaction"
       ],
       "keyDeal": false,
-      "isNew": true,
+      "isNew": false,
       "id": 3
+    },
+    {
+      "title": "Herfinanciering duurzaam kantoor The Share in Hoofddorp",
+      "summary": "Jupiter heeft samen met Federated Hermes een financiering van € 21,9 mln verstrekt voor de herfinanciering van kantoorgebouw The Share in Hoofddorp. Het gebouw ligt direct naast station Hoofddorp en heeft L’Oréal Nederland als belangrijkste huurder.",
+      "date": "2026-08-27",
+      "source": "propertynl",
+      "sourceLabel": "PropertyNL",
+      "url": "https://propertynl.com/Nieuws/Herfinanciering-duurzaam-kantoor-The-Share-in-Hoofddorp/0eecc0e9-9b09-46c6-b02f-91b96780caaa",
+      "companies": [
+        "Schiphol",
+        "VolkerWessels"
+      ],
+      "customers": [],
+      "prospects": [
+        "Schiphol",
+        "VolkerWessels"
+      ],
+      "categories": [
+        "Duurzaamheid",
+        "Kantoren"
+      ],
+      "badges": [
+        "transaction"
+      ],
+      "keyDeal": false,
+      "isNew": true,
+      "id": 4
     },
     {
       "title": "Een bancaire afwijzing zegt niets over de kwaliteit van een project",
@@ -194,7 +221,7 @@
       ],
       "keyDeal": false,
       "isNew": false,
-      "id": 4
+      "id": 5
     },
     {
       "title": "Carrière 27 augustus 2026",
@@ -219,8 +246,8 @@
         "rolechange"
       ],
       "keyDeal": false,
-      "isNew": true,
-      "id": 5
+      "isNew": false,
+      "id": 6
     },
     {
       "title": "Wie krijgt het horeca-imperium van Dolly Parton?",
@@ -242,7 +269,7 @@
       "badges": [],
       "keyDeal": false,
       "isNew": false,
-      "id": 6
+      "id": 7
     },
     {
       "title": "Raad van State haalt streep door bezwaren plan Poort van Hoorn",
@@ -265,8 +292,8 @@
       ],
       "badges": [],
       "keyDeal": false,
-      "isNew": true,
-      "id": 7
+      "isNew": false,
+      "id": 8
     },
     {
       "title": "Noord-Brabant investeert € 150 mln voor 500 zorgwoningen",
@@ -292,8 +319,8 @@
       ],
       "badges": [],
       "keyDeal": false,
-      "isNew": true,
-      "id": 8
+      "isNew": false,
+      "id": 9
     },
     {
       "title": "Twee huurtransacties in kantoorgebouw Munthof Amsterdam",
@@ -318,7 +345,7 @@
       ],
       "keyDeal": false,
       "isNew": false,
-      "id": 9
+      "id": 10
     },
     {
       "title": "Segro verhuurt aan CSafe Global in Segro Logistics Centre Schiphol",
@@ -342,7 +369,7 @@
       ],
       "keyDeal": false,
       "isNew": false,
-      "id": 10
+      "id": 11
     },
     {
       "title": "Kroonenberg Groep verhuurt aan Gamma en Jysk in Amsterdam",
@@ -366,7 +393,7 @@
       ],
       "keyDeal": false,
       "isNew": false,
-      "id": 11
+      "id": 12
     },
     {
       "title": "Huurtransactie 25 augustus 2026",
@@ -391,7 +418,7 @@
       ],
       "keyDeal": false,
       "isNew": false,
-      "id": 12
+      "id": 13
     },
     {
       "title": "Dirk Brounen treedt toe tot raad van commissarissen Amvest",
@@ -415,7 +442,7 @@
       ],
       "keyDeal": false,
       "isNew": false,
-      "id": 13
+      "id": 14
     },
     {
       "title": "CSafe huurt 9.723 m² van SEGRO in Hoofddorp",
@@ -439,7 +466,7 @@
       ],
       "keyDeal": false,
       "isNew": false,
-      "id": 14
+      "id": 15
     },
     {
       "title": "Bridges Real Estate koopt mixed-use gebouw in centrum Utrecht",
@@ -463,7 +490,7 @@
       ],
       "keyDeal": false,
       "isNew": false,
-      "id": 15
+      "id": 16
     },
     {
       "title": "Bridges Real Estate koopt mixed-use gebouw in Utrecht",
@@ -487,79 +514,7 @@
       ],
       "keyDeal": false,
       "isNew": false,
-      "id": 16
-    },
-    {
-      "title": "Ruim 100 woningen op erfenis V&D en Rabobank in Hengelo",
-      "summary": "De transformatie van twee voormalige iconen uit de binnenstad van Hengelo levert meer dan honderd nieuwe woningen op. In het voormalige V&D-pand en het oude Rabobankkantoor wordt volop gebouwd aan een mix van woningen, zorgfuncties en commerciële ruimte.",
-      "date": "2026-08-21",
-      "source": "propertynl",
-      "sourceLabel": "PropertyNL",
-      "url": "https://propertynl.com/Nieuws/Ruim-100-woningen-op-erfenis-V-D-en-Rabobank-in-Hengelo/c01f51fb-c595-409a-9e6a-4baa26e700e0",
-      "companies": [
-        "Rabobank"
-      ],
-      "customers": [],
-      "prospects": [
-        "Rabobank"
-      ],
-      "categories": [
-        "Kantoren",
-        "Nieuwbouw",
-        "Woningmarkt"
-      ],
-      "badges": [],
-      "keyDeal": false,
-      "isNew": false,
       "id": 17
-    },
-    {
-      "title": "Ruim 100 woningen op erfenis V&D en Rabobank in Enschede",
-      "summary": "De transformatie van twee voormalige iconen uit de binnenstad van Enschede levert meer dan honderd nieuwe woningen op. In het voormalige V&D-pand en het oude Rabobankkantoor wordt volop gebouwd aan een mix van woningen, zorgfuncties en commerciële ruimte.",
-      "date": "2026-08-21",
-      "source": "propertynl",
-      "sourceLabel": "PropertyNL",
-      "url": "https://propertynl.com/Nieuws/Ruim-100-woningen-op-erfenis-V-D-en-Rabobank-in-Enschede/c01f51fb-c595-409a-9e6a-4baa26e700e0",
-      "companies": [
-        "Rabobank"
-      ],
-      "customers": [],
-      "prospects": [
-        "Rabobank"
-      ],
-      "categories": [
-        "Kantoren",
-        "Nieuwbouw",
-        "Woningmarkt"
-      ],
-      "badges": [],
-      "keyDeal": false,
-      "isNew": false,
-      "id": 18
-    },
-    {
-      "title": "Nacex huurt logistieke ruimte op SEGRO Park Amsterdam Airport",
-      "summary": "Nacex by Logista Netherlands heeft 1.404 m² logistieke ruimte gehuurd in het nieuw opgeleverde complex Barnsteen op SEGRO Park Amsterdam Airport (SPAA) in Hoofddorp.",
-      "date": "2026-08-21",
-      "source": "propertynl",
-      "sourceLabel": "PropertyNL",
-      "url": "https://propertynl.com/Nieuws/Nacex-huurt-logistieke-ruimte-op-SEGRO-Park-Amsterdam-Airport/478c6c1b-97aa-43c1-8162-5303b90335fa",
-      "companies": [
-        "SEGRO"
-      ],
-      "customers": [],
-      "prospects": [
-        "SEGRO"
-      ],
-      "categories": [
-        "Logistiek"
-      ],
-      "badges": [
-        "transaction"
-      ],
-      "keyDeal": false,
-      "isNew": false,
-      "id": 19
     }
   ]
 }
