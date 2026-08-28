@@ -1,14 +1,11 @@
-# Watchlist — one company per line.
-# Lines starting with # are ignored, so you can group and annotate freely.
-#
 # Notes on matching:
-#   - Matching is case-insensitive and accent-insensitive (Klépierre = Klepierre).
-#   - Word boundaries apply, so "Ahold" will not match "Aholdings".
-#   - "Dutch City Development (DCD)" matches either the full name or "DCD".
+#   - Matching is case-insensitive and accent-insensitive!!! (Klépierre = Klepierre).
+#   - Word boundaries apply, so "Ahold" will not match "Aholdings"
+#   - "Dutch City Development (DCD)" matches either the full name or "DCD"
 #   - Names under 4 characters are skipped unless whitelisted in collect.py,
 #     because things like "AM" and "b" match half the Dutch language.
 #
-# PASTE YOUR FULL LIST BELOW THIS LINE (replacing these examples).
+# FULL LIST, NEW COMPANIES ADD BELOW <3
 
 Victory Group
 
