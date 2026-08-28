@@ -70,7 +70,7 @@ CASE_SENSITIVE = {"NSI", "DWS", "TPG", "VGP", "CTP", "WDP", "SEGRO", "KPN", "DSM
                   "NIBC", "PME", "PFZW", "ABP", "COA", "NVM", "VU", "AM", "AEW", "TIAA",
                   "IBM", "RWE", "MARK", "KUDO", "BPRE", "DCD", "LRE", "VDG", "DHG",
                   "CRV", "DVM", "ZWB", "HIM", "SF Group", "VB Groep", "3B Group",
-                  "O Capital", "FOUR-D", "AT Capital", "TCN", "HTM"}
+                  "O Capital", "FOUR-D", "AT Capital", "TCN", "HTM", "PPF", M7"}
 
 # Two tiers of optional suffix, because "Meerdervoort Group" and "Invesco Real
 # Estate" are routinely written without the suffix, but blindly stripping
