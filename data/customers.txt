@@ -1,14 +1,16 @@
-# EXISTING CUSTOMERS — one per line. Lines starting with # are ignored.
+# Notes on matching:
+#   - Matching is case-insensitive and accent-insensitive!!! (Klépierre = Klepierre).
+#   - Word boundaries apply, so "Ahold" will not match "Aholdings"
+#   - "Dutch City Development (DCD)" matches either the full name or "DCD"
+#   - Names under 4 characters are skipped unless whitelisted in collect.py,
+#     because things like "AM" and "b" match half the Dutch language.
 #
-# These names are matched the same way as data/companies.txt (case-, accent-
-# and punctuation-insensitive, with optional Group/Groep/Holding suffixes),
-# so they do not have to be spelled identically to the watchlist entry.
-#
+# FULL LIST, NEW COMPANIES ADD BELOW <3
 # Any customer not already in companies.txt is added to the watchlist
 # automatically and reported in the run log, so a customer can never go
 # unmonitored because of a spelling difference.
 #
-# PASTE YOUR CUSTOMER LIST BELOW THIS LINE.
+# NEW CUSTOMERS ARE ADDED BELOW <3
 Alzayani
 AM
 Aroundtown
