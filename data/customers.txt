@@ -23,7 +23,10 @@ Bouwhuis Groep
 Burgstate
 Caransa
 Catella Investment Management Benelux
+Catella Investment Management
+Catella
 CK Capital Partners
+CK Capital
 Cornerstone Real Estate
 Deltabrug
 DHG
@@ -31,6 +34,7 @@ DHS Real Estate
 DTZ Investors
 Dura Vermeer
 Dutch RE
+Dutch Real Estate
 DVM BV
 Edmond de Rothschild
 Equity Estate
@@ -38,6 +42,7 @@ Fabory Nederland B.V.
 Focus Real Estate (Everglow)
 Frame Offices
 Global Holdings Management Group
+Global Holdings
 Hartelt FM
 Hinke Fongers Beheer BV
 IMP
@@ -46,6 +51,7 @@ Lenferink Groep Zwolle
 Leyten Vastgoed
 Lister Buildings
 M7 Real Estate
+M7
 Maarsen groep
 MAC³PARK
 Millten
@@ -56,6 +62,7 @@ NL Asset Management
 NLV
 Ping Properties
 PPF Real Estate
+PPF
 Profound
 Prologis
 Property Partners
