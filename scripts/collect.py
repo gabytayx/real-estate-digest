@@ -67,7 +67,7 @@ JUNK = {
 
 # Acronyms matched on exact casing, so MARK does not fire on someone named Mark.
 CASE_SENSITIVE = {"NSI", "DWS", "TPG", "VGP", "CTP", "WDP", "SEGRO", "KPN", "DSM",
-                  "NIBC", "PME", "PFZW", "ABP", "COA", "NVM", "VU", "AEW", "TIAA",
+                  "NIBC", "PME", "PFZW", "ABP", "COA", "NVM", "VU", "AM", "AEW", "TIAA",
                   "IBM", "RWE", "MARK", "KUDO", "BPRE", "DCD", "LRE", "VDG", "DHG",
                   "CRV", "DVM", "ZWB", "HIM", "SF Group", "VB Groep", "3B Group",
                   "O Capital", "FOUR-D", "AT Capital", "TCN", "HTM"}
