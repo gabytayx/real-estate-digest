@@ -1,5 +1,5 @@
 {
-  "generated": "2026-08-31T07:22:47+00:00",
+  "generated": "2026-09-01T07:14:07+00:00",
   "windowDays": 7,
   "ingestDays": 2,
   "health": [
@@ -13,7 +13,7 @@
     {
       "source": "propertynl",
       "label": "PropertyNL",
-      "items": 18,
+      "items": 25,
       "via": "html-listing",
       "error": ""
     },
@@ -55,11 +55,11 @@
       "kept": 0
     },
     "propertynl": {
-      "candidates": 18,
+      "candidates": 25,
       "undated": 0,
-      "too_old": 15,
-      "no_match": 1,
-      "kept": 2
+      "too_old": 11,
+      "no_match": 5,
+      "kept": 9
     },
     "vastgoedmarkt": {
       "candidates": 0,
@@ -71,9 +71,9 @@
     "vastgoeddata": {
       "candidates": 23,
       "undated": 0,
-      "too_old": 23,
-      "no_match": 0,
-      "kept": 0
+      "too_old": 15,
+      "no_match": 2,
+      "kept": 6
     },
     "vastgoednieuws": {
       "candidates": 10,
@@ -85,19 +85,191 @@
     "vastgoedactueel": {
       "candidates": 10,
       "undated": 0,
-      "too_old": 10,
-      "no_match": 0,
+      "too_old": 9,
+      "no_match": 1,
       "kept": 0
     }
   },
   "stats": {
     "undated": 75,
-    "too_old": 48,
-    "no_match": 1,
+    "too_old": 35,
+    "no_match": 8,
     "pages": 120,
-    "stale_dropped": 0
+    "stale_dropped": 8
   },
   "articles": [
+    {
+      "title": "Copernicus verwelkomt Marco Hoogervorst als partner",
+      "summary": "Copernicus Advisory Services heeft voormalig ABN Amro-vastgoedbankier Marco Hoogervorst benoemd tot partner.",
+      "date": "2026-09-01",
+      "source": "propertynl",
+      "sourceLabel": "PropertyNL",
+      "url": "https://propertynl.com/Nieuws/Copernicus-verwelkomt-Marco-Hoogervorst-als-partner/56ecdb79-afa0-4733-a380-bab3a7af0ac2",
+      "companies": [
+        "ABN AMRO"
+      ],
+      "customers": [],
+      "prospects": [
+        "ABN AMRO"
+      ],
+      "categories": [
+        "Personalia"
+      ],
+      "badges": [
+        "rolechange"
+      ],
+      "keyDeal": false,
+      "isNew": true,
+      "id": 1
+    },
+    {
+      "title": "Oud-bouwbaas en minister Elco Brinkman overleden",
+      "summary": "Elco Brinkman, de eerste voorzitter van Bouwend Nederland en een van de meest invloedrijke bestuurders van de Nederlandse bouw- en infrasector van de afgelopen decennia, is maandag 31 augustus overleden na een kort ziekbed. Hij werd 78 jaar.",
+      "date": "2026-08-31",
+      "source": "propertynl",
+      "sourceLabel": "PropertyNL",
+      "url": "https://propertynl.com/Nieuws/Oud-bouwbaas-en-minister-Elco-Brinkman-overleden/66be5c2e-a9c4-4dd6-b75d-3ab1c2a3571a",
+      "companies": [
+        "Nederlandse Aardolie Maatschappij (NAM)"
+      ],
+      "customers": [],
+      "prospects": [
+        "Nederlandse Aardolie Maatschappij (NAM)"
+      ],
+      "categories": [
+        "Beleid & Gemeente"
+      ],
+      "badges": [],
+      "keyDeal": false,
+      "isNew": true,
+      "id": 2
+    },
+    {
+      "title": "Opgeleverd: nieuw logistiek distributiecentrum in Ridderkerk",
+      "summary": "DHS Real Estate Investment Management heeft de oplevering van een nieuw distributiecentrum in Ridderkerk bekendgemaakt. Het complex aan de Selderijweg 20-26 in...",
+      "date": "2026-08-31",
+      "source": "vastgoeddata",
+      "sourceLabel": "Vastgoeddata",
+      "url": "https://www.vastgoeddata.nl/article/c85f2222-a513-11f1-b96f-464e1662e283/opgeleverd-nieuw-logistiek-distributiecentrum-in-ridderkerk",
+      "companies": [
+        "DHS Real Estate"
+      ],
+      "customers": [
+        "DHS Real Estate"
+      ],
+      "prospects": [],
+      "categories": [
+        "Logistiek",
+        "Nieuwbouw"
+      ],
+      "badges": [],
+      "keyDeal": false,
+      "isNew": true,
+      "id": 3
+    },
+    {
+      "title": "NLV voegt winkelcentrum Eskerplein in Almelo toe aan winkelportefeuille",
+      "summary": "NLV heeft het winkelcentrum Eskerplein te Almelo gekocht van Nova Capital, handelend namens vastgoedfonds Eskerplein CV.",
+      "date": "2026-08-31",
+      "source": "propertynl",
+      "sourceLabel": "PropertyNL",
+      "url": "https://propertynl.com/Nieuws/-NLV-voegt-winkelcentrum-Eskerplein-in-Almelo-toe-aan-winkelportefeuille/50b70d7e-ff59-415e-96b2-0e4576d0b9c8",
+      "companies": [
+        "NLV"
+      ],
+      "customers": [
+        "NLV"
+      ],
+      "prospects": [],
+      "categories": [
+        "Beleggingen",
+        "Retail",
+        "Transacties"
+      ],
+      "badges": [
+        "buy"
+      ],
+      "keyDeal": true,
+      "isNew": true,
+      "id": 4
+    },
+    {
+      "title": "Kooptransactie 31 augustus 2026",
+      "summary": "NLV heeft het winkelcentrum Eskerplein in Almelo gekocht van Nova Capital. Met deze aankoop voegt NLV een toekomstbestendig wijkwinkelcentrum toe aan de...",
+      "date": "2026-08-31",
+      "source": "vastgoeddata",
+      "sourceLabel": "Vastgoeddata",
+      "url": "https://www.vastgoeddata.nl/article/4a7d9ebb-a541-11f1-b96f-464e1662e283/nlv-koopt-winkelcentrum-eskerplein-in-almelo",
+      "companies": [
+        "NLV"
+      ],
+      "customers": [
+        "NLV"
+      ],
+      "prospects": [],
+      "categories": [
+        "Retail",
+        "Transacties"
+      ],
+      "badges": [
+        "buy",
+        "transaction"
+      ],
+      "keyDeal": true,
+      "isNew": true,
+      "id": 5
+    },
+    {
+      "title": "Huurtransactie 31 augustus 2026",
+      "summary": "Booking Experts heeft een langjarige huurovereenkomst gesloten voor 800 m² kantoorruimte in The City Post Oost aan de Westerlaan 51 in Zwolle op de tweede...",
+      "date": "2026-08-31",
+      "source": "vastgoeddata",
+      "sourceLabel": "Vastgoeddata",
+      "url": "https://www.vastgoeddata.nl/article/3c56ba8a-a519-11f1-b96f-464e1662e283/booking-experts-versterkt-internationale-groei-met-tweede-vestiging-in-zwolle",
+      "companies": [
+        "DC Vastgoed"
+      ],
+      "customers": [],
+      "prospects": [
+        "DC Vastgoed"
+      ],
+      "categories": [
+        "Kantoren",
+        "Transacties"
+      ],
+      "badges": [
+        "transaction"
+      ],
+      "keyDeal": false,
+      "isNew": true,
+      "id": 6
+    },
+    {
+      "title": "Heimstaden koopt 529 huurwoningen in Max Euwe Kwartier Rotterdam",
+      "summary": "Heimstaden Bostad heeft met Bakkers|Hommen een overeenkomst gesloten voor de aankoop van 529 nieuwbouwhuurwoningen en 5.400 m² commerciële ruimte in het Max...",
+      "date": "2026-08-31",
+      "source": "vastgoeddata",
+      "sourceLabel": "Vastgoeddata",
+      "url": "https://www.vastgoeddata.nl/article/f27270c9-a50c-11f1-b96f-464e1662e283/heimstaden-koopt-529-huurwoningen-in-max-euwe-kwartier-rotterdam",
+      "companies": [
+        "VolkerWessels"
+      ],
+      "customers": [],
+      "prospects": [
+        "VolkerWessels"
+      ],
+      "categories": [
+        "Nieuwbouw",
+        "Transacties",
+        "Woningmarkt"
+      ],
+      "badges": [
+        "buy"
+      ],
+      "keyDeal": false,
+      "isNew": true,
+      "id": 7
+    },
     {
       "title": "Heimstaden koopt 529 huurwoningen in Brainpark Rotterdam",
       "summary": "Heimstaden zet opnieuw een stap op de Nederlandse woningmarkt met de aankoop van 529 nieuwbouwhuurwoningen in Rotterdam. De transactie volgt enkele maanden nadat de Zweedse woningbelegger al 65 middenhuurwoningen in Amsterdam verwierf.",
@@ -123,13 +295,13 @@
         "transaction"
       ],
       "keyDeal": false,
-      "isNew": true,
-      "id": 1
+      "isNew": false,
+      "id": 8
     },
     {
       "title": "Een bancaire afwijzing zegt niets over de kwaliteit van een project",
       "summary": "Je hebt een pand op het oog. De taxatie is rond, je brengt eigen vermogen in en de rekensom klopt. Toch wijst de bank de financieringsaanvraag af. Voor veel vastgoedondernemers voelt dat als het einde van het project. Alsof er een definitief oordeel over het project is geveld. Alternatieve financier",
-      "date": "2026-08-30",
+      "date": "2026-08-31",
       "source": "propertynl",
       "sourceLabel": "PropertyNL",
       "url": "https://propertynl.com/Nieuws/Een-bancaire-afwijzing-zegt-niets-over-de-kwaliteit-van-een-project/cb50cdb6-13c2-41e7-8bd3-3a0613e3a645",
@@ -148,7 +320,148 @@
       ],
       "keyDeal": false,
       "isNew": false,
-      "id": 2
+      "id": 9
+    },
+    {
+      "title": "EMRO en gemeente Amsterdam schrappen kantoren en gaan voor woningen",
+      "summary": "EMRO Real Estate en de gemeente Amsterdam hebben op 26 augustus 2026 de gewijzigde afsprakenbrief getekend voor Amstel Next, de nieuwbouwlocatie aan de Hettenheuvelweg 26.",
+      "date": "2026-08-31",
+      "source": "propertynl",
+      "sourceLabel": "PropertyNL",
+      "url": "https://propertynl.com/Nieuws/EMRO-en-gemeente-Amsterdam-schrappen-kantoren-en-gaan-voor-woningen/884d5572-6ba3-4c60-8796-d7b1099be5ec",
+      "companies": [
+        "Gemeente Amsterdam"
+      ],
+      "customers": [],
+      "prospects": [
+        "Gemeente Amsterdam"
+      ],
+      "categories": [
+        "Beleid & Gemeente",
+        "Nieuwbouw",
+        "Woningmarkt"
+      ],
+      "badges": [],
+      "keyDeal": false,
+      "isNew": true,
+      "id": 10
+    },
+    {
+      "title": "DHS REIM en EuroZaken verwerven ontwikkellocatie in Roosendaal",
+      "summary": "DHS Real Estate Investment Management (DHS REIM) en EuroZaken Investeringen hebben een ontwikkellocatie aan de Rucphensebaan 77 in Roosendaal verworven van Van...",
+      "date": "2026-08-31",
+      "source": "vastgoeddata",
+      "sourceLabel": "Vastgoeddata",
+      "url": "https://www.vastgoeddata.nl/article/d26b9a53-a52e-11f1-b96f-464e1662e283/dhs-reim-en-eurozaken-verwerven-ontwikkellocatie-in-roosendaal",
+      "companies": [
+        "DHS Real Estate"
+      ],
+      "customers": [
+        "DHS Real Estate"
+      ],
+      "prospects": [],
+      "categories": [
+        "Nieuwbouw",
+        "Transacties"
+      ],
+      "badges": [
+        "buy"
+      ],
+      "keyDeal": true,
+      "isNew": true,
+      "id": 11
+    },
+    {
+      "title": "DHS REIM en EuroZaken verwerven ontwikkelingslocatie in Roosendaal",
+      "summary": "DHS Real Estate Investment Management (DHS REIM) heeft samen met EuroZaken Investeringen een ontwikkelingslocatie voor logistiek in Roosendaal aangekocht.",
+      "date": "2026-08-31",
+      "source": "propertynl",
+      "sourceLabel": "PropertyNL",
+      "url": "https://propertynl.com/Nieuws/DHS-REIM-en-EuroZaken-verwerven-ontwikkelingslocatie-in-Roosendaal/0d57ac9e-05f0-4a9a-a702-7282a9af6cad",
+      "companies": [
+        "DHS Real Estate"
+      ],
+      "customers": [
+        "DHS Real Estate"
+      ],
+      "prospects": [],
+      "categories": [
+        "Logistiek",
+        "Nieuwbouw",
+        "Transacties"
+      ],
+      "badges": [
+        "buy"
+      ],
+      "keyDeal": true,
+      "isNew": true,
+      "id": 12
+    },
+    {
+      "title": "Carrière 31 augustus 2026",
+      "summary": "Michael van Loon start per 1 september als taxateur bij vastgoedaviseur en taxateur Basevalue. Van Loon staat ingeschreven in de Kamer Bedrijfsmatig Vastgoed...",
+      "date": "2026-08-31",
+      "source": "vastgoeddata",
+      "sourceLabel": "Vastgoeddata",
+      "url": "https://www.vastgoeddata.nl/article/3db176f1-a539-11f1-b96f-464e1662e283/michael-van-loon-aan-de-slag-bij-basevalue",
+      "companies": [
+        "Gemeente Utrecht"
+      ],
+      "customers": [],
+      "prospects": [
+        "Gemeente Utrecht"
+      ],
+      "categories": [
+        "Overig"
+      ],
+      "badges": [],
+      "keyDeal": false,
+      "isNew": true,
+      "id": 13
+    },
+    {
+      "title": "Bouwen bij het station, zo gebeurt dat in Dijk en Waard",
+      "summary": "In Heerhugowaard krijgt de gebiedstransformatie Stationskwartier steeds meer vorm. Aan de basis ligt een specifiek publiek–privaat ontwikkelingsmodel: DAT, oftewel: ‘Developing Apart Together’.",
+      "date": "2026-08-31",
+      "source": "propertynl",
+      "sourceLabel": "PropertyNL",
+      "url": "https://propertynl.com/Nieuws/Bouwen-bij-het-station-zo-gebeurt-dat-in-Dijk-en-Waard/520b7558-f35f-4660-8af5-1d9e3fe17c1f",
+      "companies": [
+        "VORM"
+      ],
+      "customers": [
+        "VORM"
+      ],
+      "prospects": [],
+      "categories": [
+        "Nieuwbouw"
+      ],
+      "badges": [],
+      "keyDeal": false,
+      "isNew": true,
+      "id": 14
+    },
+    {
+      "title": "Boei heeft in Achmea een nieuwe vriend",
+      "summary": "Stichting Vrienden van BOEi verwelkomt Achmea Real Estate (ARE) de komende drie jaar als Bedrijfsvriend. Met de financiële bijdragen van ARE kunnen de komende jaren bijzondere monumenten in Nederland beschermd en herbestemd worden.",
+      "date": "2026-08-31",
+      "source": "propertynl",
+      "sourceLabel": "PropertyNL",
+      "url": "https://propertynl.com/Nieuws/Boei-heeft-in-Achmea-een-nieuwe-vriend/865680e4-0880-4621-8e1a-5c4d81703a87",
+      "companies": [
+        "Achmea"
+      ],
+      "customers": [],
+      "prospects": [
+        "Achmea"
+      ],
+      "categories": [
+        "Overig"
+      ],
+      "badges": [],
+      "keyDeal": false,
+      "isNew": true,
+      "id": 15
     },
     {
       "title": "Naessens levert nieuw dc Jysk op",
@@ -170,7 +483,7 @@
       "badges": [],
       "keyDeal": false,
       "isNew": false,
-      "id": 3
+      "id": 16
     },
     {
       "title": "JYSK neemt nieuw distributiecentrum in Lelystad in ontvangst",
@@ -194,7 +507,7 @@
       "badges": [],
       "keyDeal": false,
       "isNew": false,
-      "id": 4
+      "id": 17
     },
     {
       "title": "Huurtransactie 27 augustus 2026",
@@ -222,7 +535,7 @@
       ],
       "keyDeal": false,
       "isNew": false,
-      "id": 5
+      "id": 18
     },
     {
       "title": "Herfinanciering duurzaam kantoor The Share in Hoofddorp",
@@ -249,7 +562,7 @@
       ],
       "keyDeal": false,
       "isNew": false,
-      "id": 6
+      "id": 19
     },
     {
       "title": "Carrière 27 augustus 2026",
@@ -275,7 +588,7 @@
       ],
       "keyDeal": false,
       "isNew": false,
-      "id": 7
+      "id": 20
     },
     {
       "title": "Wie krijgt het horeca-imperium van Dolly Parton?",
@@ -297,7 +610,7 @@
       "badges": [],
       "keyDeal": false,
       "isNew": false,
-      "id": 8
+      "id": 21
     },
     {
       "title": "Raad van State haalt streep door bezwaren plan Poort van Hoorn",
@@ -321,7 +634,7 @@
       "badges": [],
       "keyDeal": false,
       "isNew": false,
-      "id": 9
+      "id": 22
     },
     {
       "title": "Noord-Brabant investeert € 150 mln voor 500 zorgwoningen",
@@ -348,201 +661,7 @@
       "badges": [],
       "keyDeal": false,
       "isNew": false,
-      "id": 10
-    },
-    {
-      "title": "Twee huurtransacties in kantoorgebouw Munthof Amsterdam",
-      "summary": "In kantoorgebouw Munthof aan de Reguliersdwarsstraat 58 in Amsterdam zijn twee langjarige huurovereenkomsten gesloten. Uitblinqers huurt 1.000 m² vvo...",
-      "date": "2026-08-25",
-      "source": "vastgoeddata",
-      "sourceLabel": "Vastgoeddata",
-      "url": "https://www.vastgoeddata.nl/article/cd6d0b05-a06e-11f1-b96f-464e1662e283/twee-huurtransacties-in-kantoorgebouw-munthof-amsterdam",
-      "companies": [
-        "First Sponsor Group"
-      ],
-      "customers": [],
-      "prospects": [
-        "First Sponsor Group"
-      ],
-      "categories": [
-        "Kantoren",
-        "Transacties"
-      ],
-      "badges": [
-        "transaction"
-      ],
-      "keyDeal": false,
-      "isNew": false,
-      "id": 11
-    },
-    {
-      "title": "Segro verhuurt aan CSafe Global in Segro Logistics Centre Schiphol",
-      "summary": "Segro heeft een huurovereenkomst gesloten met CSafe Global Coöperatief voor 9.723 m² aan Dreamstreet 21 in Segro Logistics Centre Schiphol op Schiphol Trade Park, Hoofddorp. Met de verhuizing verdubbelt CSafe Global bijna haar ruimte.",
-      "date": "2026-08-25",
-      "source": "propertynl",
-      "sourceLabel": "PropertyNL",
-      "url": "https://propertynl.com/Nieuws/Segro-verhuurt-aan-CSafe-Global-in-Segro-Logistics-Centre-Schiphol/0657ccff-92eb-461b-affb-21e3274c7d1e",
-      "companies": [
-        "Schiphol"
-      ],
-      "customers": [],
-      "prospects": [
-        "Schiphol"
-      ],
-      "categories": [
-        "Overig"
-      ],
-      "badges": [
-        "transaction"
-      ],
-      "keyDeal": false,
-      "isNew": false,
-      "id": 12
-    },
-    {
-      "title": "Kroonenberg Groep verhuurt aan Gamma en Jysk in Amsterdam",
-      "summary": "Kroonenberg Groep heeft overeenstemming bereikt met Gamma en Jysk voor langjarige huurovereenkomsten aan de Spaklerweg in Amsterdam.",
-      "date": "2026-08-25",
-      "source": "propertynl",
-      "sourceLabel": "PropertyNL",
-      "url": "https://propertynl.com/Nieuws/Kroonenberg-Groep-verhuurt-aan-Gamma-en-Jysk-in-Amsterdam/04ea5687-2378-4b50-b4df-534609c67568",
-      "companies": [
-        "Kroonenberg Groep"
-      ],
-      "customers": [],
-      "prospects": [
-        "Kroonenberg Groep"
-      ],
-      "categories": [
-        "Overig"
-      ],
-      "badges": [
-        "transaction"
-      ],
-      "keyDeal": false,
-      "isNew": false,
-      "id": 13
-    },
-    {
-      "title": "Huurtransactie 25 augustus 2026",
-      "summary": "GAMMA breidt zijn winkel aan de Spaklerweg in Amsterdam met 700 m² uit tot in totaal 3.650 m². Daarnaast huurt JYSK 400 m² winkelruimte op dezelfde locatie....",
-      "date": "2026-08-25",
-      "source": "vastgoeddata",
-      "sourceLabel": "Vastgoeddata",
-      "url": "https://www.vastgoeddata.nl/article/99a1cf29-a07a-11f1-b96f-464e1662e283/gamma-breidt-uit-en-jysk-opent-winkel-aan-spaklerweg-in-amsterdam",
-      "companies": [
-        "Kroonenberg Groep"
-      ],
-      "customers": [],
-      "prospects": [
-        "Kroonenberg Groep"
-      ],
-      "categories": [
-        "Retail",
-        "Transacties"
-      ],
-      "badges": [
-        "transaction"
-      ],
-      "keyDeal": false,
-      "isNew": false,
-      "id": 14
-    },
-    {
-      "title": "Dirk Brounen treedt toe tot raad van commissarissen Amvest",
-      "summary": "Dirk Brounen is per 1 augustus 2026 benoemd tot lid van de raad van commissarissen van Amvest. De benoeming is goedgekeurd door de algemene vergadering van aandeelhouders.",
-      "date": "2026-08-25",
-      "source": "propertynl",
-      "sourceLabel": "PropertyNL",
-      "url": "https://propertynl.com/Nieuws/Dirk-Brounen-treedt-toe-tot-raad-van-commissarissen-Amvest/6e4cba04-2015-4d54-be48-234f7c10cc6b",
-      "companies": [
-        "Amvest"
-      ],
-      "customers": [],
-      "prospects": [
-        "Amvest"
-      ],
-      "categories": [
-        "Personalia"
-      ],
-      "badges": [
-        "rolechange"
-      ],
-      "keyDeal": false,
-      "isNew": false,
-      "id": 15
-    },
-    {
-      "title": "CSafe huurt 9.723 m² van SEGRO in Hoofddorp",
-      "summary": "CSafe Global heeft een huurovereenkomst gesloten met SEGRO voor 9.723 m² logistieke bedrijfsruimte aan Dreamstreet 21 in Hoofddorp. Het pand maakt deel uit van...",
-      "date": "2026-08-25",
-      "source": "vastgoeddata",
-      "sourceLabel": "Vastgoeddata",
-      "url": "https://www.vastgoeddata.nl/article/b95adbef-a08d-11f1-b96f-464e1662e283/csafe-huurt-9-723-m-van-segro-in-hoofddorp",
-      "companies": [
-        "SEGRO"
-      ],
-      "customers": [],
-      "prospects": [
-        "SEGRO"
-      ],
-      "categories": [
-        "Logistiek"
-      ],
-      "badges": [
-        "transaction"
-      ],
-      "keyDeal": false,
-      "isNew": false,
-      "id": 16
-    },
-    {
-      "title": "Bridges Real Estate koopt mixed-use gebouw in centrum Utrecht",
-      "summary": "Bridges Real Estate heeft gebouw Vredenburg 17–19 in het centrum van Utrecht overgenomen van Redevco.",
-      "date": "2026-08-25",
-      "source": "propertynl",
-      "sourceLabel": "PropertyNL",
-      "url": "https://propertynl.com/Nieuws/Bridges-Real-Estate-koopt-mixed-use-gebouw-in-centrum-Utrecht/5820e057-a72e-4c7d-8229-ce2dea8de0fc",
-      "companies": [
-        "Bridges Real Estate"
-      ],
-      "customers": [],
-      "prospects": [
-        "Bridges Real Estate"
-      ],
-      "categories": [
-        "Transacties"
-      ],
-      "badges": [
-        "buy"
-      ],
-      "keyDeal": false,
-      "isNew": false,
-      "id": 17
-    },
-    {
-      "title": "Bridges Real Estate koopt mixed-use gebouw in Utrecht",
-      "summary": "Bridges Real Estate heeft het multifunctionele gebouw aan Vredenburg 17–19 in het centrum van Utrecht aangekocht. Het pand meet 6.361 m² verhuurbaar...",
-      "date": "2026-08-25",
-      "source": "vastgoeddata",
-      "sourceLabel": "Vastgoeddata",
-      "url": "https://www.vastgoeddata.nl/article/d4c9136c-a057-11f1-b96f-464e1662e283/bridges-real-estate-koopt-mixed-use-gebouw-in-utrecht",
-      "companies": [
-        "Bridges Real Estate"
-      ],
-      "customers": [],
-      "prospects": [
-        "Bridges Real Estate"
-      ],
-      "categories": [
-        "Transacties"
-      ],
-      "badges": [
-        "buy"
-      ],
-      "keyDeal": false,
-      "isNew": false,
-      "id": 18
+      "id": 23
     }
   ]
 }
