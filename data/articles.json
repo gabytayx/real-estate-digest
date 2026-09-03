@@ -1,19 +1,19 @@
 {
-  "generated": "2026-09-02T07:18:07+00:00",
+  "generated": "2026-09-03T08:43:38+00:00",
   "windowDays": 7,
   "ingestDays": 2,
   "health": [
     {
       "source": "vastgoedjournaal",
       "label": "Vastgoedjournaal",
-      "items": 54,
+      "items": 57,
       "via": "html-listing",
       "error": ""
     },
     {
       "source": "propertynl",
       "label": "PropertyNL",
-      "items": 25,
+      "items": 24,
       "via": "html-listing",
       "error": ""
     },
@@ -48,18 +48,18 @@
   ],
   "funnel": {
     "vastgoedjournaal": {
-      "candidates": 54,
-      "undated": 54,
+      "candidates": 57,
+      "undated": 57,
       "too_old": 0,
       "no_match": 0,
       "kept": 0
     },
     "propertynl": {
-      "candidates": 25,
+      "candidates": 24,
       "undated": 0,
-      "too_old": 10,
-      "no_match": 8,
-      "kept": 7
+      "too_old": 6,
+      "no_match": 9,
+      "kept": 9
     },
     "vastgoedmarkt": {
       "candidates": 0,
@@ -71,9 +71,9 @@
     "vastgoeddata": {
       "candidates": 23,
       "undated": 0,
-      "too_old": 15,
-      "no_match": 4,
-      "kept": 4
+      "too_old": 16,
+      "no_match": 6,
+      "kept": 1
     },
     "vastgoednieuws": {
       "candidates": 10,
@@ -91,13 +91,167 @@
     }
   },
   "stats": {
-    "undated": 64,
-    "too_old": 34,
-    "no_match": 13,
+    "undated": 67,
+    "too_old": 31,
+    "no_match": 16,
     "pages": 120,
-    "stale_dropped": 3
+    "stale_dropped": 5
   },
   "articles": [
+    {
+      "title": "Huurtransactie 3 september 2026",
+      "summary": "Estadio Offices opent een vestiging in het voormalige Rabobank-kantoor aan De Werf 5 in Almelo. Het betreft de vierde locatie van de flexibele kantoorformule...",
+      "date": "2026-09-03",
+      "source": "vastgoeddata",
+      "sourceLabel": "Vastgoeddata",
+      "url": "https://www.vastgoeddata.nl/article/9e0b623e-a766-11f1-b96f-464e1662e283/estadio-offices-opent-vierde-vestiging-in-almelo",
+      "companies": [
+        "Rabobank"
+      ],
+      "customers": [],
+      "prospects": [
+        "Rabobank"
+      ],
+      "categories": [
+        "Kantoren",
+        "Transacties"
+      ],
+      "badges": [
+        "transaction"
+      ],
+      "keyDeal": false,
+      "isNew": true,
+      "id": 1
+    },
+    {
+      "title": "1.300 bouwprojecten liggen stil door geschorste kwaliteitsborgers",
+      "summary": "Drie grote bureaus van kwaliteitsborgers zijn geschorst, waardoor in totaal tot 1.300 bouwprojecten zijn stilgelegd, zo meldt de Vereniging Nederlandse Gemeenten (VNG).",
+      "date": "2026-09-03",
+      "source": "propertynl",
+      "sourceLabel": "PropertyNL",
+      "url": "https://propertynl.com/Nieuws/1-300-bouwprojecten-liggen-stil-door-geschorste-kwaliteitsborgers/a85f6319-1bc9-4d29-8b59-935008141161",
+      "companies": [
+        "Vereniging Nederlandse Gemeenten"
+      ],
+      "customers": [],
+      "prospects": [
+        "Vereniging Nederlandse Gemeenten"
+      ],
+      "categories": [
+        "Beleid & Gemeente"
+      ],
+      "badges": [],
+      "keyDeal": false,
+      "isNew": true,
+      "id": 2
+    },
+    {
+      "title": "'Kansen voor vastgoed in volgende fase ontwikkeling AI'",
+      "summary": "In de volgende fase van de ontwikkeling van AI wordt vastgoed en met name grond steeds belangrijker, stelt vermogensbeheerder Schroders.",
+      "date": "2026-09-03",
+      "source": "propertynl",
+      "sourceLabel": "PropertyNL",
+      "url": "https://propertynl.com/Nieuws/-Kansen-voor-vastgoed-in-volgende-fase-ontwikkeling-AI/4660aa38-7006-4f01-8464-3d42fe0e0dc6",
+      "companies": [
+        "Schroders"
+      ],
+      "customers": [
+        "Schroders"
+      ],
+      "prospects": [],
+      "categories": [
+        "Nieuwbouw"
+      ],
+      "badges": [],
+      "keyDeal": false,
+      "isNew": true,
+      "id": 3
+    },
+    {
+      "title": "Wat betaalde UMB voor 22 historische panden in Amsterdam en Rotterdam?",
+      "summary": "UMB Group heeft een portefeuille van 22 historische panden gekocht in Amsterdam en Rotterdam van Tristan Capital Partners. De gebouwen bevatten 92 appartementen en twee commerciële ruimtes.",
+      "date": "2026-09-02",
+      "source": "propertynl",
+      "sourceLabel": "PropertyNL",
+      "url": "https://propertynl.com/Nieuws/Wat-betaalde-UMB-voor-22-historische-panden-in-Amsterdam-en-Rotterdam/45a1a5bb-91ec-4f2f-8100-a48ce6cb5119",
+      "companies": [
+        "UMB Group"
+      ],
+      "customers": [],
+      "prospects": [
+        "UMB Group"
+      ],
+      "categories": [
+        "Beleggingen",
+        "Transacties",
+        "Woningmarkt"
+      ],
+      "badges": [
+        "buy"
+      ],
+      "keyDeal": false,
+      "isNew": true,
+      "id": 4
+    },
+    {
+      "title": "WDP slaat slag met 100.000 m² grond in Antwerpse haven",
+      "summary": "Logistiek ontwikkelaar WDP heeft een aanzienlijke grondreserve van 100.000 m² in de haven van Antwerpen verworven. De grondpositie in volle eigendom wordt gecombineerd met 40 MVA aan netcapaciteit.",
+      "date": "2026-09-02",
+      "source": "propertynl",
+      "sourceLabel": "PropertyNL",
+      "url": "https://propertynl.com/Nieuws/WDP-slaat-slag-met-100-000-m-grond-in-Antwerpse-haven/20ea614f-7ae7-4a04-abc8-ed74d0abc976",
+      "companies": [
+        "WDP (Warehouses de Pauw)"
+      ],
+      "customers": [],
+      "prospects": [
+        "WDP (Warehouses de Pauw)"
+      ],
+      "categories": [
+        "Logistiek",
+        "Nieuwbouw",
+        "Transacties"
+      ],
+      "badges": [
+        "buy"
+      ],
+      "keyDeal": false,
+      "isNew": true,
+      "id": 5
+    },
+    {
+      "title": "Vastgoedbeleggingen stijgen met 43% naar € 9,2 mrd",
+      "summary": "Het volume van vastgoedbeleggingen in de Nederlandse markt komt in het eerste halfjaar van 2026 uit op € 9,2 mrd. Een jaar geleden was dat nog € 6,43 mrd.",
+      "date": "2026-09-02",
+      "source": "propertynl",
+      "sourceLabel": "PropertyNL",
+      "url": "https://propertynl.com/Nieuws/Vastgoedbeleggingen-stijgen-met-43-naar--9-2-mrd/fa9667e9-5d3b-4ed6-869d-b926ceb6014e",
+      "companies": [
+        "Achmea",
+        "DWS",
+        "TPG",
+        "Union Investment",
+        "VORM"
+      ],
+      "customers": [
+        "VORM"
+      ],
+      "prospects": [
+        "Achmea",
+        "DWS",
+        "TPG",
+        "Union Investment"
+      ],
+      "categories": [
+        "Beleggingen"
+      ],
+      "badges": [
+        "market"
+      ],
+      "keyDeal": false,
+      "isNew": true,
+      "id": 6
+    },
     {
       "title": "Pidz tekent huurovereenkomst bij Diana & Vesta",
       "summary": "DHS Real Estate Investment Management heeft een nieuwe huurovereenkomst gesloten met Pidz voor 940 m² kantoorruimte in Diana & Vesta.",
@@ -119,8 +273,83 @@
         "transaction"
       ],
       "keyDeal": false,
+      "isNew": false,
+      "id": 7
+    },
+    {
+      "title": "Heylen neemt Audi-terrein van 55 hectare in Brussel over",
+      "summary": "De Belgische logistieke ontwikkelaar Heylen Warehouses, Audi, het Brussels Hoofdstedelijk Gewest en de gemeente Vorst (Brussel) hebben een overeenkomst getekend voor de overname van het terrein van de voormalige Audi-fabriek in Vorst.",
+      "date": "2026-09-02",
+      "source": "propertynl",
+      "sourceLabel": "PropertyNL",
+      "url": "https://propertynl.com/Nieuws/Heylen-neemt-Audi-terrein-van-55-hectare-in-Brussel-over/0041c96c-90a3-4b2b-8022-7dc098c6038f",
+      "companies": [
+        "Heylen Warehouses"
+      ],
+      "customers": [],
+      "prospects": [
+        "Heylen Warehouses"
+      ],
+      "categories": [
+        "Beleid & Gemeente",
+        "Logistiek",
+        "Nieuwbouw"
+      ],
+      "badges": [],
+      "keyDeal": false,
       "isNew": true,
-      "id": 1
+      "id": 8
+    },
+    {
+      "title": "Eindhoven mag aan de slag met 346 woningen VDMA-terrein",
+      "summary": "De ontwikkeling van het VDMA-terrein in Eindhoven kan doorgaan. De Raad van State heeft de vergunningen voor de eerste fase in stand gelaten, waardoor de bouw naar verwachting begin 2027 kan starten.",
+      "date": "2026-09-02",
+      "source": "propertynl",
+      "sourceLabel": "PropertyNL",
+      "url": "https://propertynl.com/Nieuws/Eindhoven-mag-aan-de-slag-met-346-woningen-VDMA-terrein/f333efaf-1a3d-4b9b-bcd2-83d904e3678b",
+      "companies": [
+        "Being",
+        "Being Development"
+      ],
+      "customers": [
+        "Being"
+      ],
+      "prospects": [
+        "Being Development"
+      ],
+      "categories": [
+        "Beleid & Gemeente",
+        "Nieuwbouw",
+        "Woningmarkt"
+      ],
+      "badges": [],
+      "keyDeal": false,
+      "isNew": true,
+      "id": 9
+    },
+    {
+      "title": "Een bancaire afwijzing zegt niets over de kwaliteit van een project",
+      "summary": "Je hebt een pand op het oog. De taxatie is rond, je brengt eigen vermogen in en de rekensom klopt. Toch wijst de bank de financieringsaanvraag af. Voor veel vastgoedondernemers voelt dat als het einde van het project. Alsof er een definitief oordeel over het project is geveld. Alternatieve financier",
+      "date": "2026-09-02",
+      "source": "propertynl",
+      "sourceLabel": "PropertyNL",
+      "url": "https://propertynl.com/Nieuws/Een-bancaire-afwijzing-zegt-niets-over-de-kwaliteit-van-een-project/cb50cdb6-13c2-41e7-8bd3-3a0613e3a645",
+      "companies": [
+        "VORM"
+      ],
+      "customers": [
+        "VORM"
+      ],
+      "prospects": [],
+      "categories": [
+        "Overig"
+      ],
+      "badges": [
+        "transaction"
+      ],
+      "keyDeal": false,
+      "isNew": false,
+      "id": 10
     },
     {
       "title": "Benkey verwerft kantoorobject in Nieuwegein",
@@ -145,8 +374,8 @@
         "buy"
       ],
       "keyDeal": true,
-      "isNew": true,
-      "id": 2
+      "isNew": false,
+      "id": 11
     },
     {
       "title": "Top Ontwikkelaars Logistiek: Logistieke ontwikkeling klimt uit dal",
@@ -183,8 +412,8 @@
       ],
       "badges": [],
       "keyDeal": false,
-      "isNew": true,
-      "id": 3
+      "isNew": false,
+      "id": 12
     },
     {
       "title": "Premium Huurtransactie 1 september 2026",
@@ -208,8 +437,8 @@
         "transaction"
       ],
       "keyDeal": false,
-      "isNew": true,
-      "id": 4
+      "isNew": false,
+      "id": 13
     },
     {
       "title": "Havensteder voegt 171 sociale huurwoningen toe aan Max Euwe Kwartier",
@@ -230,32 +459,8 @@
       ],
       "badges": [],
       "keyDeal": false,
-      "isNew": true,
-      "id": 5
-    },
-    {
-      "title": "Een bancaire afwijzing zegt niets over de kwaliteit van een project",
-      "summary": "Je hebt een pand op het oog. De taxatie is rond, je brengt eigen vermogen in en de rekensom klopt. Toch wijst de bank de financieringsaanvraag af. Voor veel vastgoedondernemers voelt dat als het einde van het project. Alsof er een definitief oordeel over het project is geveld. Alternatieve financier",
-      "date": "2026-09-01",
-      "source": "propertynl",
-      "sourceLabel": "PropertyNL",
-      "url": "https://propertynl.com/Nieuws/Een-bancaire-afwijzing-zegt-niets-over-de-kwaliteit-van-een-project/cb50cdb6-13c2-41e7-8bd3-3a0613e3a645",
-      "companies": [
-        "VORM"
-      ],
-      "customers": [
-        "VORM"
-      ],
-      "prospects": [],
-      "categories": [
-        "Overig"
-      ],
-      "badges": [
-        "transaction"
-      ],
-      "keyDeal": false,
       "isNew": false,
-      "id": 6
+      "id": 14
     },
     {
       "title": "Copernicus verwelkomt Marco Hoogervorst als partner",
@@ -279,7 +484,7 @@
       ],
       "keyDeal": false,
       "isNew": false,
-      "id": 7
+      "id": 15
     },
     {
       "title": "Carrière 1 september 2026",
@@ -300,8 +505,8 @@
       ],
       "badges": [],
       "keyDeal": false,
-      "isNew": true,
-      "id": 8
+      "isNew": false,
+      "id": 16
     },
     {
       "title": "Car Parks bouwt parkeergarage op Kennispark Enschede",
@@ -323,8 +528,8 @@
       ],
       "badges": [],
       "keyDeal": false,
-      "isNew": true,
-      "id": 9
+      "isNew": false,
+      "id": 17
     },
     {
       "title": "CBRE: eerste helft 2026 nieuwe fase in beleggingscyclus",
@@ -345,8 +550,8 @@
       ],
       "badges": [],
       "keyDeal": false,
-      "isNew": true,
-      "id": 10
+      "isNew": false,
+      "id": 18
     },
     {
       "title": "Algemeen 1 september 2026",
@@ -369,8 +574,8 @@
         "rolechange"
       ],
       "keyDeal": false,
-      "isNew": true,
-      "id": 11
+      "isNew": false,
+      "id": 19
     },
     {
       "title": "171 sociale huurwoningen voor Havensteder in Brainpark Rotterdam",
@@ -392,8 +597,8 @@
       ],
       "badges": [],
       "keyDeal": false,
-      "isNew": true,
-      "id": 12
+      "isNew": false,
+      "id": 20
     },
     {
       "title": "Oud-bouwbaas en minister Elco Brinkman overleden",
@@ -415,7 +620,7 @@
       "badges": [],
       "keyDeal": false,
       "isNew": false,
-      "id": 13
+      "id": 21
     },
     {
       "title": "Opgeleverd: nieuw logistiek distributiecentrum in Ridderkerk",
@@ -438,7 +643,7 @@
       "badges": [],
       "keyDeal": false,
       "isNew": false,
-      "id": 14
+      "id": 22
     },
     {
       "title": "NLV voegt winkelcentrum Eskerplein in Almelo toe aan winkelportefeuille",
@@ -464,7 +669,7 @@
       ],
       "keyDeal": true,
       "isNew": false,
-      "id": 15
+      "id": 23
     },
     {
       "title": "Kooptransactie 31 augustus 2026",
@@ -490,7 +695,7 @@
       ],
       "keyDeal": true,
       "isNew": false,
-      "id": 16
+      "id": 24
     },
     {
       "title": "Huurtransactie 31 augustus 2026",
@@ -515,7 +720,7 @@
       ],
       "keyDeal": false,
       "isNew": false,
-      "id": 17
+      "id": 25
     },
     {
       "title": "Heimstaden koopt 529 huurwoningen in Max Euwe Kwartier Rotterdam",
@@ -541,7 +746,7 @@
       ],
       "keyDeal": false,
       "isNew": false,
-      "id": 18
+      "id": 26
     },
     {
       "title": "Heimstaden koopt 529 huurwoningen in Brainpark Rotterdam",
@@ -569,7 +774,7 @@
       ],
       "keyDeal": false,
       "isNew": false,
-      "id": 19
+      "id": 27
     },
     {
       "title": "EMRO en gemeente Amsterdam schrappen kantoren en gaan voor woningen",
@@ -593,7 +798,7 @@
       "badges": [],
       "keyDeal": false,
       "isNew": false,
-      "id": 20
+      "id": 28
     },
     {
       "title": "DHS REIM en EuroZaken verwerven ontwikkellocatie in Roosendaal",
@@ -618,7 +823,7 @@
       ],
       "keyDeal": true,
       "isNew": false,
-      "id": 21
+      "id": 29
     },
     {
       "title": "DHS REIM en EuroZaken verwerven ontwikkelingslocatie in Roosendaal",
@@ -644,7 +849,7 @@
       ],
       "keyDeal": true,
       "isNew": false,
-      "id": 22
+      "id": 30
     },
     {
       "title": "Carrière 31 augustus 2026",
@@ -666,7 +871,7 @@
       "badges": [],
       "keyDeal": false,
       "isNew": false,
-      "id": 23
+      "id": 31
     },
     {
       "title": "Bouwen bij het station, zo gebeurt dat in Dijk en Waard",
@@ -688,7 +893,7 @@
       "badges": [],
       "keyDeal": false,
       "isNew": false,
-      "id": 24
+      "id": 32
     },
     {
       "title": "Boei heeft in Achmea een nieuwe vriend",
@@ -710,134 +915,7 @@
       "badges": [],
       "keyDeal": false,
       "isNew": false,
-      "id": 25
-    },
-    {
-      "title": "Naessens levert nieuw dc Jysk op",
-      "summary": "Hoofdaannemer Willy Naessens en bouwpartner Vrolijk hebben het nieuwe distributiecentrum van Jysk in Lelystad opgeleverd.",
-      "date": "2026-08-27",
-      "source": "propertynl",
-      "sourceLabel": "PropertyNL",
-      "url": "https://propertynl.com/Nieuws/Naessens-levert-nieuw-dc-Jysk-op/0e88a415-4c9c-41d1-b4f0-65a1205b3da9",
-      "companies": [
-        "Willy Naessens"
-      ],
-      "customers": [],
-      "prospects": [
-        "Willy Naessens"
-      ],
-      "categories": [
-        "Logistiek"
-      ],
-      "badges": [],
-      "keyDeal": false,
-      "isNew": false,
-      "id": 26
-    },
-    {
-      "title": "JYSK neemt nieuw distributiecentrum in Lelystad in ontvangst",
-      "summary": "JYSK heeft de sleutels ontvangen van zijn nieuwe distributiecentrum aan de Buitenhavenweg 48 Lelystad. Met de sleuteloverdracht is de bouwfase van het 147.000...",
-      "date": "2026-08-27",
-      "source": "vastgoeddata",
-      "sourceLabel": "Vastgoeddata",
-      "url": "https://www.vastgoeddata.nl/article/ebfd2b4f-a1e5-11f1-b96f-464e1662e283/jysk-neemt-nieuw-distributiecentrum-in-lelystad-in-ontvangst",
-      "companies": [
-        "Nederlandse Aardolie Maatschappij (NAM)",
-        "Willy Naessens"
-      ],
-      "customers": [],
-      "prospects": [
-        "Nederlandse Aardolie Maatschappij (NAM)",
-        "Willy Naessens"
-      ],
-      "categories": [
-        "Logistiek"
-      ],
-      "badges": [],
-      "keyDeal": false,
-      "isNew": false,
-      "id": 27
-    },
-    {
-      "title": "Huurtransactie 27 augustus 2026",
-      "summary": "Logistiek dienstverlener LX Pantos heeft zijn huurovereenkomst voor 825 m² kantoorruimte aan de Siriusdreef 30-72 in Hoofddorp langjarig verlengd. De...",
-      "date": "2026-08-27",
-      "source": "vastgoeddata",
-      "sourceLabel": "Vastgoeddata",
-      "url": "https://www.vastgoeddata.nl/article/36e9f11f-a1f9-11f1-b96f-464e1662e283/lx-pantos-verlengt-huur-in-hoofddorp",
-      "companies": [
-        "BNP Paribas Real Estate",
-        "Schiphol"
-      ],
-      "customers": [],
-      "prospects": [
-        "BNP Paribas Real Estate",
-        "Schiphol"
-      ],
-      "categories": [
-        "Kantoren",
-        "Logistiek",
-        "Transacties"
-      ],
-      "badges": [
-        "transaction"
-      ],
-      "keyDeal": false,
-      "isNew": false,
-      "id": 28
-    },
-    {
-      "title": "Herfinanciering duurzaam kantoor The Share in Hoofddorp",
-      "summary": "Jupiter heeft samen met Federated Hermes een financiering van € 21,9 mln verstrekt voor de herfinanciering van kantoorgebouw The Share in Hoofddorp. Het gebouw ligt direct naast station Hoofddorp en heeft L’Oréal Nederland als belangrijkste huurder.",
-      "date": "2026-08-27",
-      "source": "propertynl",
-      "sourceLabel": "PropertyNL",
-      "url": "https://propertynl.com/Nieuws/Herfinanciering-duurzaam-kantoor-The-Share-in-Hoofddorp/0eecc0e9-9b09-46c6-b02f-91b96780caaa",
-      "companies": [
-        "Schiphol",
-        "VolkerWessels"
-      ],
-      "customers": [],
-      "prospects": [
-        "Schiphol",
-        "VolkerWessels"
-      ],
-      "categories": [
-        "Duurzaamheid",
-        "Kantoren"
-      ],
-      "badges": [
-        "transaction"
-      ],
-      "keyDeal": false,
-      "isNew": false,
-      "id": 29
-    },
-    {
-      "title": "Carrière 27 augustus 2026",
-      "summary": "Maarten Donkers wordt de nieuwe directeur Research & Data Intelligence bij Capital Value. Per 1 september  krijgt hij de leiding over het researchteam. Hij...",
-      "date": "2026-08-27",
-      "source": "vastgoeddata",
-      "sourceLabel": "Vastgoeddata",
-      "url": "https://www.vastgoeddata.nl/article/4ae569b3-a14a-11f1-b96f-464e1662e283/maarten-donkers-nieuwe-directeur-research-bij-capital-value",
-      "companies": [
-        "FGH Bank",
-        "Rabobank"
-      ],
-      "customers": [],
-      "prospects": [
-        "FGH Bank",
-        "Rabobank"
-      ],
-      "categories": [
-        "Personalia"
-      ],
-      "badges": [
-        "rolechange"
-      ],
-      "keyDeal": false,
-      "isNew": false,
-      "id": 30
+      "id": 33
     }
   ]
 }
